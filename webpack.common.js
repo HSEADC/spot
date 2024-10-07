@@ -80,6 +80,52 @@ module.exports = {
       filename: './index.html'
     }),
 
+    // Main sections
+    new HtmlWebpackPlugin({
+      template: './src/art.html',
+      filename: './art.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/skateboarding.html',
+      filename: './skateboarding.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/music.html',
+      filename: './music.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/fashion.html',
+      filename: './fashion.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dance.html',
+      filename: './dance.html'
+    }),
+
+    // Section 'Art' articles
+    new HtmlWebpackPlugin({
+      template: './src/art/art-articles.html',
+      filename: './art/art-articles.html'
+    }),
+    // Section 'Skateboarding' articles
+    new HtmlWebpackPlugin({
+      template: './src/skateboarding/skateboarding-articles.html',
+      filename: './skateboarding/skateboarding-articles.html'
+    }),
+    // Section 'Music' articles
+    new HtmlWebpackPlugin({
+      template: './src/music/music-articles.html',
+      filename: './music/music-articles.html'
+    }), // Section 'Fashion' articles
+    new HtmlWebpackPlugin({
+      template: './src/fashion/fashion-articles.html',
+      filename: './fashion/fashion-articles.html'
+    }), // Section 'Dance' articles
+    new HtmlWebpackPlugin({
+      template: './src/dance/dance-articles.html',
+      filename: './dance/dance-articles.html'
+    }),
+
     // Internal pages
     // new HtmlWebpackPlugin({
     //   hash: true,
