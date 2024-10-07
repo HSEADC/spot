@@ -101,6 +101,10 @@ module.exports = {
       template: './src/dance.html',
       filename: './dance.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: './about.html'
+    }),
 
     // Section 'Art' articles
     new HtmlWebpackPlugin({
