@@ -3,3 +3,12 @@
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/basics.scss';
 @import 'stylesheets/index.scss';
+h1 {
+  font-size: 12vw;
+}
+h2 {
+  font-size: 6vw;
+}
+p {
+  font: 2vw;
+}

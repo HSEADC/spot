@@ -1,8 +1,8 @@
 {
-  "name": "static-site-boilerplate",
+  "name": "street",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Anna Komkova <ann.komkova98@gmail.com>",
+  "author": "Naranzaya",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
@@ -34,5 +34,6 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0",
     "webpack-merge": "^6.0.1"
-  }
+  },
+  "repository": "git@github.com:HSEADC/static-site-2024-04.git"
 }
