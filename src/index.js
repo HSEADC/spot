@@ -1,5 +1,6 @@
 import './index.css'
-import jpg from './images/image.jpg'
+import '../src/fonts/TT-Prosto-Sans-Trial-Bold.otf'
+import '../src/fonts/TT-Prosto-Sans-Trial-Regular.otf'
 
 document.addEventListener('DOMContentLoaded', () => {
   const image = new Image()
