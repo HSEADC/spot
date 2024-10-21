@@ -1,11 +1,93 @@
-body.index {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  & > div,
-  & > a {
-    margin: 10px 0;
+.options {
+  a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--red);
+    border-radius: 2.083vw;
+    padding: 1.389vw 1.736vw;
+    font-weight: 400;
+    font-size: 1.25vw;
   }
+}
+.landing_content {
+  position: relative;
+  width: 93.056vw;
+  height: 71.944vw;
+  left: 3.472vw;
+  background-color: aquamarine;
+
+  h2 {
+    position: absolute;
+    left: -5.903vw;
+    top: 4.097vw;
+  }
+
+  .landingPh_1 {
+    background-image: url('../images/landing/landing_1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 44.567vw;
+    height: 38.681vw;
+    position: absolute;
+    left: 43.542vw;
+    top: 26.944vw;
+    z-index: 2;
+  }
+  .landingPh_2 {
+    background-image: url('../images/landing/landing_2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16.667vw;
+    height: 14.236vw;
+    position: absolute;
+    right: 5.972vw;
+    top: 25.417vw;
+    z-index: 1;
+  }
+  p {
+    position: absolute;
+    left: 8.819vw;
+    top: 39.583vw;
+    width: 32.361vw;
+    line-height: normal;
+  }
+}
+.mails {
+  position: absolute;
+  left: 8.819vw;
+  top: 55.625vw;
+  width: 30.417vw;
+  height: 4.375vw;
+
+  #email {
+    background-color: var(--white);
+    border-radius: 2.083vw;
+    padding: 1.4vw 1.736vw;
+    font-weight: 400;
+    font-size: 1.25vw;
+    width: 30.417vw;
+    border-color: var(--blue);
+    margin: 0;
+  }
+
+  #button {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 2.083vw;
+    border-color: none;
+    padding: 1.4vw 1.736vw;
+    font-weight: 400;
+    font-size: 1.25vw;
+    width: 10.069vw;
+    margin-right: 0;
+  }
+}
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 6.944vw;
+  background-color: var(--blue);
 }
