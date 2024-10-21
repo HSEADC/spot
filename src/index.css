@@ -4,11 +4,19 @@
 @import 'stylesheets/basics.scss';
 @import 'stylesheets/index.scss';
 h1 {
-  font-size: 12vw;
+  font-size: 15.5vw;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 700;
 }
 h2 {
-  font-size: 6vw;
+  font-size: 8.3vw;
+  text-transform: uppercase;
+  color: var(--blue);
+  font-weight: 700;
 }
 p {
-  font: 2vw;
+  font-size: 1.25vw;
+  color: var(--blue);
+  font-weight: 400;
 }
