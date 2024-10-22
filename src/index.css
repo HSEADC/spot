@@ -3,6 +3,8 @@
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/basics.scss';
 @import 'stylesheets/index.scss';
+@import 'stylesheets/landing.scss';
+
 h1 {
   font-size: 15.5vw;
   text-transform: uppercase;
