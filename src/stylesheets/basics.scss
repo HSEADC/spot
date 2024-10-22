@@ -12,18 +12,25 @@ body {
   font-family: 'TT Prosto Sans Trial', sans-serif;
 }
 .menu {
-  position: sticky;
-  width: 100vw;
-  height: 6.875vw;
+  position: fixed;
+  width: 93.056vw;
+  height: 3.9vw;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 3.472vw;
-}
-.logo {
-  background-image: url('../images/logo.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 11.1vw;
-  height: 3.5vw;
+  align-items: end;
+  padding: 0 0 0 1.736vw;
+  margin: 2.778vw 3.472vw 0 3.472vw;
+  border-radius: 5vw;
+
+  .logo {
+    background-image: url('../images/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 11.1vw;
+    height: 3.5vw;
+  }
+
+  .options {
+    margin-bottom: 1.2vw;
+  }
 }
