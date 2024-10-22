@@ -4,7 +4,6 @@
 @import 'stylesheets/basics.scss';
 @import 'stylesheets/index.scss';
 @import 'stylesheets/landing.scss';
-@import 'stylesheets/adaptive_landing.scss';
 
 h1 {
   font-size: 15.5vw;
