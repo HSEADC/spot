@@ -1,5 +1,6 @@
 @import 'stylesheets/reset.scss';
 @import 'stylesheets/vars.scss';
 @import 'stylesheets/fonts.scss';
+@import url('https://fonts.cdnfonts.com/css/tt-prosto-sans-trial');
 @import 'stylesheets/basics.scss';
 @import 'stylesheets/index.scss';
