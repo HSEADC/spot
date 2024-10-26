@@ -5,7 +5,6 @@
 html,
 body {
   height: 100%;
-  background-color: var(--white);
 }
 
 body {
@@ -29,18 +28,46 @@ p {
   font-weight: 400;
 }
 .menu {
-  position: sticky;
+  z-index: 9999;
+  position: fixed;
   width: 100vw;
   height: 6.875vw;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 3.472vw;
+  .options {
+    width: 93.056vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      background-image: url('../images/logo.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 11.1vw;
+      height: 4vw;
+    }
+    .links {
+      width: 58.264vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      * {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.25vw;
+      }
+    }
+  }
 }
-.logo {
-  background-image: url('../images/logo.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 11.1vw;
-  height: 3.5vw;
+@media screen and (max-width: 1025px) {
+  h2 {
+    font-size: 11.655vw;
+  }
+  p {
+    font-size: 3.721vw;
+  }
 }
