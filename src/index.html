@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="icon" type="images" href="images/icon.ico" />
-    <link rel="icon" type="images" href="images/icon.png" />
+    <link rel="icon" href="../src/images/icon.ico" type="image/x-icon" />
+    <link rel="icon" href="../src/images/icon.png" type="image/png" />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Urban Ink</title>
     <analytics></analytics>
   </head>
@@ -14,76 +15,84 @@
       <div class="options">
         <div class="logo"></div>
         <div class="links">
-          <a href="about.html" class="about">о нас</a>
+          <a href="about.html" class="about_btn"><p>О НАС</p></a>
         </div>
       </div>
     </div>
     <div class="landing_content">
-      <h2>погрузись <br />в стритстайл <br />с urban ink</h2>
+      <h2>погрузись в стритстайл с <span class="red">urban </span>ink</h2>
       <p>
-        Мы — медиа об уличной культуре, создающий пространство для тех кто ценит
-        эмоции, свободу и эксперименты. Удивляем <br />
-        и вдохновляем не только полезным, но <br />
-        и уникальным материалом. Будет много интересного, так что оставайтесь с
-        нами!
+        Мы — медиа об уличной культуре, создающий пространство для тех кто ценит
+        эмоции, свободу и эксперименты. Удивляем и вдохновляем не только
+        полезным, но и уникальным материалом. Будет много интересного, <br />так
+        что оставайтесь с нами!
       </p>
-      <div class="landingPh_1"></div>
-      <div class="landingPh_2"></div>
-      <div class="mails">
-        <!-- modify this form HTML and place wherever you want your form -->
-        <form
-          id="my-form"
-          action="https://formspree.io/f/meojynpe"
-          method="POST"
-        >
-          <!-- <label>Email:</label> -->
-          <input type="email" name="email" id="email" placeholder="e-mail" />
-          <input type="submit" id="button" value="отправить" />
-          <!-- <button id="my-form-button">Отправить</button> -->
-          <p id="my-form-status"></p>
-        </form>
 
-        <!-- Place this script at the end of the body tag -->
-        <script>
-          var form = document.getElementById('my-form')
+      <img src="../src/images/home_screen/s.svg" alt="" class="s" />
+      <img src="../src/images/home_screen/s1.jpg" alt="" class="s1" />
+      <img src="../src/images/home_screen/s2.jpg" alt="" class="s2" />
+      <img src="../src/images/home_screen/s3.jpg" alt="" class="s3" />
+    </div>
+    <div class="mails">
+      <!-- modify this form HTML and place wherever you want your form -->
+      <form id="my-form" action="https://formspree.io/f/meojynpe" method="POST">
+        <!-- <label>Email:</label> -->
+        <input type="email" name="email" id="email" placeholder="E-mail" />
+        <input type="submit" id="button" value="Отправить" />
+        <!-- <button id="my-form-button">Отправить</button> -->
+        <p id="my-form-status"></p>
+      </form>
 
-          async function handleSubmit(event) {
-            event.preventDefault()
-            var status = document.getElementById('my-form-status')
-            var data = new FormData(event.target)
-            fetch(event.target.action, {
-              method: form.method,
-              body: data,
-              headers: {
-                Accept: 'application/json'
+      <!-- Place this script at the end of the body tag -->
+      <script>
+        var form = document.getElementById('my-form')
+
+        async function handleSubmit(event) {
+          event.preventDefault()
+          var status = document.getElementById('my-form-status')
+          var data = new FormData(event.target)
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+              Accept: 'application/json'
+            }
+          })
+            .then((response) => {
+              if (response.ok) {
+                status.innerHTML = 'Thanks for your submission!'
+                form.reset()
+              } else {
+                response.json().then((data) => {
+                  if (Object.hasOwn(data, 'errors')) {
+                    status.innerHTML = data['errors']
+                      .map((error) => error['message'])
+                      .join(', ')
+                  } else {
+                    status.innerHTML =
+                      'Oops! There was a problem submitting your form'
+                  }
+                })
               }
             })
-              .then((response) => {
-                if (response.ok) {
-                  status.innerHTML = 'Thanks for your submission!'
-                  form.reset()
-                } else {
-                  response.json().then((data) => {
-                    if (Object.hasOwn(data, 'errors')) {
-                      status.innerHTML = data['errors']
-                        .map((error) => error['message'])
-                        .join(', ')
-                    } else {
-                      status.innerHTML =
-                        'Oops! There was a problem submitting your form'
-                    }
-                  })
-                }
-              })
-              .catch((error) => {
-                status.innerHTML =
-                  'Oops! There was a problem submitting your form'
-              })
-          }
-          form.addEventListener('submit', handleSubmit)
-        </script>
+            .catch((error) => {
+              status.innerHTML =
+                'Oops! There was a problem submitting your form'
+            })
+        }
+        form.addEventListener('submit', handleSubmit)
+      </script>
+    </div>
+    <div class="footer_form">
+      <div class="logo_white"></div>
+      <div class="sm">
+        <a href="https://t.me/urbankni"
+          ><img class="tg_white" src="../src/images/tg_white.svg" alt=""
+        /></a>
+        <a href="https://vk.com/club228021421"
+          ><img class="vk_white" src="../src/images/vk_white.svg" alt=""
+        /></a>
       </div>
     </div>
-    <div class="footer"></div>
   </body>
 </html>
