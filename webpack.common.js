@@ -82,53 +82,50 @@ module.exports = {
 
     // Main sections
     new HtmlWebpackPlugin({
-      template: './src/art.html',
-      filename: './art.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/skateboarding.html',
-      filename: './skateboarding.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/music.html',
-      filename: './music.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/fashion.html',
-      filename: './fashion.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/dance.html',
-      filename: './dance.html'
-    }),
-    new HtmlWebpackPlugin({
       template: './src/about.html',
       filename: './about.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks.html',
+      filename: './tricks.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/spots.html',
+      filename: './spots.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill.html',
+      filename: './chill.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips.html',
+      filename: './tips.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/styleguide.html',
+      filename: './styleguide.html'
+    }),
 
-    // Section 'Art' articles
-    new HtmlWebpackPlugin({
-      template: './src/art/art-articles.html',
-      filename: './art/art-articles.html'
-    }),
-    // Section 'Skateboarding' articles
-    new HtmlWebpackPlugin({
-      template: './src/skateboarding/skateboarding-articles.html',
-      filename: './skateboarding/skateboarding-articles.html'
-    }),
-    // Section 'Music' articles
-    new HtmlWebpackPlugin({
-      template: './src/music/music-articles.html',
-      filename: './music/music-articles.html'
-    }), // Section 'Fashion' articles
-    new HtmlWebpackPlugin({
-      template: './src/fashion/fashion-articles.html',
-      filename: './fashion/fashion-articles.html'
-    }), // Section 'Dance' articles
-    new HtmlWebpackPlugin({
-      template: './src/dance/dance-articles.html',
-      filename: './dance/dance-articles.html'
-    }),
+    // // Section 'Tricks' articles
+    // new HtmlWebpackPlugin({
+    //   template: './src/art/art-articles.html',
+    //   filename: './art/art-articles.html'
+    // }),
+    // // Section 'Spots' articles
+    // new HtmlWebpackPlugin({
+    //   template: './src/skateboarding/skateboarding-articles.html',
+    //   filename: './skateboarding/skateboarding-articles.html'
+    // }),
+    // // Section 'Chill' articles
+    // new HtmlWebpackPlugin({
+    //   template: './src/music/music-articles.html',
+    //   filename: './music/music-articles.html'
+    // }),
+    // // Section 'Tips' articles
+    // new HtmlWebpackPlugin({
+    //   template: './src/tips/tips-articles.html',
+    //   filename: './tips/tips-articles.html'
+    // }),
 
     // Internal pages
     // new HtmlWebpackPlugin({

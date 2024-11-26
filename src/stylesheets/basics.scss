@@ -7,6 +7,15 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vw auto;
+}
+nav > a {
+  font-size: 32px;
+}
 
 body {
   font-family: 'TT Prosto Sans Trial', sans-serif;
