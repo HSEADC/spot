@@ -1,3 +1,11 @@
 body.chill {
-  background-color: bisque;
+  background-color: white;
+  hgroup {
+    display: flex;
+    flex-direction: column;
+    a {
+      font-size: 2rem;
+      color: black;
+    }
+  }
 }

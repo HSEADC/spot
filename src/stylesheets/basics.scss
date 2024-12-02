@@ -6,6 +6,16 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
+  font-size: 16px;
+
+  hgroup {
+    margin-top: 10vw;
+    margin-left: 10vw;
+    p {
+      width: 60%;
+      margin-top: 3vw;
+    }
+  }
 }
 nav {
   position: fixed;
@@ -13,9 +23,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 2vw auto;
+  background-color: black;
+  width: 100%;
+  height: 6vw;
+  padding: 0 1.5vw;
 }
 nav > a {
-  font-size: 32px;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
 }
 
 body {
@@ -27,19 +43,19 @@ body {
   }
 }
 h1 {
-  font-size: 15.5vw;
+  font-size: 5rem;
   text-transform: uppercase;
   color: var(--red);
   font-weight: 700;
 }
 h2 {
-  font-size: 9.167vw;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: var(--blue);
   font-weight: 700;
 }
 p {
-  font-size: 1.25vw;
+  font-size: 2rem;
   color: black;
   font-weight: 400;
 }

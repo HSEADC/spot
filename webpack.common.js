@@ -116,11 +116,31 @@ module.exports = {
     //   template: './src/skateboarding/skateboarding-articles.html',
     //   filename: './skateboarding/skateboarding-articles.html'
     // }),
-    // // Section 'Chill' articles
-    // new HtmlWebpackPlugin({
-    //   template: './src/music/music-articles.html',
-    //   filename: './music/music-articles.html'
-    // }),
+    // Section 'Chill' articles
+    new HtmlWebpackPlugin({
+      template: './src/chill/chill_films.html',
+      filename: './chill/chill_films.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/chill_history.html',
+      filename: './chill/chill_history.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/chill_interview.html',
+      filename: './chill/chill_interview.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/chill_playlist.html',
+      filename: './chill/chill_playlist.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/chill_selection.html',
+      filename: './chill/chill_selection.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/chill_slangs.html',
+      filename: './chill/chill_slangs.html'
+    }),
     // // Section 'Tips' articles
     // new HtmlWebpackPlugin({
     //   template: './src/tips/tips-articles.html',
