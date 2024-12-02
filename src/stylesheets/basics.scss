@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
 }
 nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,6 +40,6 @@ h2 {
 }
 p {
   font-size: 1.25vw;
-  color: var(--blue);
+  color: black;
   font-weight: 400;
 }

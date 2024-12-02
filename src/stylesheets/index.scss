@@ -1,0 +1,74 @@
+body.index {
+  background-color: white;
+
+  hgroup {
+    margin-left: 10vw;
+    p {
+      width: 60%;
+      margin-top: 3vw;
+    }
+  }
+
+  section.gallery {
+    width: 60%;
+    height: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 5vw;
+
+    div {
+      width: 33%;
+      height: 20vw;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .card_one {
+      background-image: url('../images/main/main_one.webp');
+    }
+    .card_two {
+      background-image: url('../images/main/main_two.webp');
+    }
+    .card_three {
+      background-image: url('../images/main/main_three.webp');
+    }
+    .card_four {
+      background-image: url('../images/main/main_four.webp');
+    }
+    .card_five {
+      background-image: url('../images/main/main_five.webp');
+    }
+    .card_six {
+      background-image: url('../images/main/main_six.webp');
+    }
+    .card_seven {
+      background-image: url('../images/main/main_seven.webp');
+    }
+    .card_eight {
+      background-image: url('../images/main/main_eight.webp');
+    }
+    .card_nine {
+      background-image: url('../images/main/main_nine.webp');
+    }
+  }
+  article {
+    width: 60%;
+    margin-top: 5vw;
+    margin-left: 30vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  body.index {
+    background-color: black;
+  }
+  section.gallery {
+    width: 80%;
+
+    div {
+      width: 50%;
+    }
+  }
+}
