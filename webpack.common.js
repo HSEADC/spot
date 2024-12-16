@@ -61,9 +61,9 @@ module.exports = {
       },
       {
         test: /\.(ttf|otf|woff|woff2)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]'
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name].[ext]'
         }
       }
     ]
@@ -159,8 +159,8 @@ module.exports = {
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
-        path: path.join(__dirname, './src/partials/analytics.html'),
-        location: 'analytics',
+        path: path.join(__dirname, './src/partials/footer.html'),
+        location: 'footerPartial',
         template_filename: '*',
         priority: 'replace'
       }

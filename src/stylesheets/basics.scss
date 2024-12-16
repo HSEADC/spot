@@ -35,7 +35,13 @@ nav > a {
 }
 
 body {
-  font-family: 'TT Prosto Sans Trial', sans-serif;
+  h1 {
+    font-family: 'Muller Next Wide Trial', sans-serif;
+  }
+  nav > a,
+  p {
+    font-family: 'Hoves Pro Trial', sans-serif;
+  }
 
   section {
     width: 60vw;
