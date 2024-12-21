@@ -1,5 +1,5 @@
 body.styleguide {
-  background-color: var(--white);
+  background-color: #f2f2f2;
   width: 100%;
 
   h1 {
@@ -19,6 +19,7 @@ body.styleguide {
     font-family: 'gotham pro';
     font-weight: 400;
     color: var(--text);
+    margin: 1rem 0;
   }
   h4 {
     font-size: 1.125rem;
@@ -40,6 +41,15 @@ body.styleguide {
     display: flex;
     flex-direction: column;
     position: relative;
+    padding: 30rem 9.5rem;
+
+    img {
+      width: 35.3%;
+      height: auto;
+      background-image: url('../images/logoDark.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 
   nav {
@@ -53,5 +63,11 @@ body.styleguide {
     width: 10%;
     height: 100vw;
     padding: 0 1.5vw;
+
+    img {
+      width: 75.6%;
+      height: auto;
+      margin-left: 12.2%;
+    }
   }
 }
