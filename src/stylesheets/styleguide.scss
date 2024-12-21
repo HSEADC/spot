@@ -1,5 +1,5 @@
 body.styleguide {
-  background-color: #f2f2f2;
+  background-color: var(--white);
   width: 100%;
 
   h1 {
@@ -81,16 +81,16 @@ body.styleguide {
 
     p {
       width: 21rem;
-      margin-top: 2.5rem;
+      margin-top: 2vw;
     }
   }
 
   .style_about {
-    margin-top: 2.5rem;
+    margin-top: 2vw;
   }
 
   section + hgroup {
-    margin-top: 4.5rem;
+    margin-top: 3.6vw;
     flex-direction: column;
     gap: 0;
 
@@ -103,21 +103,23 @@ body.styleguide {
   }
 
   .style_logo {
-    margin-top: 15rem;
+    margin-top: 12vw;
   }
 
   section + img {
     margin-left: 13.6vw;
-    margin-top: 9.75rem;
+    margin-top: 8vw;
     width: 84%;
     height: auto;
   }
 
   .style_color {
-    margin-top: 14.5rem;
+    margin-top: 12vw;
+    gap: 3vw;
 
     section {
-      width: 33.8vw;
+      margin-left: 0;
+      width: 64vw;
       height: auto;
       display: flex;
       flex-direction: row;
@@ -127,7 +129,62 @@ body.styleguide {
 
       div {
         width: 49%;
-        height: 37.6%;
+        height: 24vw;
+        align-items: center;
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 66%;
+          height: auto;
+        }
+      }
+
+      div:nth-child(1) {
+        background-color: var(--black);
+      }
+      div:nth-child(2) {
+        background-color: var(--yellow);
+      }
+      div:nth-child(3) {
+        background-image: url('../images/styleguide/style_photo1.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      div:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        div {
+          width: 100%;
+          height: 11.5vw;
+        }
+        div.lastLogo {
+          background-color: var(--white);
+          border: 0.05vw solid var(--black);
+        }
+      }
+    }
+  }
+
+  .style_space {
+    margin-top: 12vw;
+    gap: 3vw;
+
+    div {
+      margin-left: 0;
+      width: 64vw;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--black);
+
+      img {
+        width: 70%;
+        height: auto;
       }
     }
   }
