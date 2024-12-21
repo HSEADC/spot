@@ -1,3 +1,57 @@
 body.styleguide {
-  background-color: azure;
+  background-color: var(--white);
+  width: 100%;
+
+  h1 {
+    font-size: 1.625rem;
+    font-family: 'druk wide cyr-bold';
+    font-weight: 900;
+    color: var(--black);
+  }
+  h2 {
+    font-size: 1rem;
+    font-family: 'gotham pro_bold';
+    font-weight: 900;
+    color: var(--yellow);
+  }
+  h3 {
+    font-size: 1.25rem;
+    font-family: 'gotham pro';
+    font-weight: 400;
+    color: var(--text);
+  }
+  h4 {
+    font-size: 1.125rem;
+    font-family: 'gotham pro';
+    font-weight: 400;
+    color: var(--white);
+  }
+  p {
+    font-size: 1rem;
+    font-family: 'gotham pro_medium';
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  .cover {
+    width: 100%;
+    height: 1080px;
+    color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  nav {
+    position: fixed;
+    top: 1080px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--black);
+    width: 10%;
+    height: 100vw;
+    padding: 0 1.5vw;
+  }
 }
