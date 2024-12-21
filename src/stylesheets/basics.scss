@@ -7,15 +7,6 @@ body {
   height: 100%;
   overflow-x: hidden;
   font-size: 16px;
-
-  hgroup {
-    margin-top: 10vw;
-    margin-left: 10vw;
-    p {
-      width: 60%;
-      margin-top: 3vw;
-    }
-  }
 }
 nav {
   position: fixed;
@@ -41,10 +32,6 @@ body {
   nav > a,
   p {
     font-family: 'Hoves Pro Trial', sans-serif;
-  }
-
-  section {
-    width: 60vw;
   }
 }
 h1 {
