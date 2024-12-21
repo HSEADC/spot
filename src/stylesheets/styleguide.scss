@@ -42,6 +42,7 @@ body.styleguide {
     flex-direction: column;
     position: relative;
     padding: 30rem 9.5rem;
+    margin: 0;
 
     img {
       width: 35.3%;
@@ -68,6 +69,66 @@ body.styleguide {
       width: 75.6%;
       height: auto;
       margin-left: 12.2%;
+    }
+  }
+
+  section,
+  section + hgroup {
+    margin-left: 13.6vw;
+    display: flex;
+    flex-direction: row;
+    gap: 4.375rem;
+
+    p {
+      width: 21rem;
+      margin-top: 2.5rem;
+    }
+  }
+
+  .style_about {
+    margin-top: 2.5rem;
+  }
+
+  section + hgroup {
+    margin-top: 4.5rem;
+    flex-direction: column;
+    gap: 0;
+
+    p {
+      font-size: 5.375rem;
+      font-family: 'druk wide cyr-bold';
+      font-weight: 900;
+      color: var(--black);
+    }
+  }
+
+  .style_logo {
+    margin-top: 15rem;
+  }
+
+  section + img {
+    margin-left: 13.6vw;
+    margin-top: 9.75rem;
+    width: 84%;
+    height: auto;
+  }
+
+  .style_color {
+    margin-top: 14.5rem;
+
+    section {
+      width: 33.8vw;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1vw;
+
+      div {
+        width: 49%;
+        height: 37.6%;
+      }
     }
   }
 }
