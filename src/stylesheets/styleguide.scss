@@ -176,11 +176,12 @@ body.styleguide {
     div {
       margin-left: 0;
       width: 64vw;
-      height: auto;
+      height: 24vw;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: var(--black);
+      border-radius: 0.8rem;
 
       img {
         width: 70%;
