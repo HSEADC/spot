@@ -58,6 +58,10 @@ body.styleguide {
       font-weight: 400;
       color: var(--white);
     }
+
+    a.active {
+      color: var(--yellow);
+    }
   }
   .cover {
     width: 100%;
@@ -91,7 +95,7 @@ body.styleguide {
     }
 
     .style_about {
-      margin-top: 2vw;
+      margin-top: 3vw;
     }
 
     section + hgroup {

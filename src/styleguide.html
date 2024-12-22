@@ -46,7 +46,7 @@
     />
 
     <analytics></analytics>
-    <script src="js/jquery-3.6.1.js"></script>
+    <!-- <script src="js/jquery-3.6.1.js"></script>
     <script type="text/javascript">
       $(function () {
         // Отслеживаем клики на ссылки внутри nav
@@ -68,6 +68,37 @@
           }
         })
       })
+    </script> -->
+
+    <script src="js/jquery-3.6.1.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        const sections = $('section[id]') // Находим все секции с атрибутом id
+        const navLinks = $('nav a') // Находим все ссылки в меню
+
+        $(window).on('scroll', function () {
+          const scrollPosition = $(window).scrollTop() // Текущая позиция скролла
+
+          // Проверяем каждую секцию
+          sections.each(function () {
+            const section = $(this)
+            const sectionTop = section.offset().top - 50 // Позиция секции с учетом небольшого отступа
+            const sectionBottom = sectionTop + section.outerHeight() // Нижняя граница секции
+
+            // Если позиция скролла находится в пределах секции
+            if (
+              scrollPosition >= sectionTop &&
+              scrollPosition < sectionBottom
+            ) {
+              const sectionId = section.attr('id') // Получаем ID текущей секции
+
+              // Добавляем активный класс к соответствующей ссылке
+              navLinks.removeClass('active') // Убираем класс у всех ссылок
+              $(`nav a[href="#${sectionId}"]`).addClass('active') // Добавляем класс текущей
+            }
+          })
+        })
+      })
     </script>
   </head>
   <body class="styleguide">
@@ -86,9 +117,9 @@
     </section>
 
     <section class="style">
-      <section class="style_about">
+      <section id="1" class="style_about">
         <hgroup>
-          <h1 id="1">Бренд</h1>
+          <h1>Бренд</h1>
           <p>
             SPOT&nbsp;&mdash; это уникальная платформа и&nbsp;комьюнити,
             объединяющее райдеров всех уровней: от&nbsp;новичков
@@ -124,9 +155,9 @@
           Целеустремленный.
         </p>
       </hgroup>
-      <section class="style_logo">
+      <section id="2" class="style_logo">
         <hgroup>
-          <h1 id="2">Логотип</h1>
+          <h1>Логотип</h1>
           <p>
             Логотип медиа-сервиса SPOT выполнен с&nbsp;использованием жирного
             шрифта и&nbsp;динамичных форм, которые отражают силу, уверенность
@@ -151,7 +182,7 @@
       <img src="images/logoDark.webp" alt="logo" />
       <section class="style_color">
         <hgroup>
-          <h1 id="3">Цвета логотипа</h1>
+          <h1>Цвета логотипа</h1>
           <p>
             Наш логотип может быть выполнен  в&nbsp;жёлтом, чёрном и&nbsp;белых
             цветах. Выбирайте цвет логотипа для достижения максимальной
@@ -251,7 +282,7 @@
           <img src="images/styleguide/style_logo8.webp" alt="logo invalid" />
         </div>
       </section>
-      <section class="style_colors">
+      <section id="3" class="style_colors">
         <hgroup>
           <h1>Цвета</h1>
           <p>
@@ -296,9 +327,9 @@
           </div>
         </section>
       </section>
-      <section class="style_fonts">
+      <section id="4" class="style_fonts">
         <hgroup>
-          <h1 id="4">Основной шрифт</h1>
+          <h1>Основной шрифт</h1>
           <p>
             Для визуального стиля медиа-сервиса SPOT выбран шрифт Benzin,
             который идеально отражает характер бренда. Benzin используется для
@@ -380,9 +411,9 @@
           <img src="images/styleguide/style_photo4.webp" alt="grid" />
         </div>
       </section>
-      <section class="style_branding">
+      <section id="5" class="style_branding">
         <hgroup>
-          <h1 id="5">Носители</h1>
+          <h1>Носители</h1>
           <p>
             Чтобы наш логотип выглядел хорошо в&nbsp;любом месте, ему нужно
             охранное поле. У&nbsp;нас оно равно высоте знака.
