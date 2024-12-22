@@ -189,4 +189,32 @@ body.styleguide {
       }
     }
   }
+
+  .style_sign {
+    margin-top: 12vw;
+    gap: 3vw;
+
+    section {
+      margin-left: 0;
+      display: flex;
+      flex-direction: row;
+      width: 64vw;
+      height: 20vw;
+      justify-content: center;
+      align-items: center;
+      gap: 1vw;
+
+      div {
+        width: 32.6%;
+        height: 20.6vw;
+        border-radius: 3.6vw;
+      }
+      div:nth-child(1) {
+        background-color: var(--black);
+      }
+      div:nth-child(2) {
+        background-color: var(--yellow);
+      }
+    }
+  }
 }
