@@ -4,36 +4,39 @@ body.styleguide {
 
   h1 {
     font-size: 1.625rem;
-    font-family: 'druk wide cyr-bold';
+    font-family: 'benzin-bold';
     font-weight: 900;
     color: var(--black);
   }
   h2 {
     font-size: 1rem;
-    font-family: 'gotham pro_bold';
+    font-family: 'Evolventa-Bold';
     font-weight: 900;
     color: var(--yellow);
+    text-transform: none;
   }
   h3 {
     font-size: 1.25rem;
-    font-family: 'gotham pro';
+    font-family: 'Evolventa-Regular';
     font-weight: 400;
     color: var(--text);
     margin: 1rem 0;
   }
   h4 {
     font-size: 1.125rem;
-    font-family: 'gotham pro';
+    font-family: 'Evolventa-Regular';
     font-weight: 400;
     color: var(--white);
   }
   p {
     font-size: 1rem;
-    font-family: 'gotham pro_medium';
-    font-weight: 500;
+    font-family: 'Evolventa-Regular';
+    font-weight: 400;
     color: var(--text);
   }
-
+  hgroup > p {
+    line-height: 1.2rem;
+  }
   .cover {
     width: 100%;
     height: 1080px;
@@ -43,13 +46,11 @@ body.styleguide {
     position: relative;
     padding: 30rem 9.5rem;
     margin: 0;
+    gap: 0;
 
     img {
       width: 35.3%;
       height: auto;
-      background-image: url('../images/logoDark.webp');
-      background-size: cover;
-      background-repeat: no-repeat;
     }
   }
 
@@ -96,14 +97,23 @@ body.styleguide {
 
     p {
       font-size: 5.375rem;
-      font-family: 'druk wide cyr-bold';
+      font-family: 'benzin-bold';
       font-weight: 900;
       color: var(--black);
+      line-height: 5.7rem;
     }
   }
 
-  .style_logo {
+  .style_logo,
+  .style_color,
+  .style_space,
+  .style_sign,
+  .style_pattern,
+  .style_forbidden,
+  .style_colors,
+  .style_fonts {
     margin-top: 12vw;
+    gap: 3vw;
   }
 
   section + img {
@@ -114,9 +124,6 @@ body.styleguide {
   }
 
   .style_color {
-    margin-top: 12vw;
-    gap: 3vw;
-
     section {
       margin-left: 0;
       width: 64vw;
@@ -130,7 +137,6 @@ body.styleguide {
       div {
         width: 49%;
         height: 24vw;
-        align-items: center;
         border-radius: 0.8rem;
         display: flex;
         align-items: center;
@@ -170,9 +176,6 @@ body.styleguide {
   }
 
   .style_space {
-    margin-top: 12vw;
-    gap: 3vw;
-
     div {
       margin-left: 0;
       width: 64vw;
@@ -181,7 +184,7 @@ body.styleguide {
       justify-content: center;
       align-items: center;
       background-color: var(--black);
-      border-radius: 0.8rem;
+      border-radius: 0.5vw;
 
       img {
         width: 70%;
@@ -191,29 +194,194 @@ body.styleguide {
   }
 
   .style_sign {
-    margin-top: 12vw;
-    gap: 3vw;
-
     section {
       margin-left: 0;
       display: flex;
       flex-direction: row;
       width: 64vw;
       height: 20vw;
-      justify-content: center;
-      align-items: center;
       gap: 1vw;
 
       div {
+        display: flex;
         width: 32.6%;
         height: 20.6vw;
-        border-radius: 3.6vw;
+        border-radius: 3vw;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 65%;
+          height: auto;
+        }
       }
       div:nth-child(1) {
         background-color: var(--black);
       }
       div:nth-child(2) {
         background-color: var(--yellow);
+      }
+      div:nth-child(3) {
+        background-color: var(--black);
+      }
+    }
+  }
+
+  .style_pattern {
+    img {
+      margin-left: 0;
+      width: 64vw;
+      height: auto;
+      border-radius: 0.8rem;
+    }
+  }
+
+  .style_forbidden {
+    div {
+      width: 64vw;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.6vw;
+
+      img {
+        width: 49.5%;
+        height: auto;
+      }
+    }
+  }
+
+  .style_colors {
+    section {
+      width: 64vw;
+      height: 45.5vw;
+      display: flex;
+      gap: 0.6vw;
+      margin-left: 0;
+
+      div {
+        height: 100%;
+        border-radius: 0.5vw;
+        padding: 1vw 0.8vw;
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        flex-direction: column;
+      }
+
+      div:nth-child(1) {
+        background-color: var(--yellow);
+        width: 30.5%;
+        p {
+          color: var(--black);
+          width: 100%;
+        }
+        p:nth-child(1) {
+          font-family: 'Evolventa-Bold';
+          font-weight: 900;
+          font-size: 4rem;
+        }
+        p:nth-child(2) {
+          font-family: 'Evolventa-Regular';
+          margin-top: 0.5vw;
+        }
+      }
+      div:nth-child(2) {
+        background-color: var(--black);
+        width: 30.5%;
+        p {
+          color: var(--white);
+          width: 100%;
+        }
+        p:nth-child(1) {
+          font-family: 'Evolventa-Bold';
+
+          font-size: 4rem;
+        }
+        p:nth-child(2) {
+          font-family: 'Evolventa-Regular';
+          margin-top: 0.5vw;
+        }
+      }
+      div:nth-child(3) {
+        background-color: var(--grey);
+        width: 18.5%;
+        p {
+          color: var(--black);
+          width: 100%;
+        }
+        p:nth-child(1) {
+          font-family: 'Evolventa-Bold';
+
+          font-size: 4rem;
+        }
+        p:nth-child(2) {
+          font-family: 'Evolventa-Regular';
+          margin-top: 0.5vw;
+        }
+      }
+      div:nth-child(4) {
+        background-color: var(--white);
+        width: 18.5%;
+        border: 0.05vw solid var(--black);
+        p {
+          color: var(--black);
+          width: 100%;
+        }
+        p:nth-child(1) {
+          font-family: 'Evolventa-Bold';
+
+          font-size: 4rem;
+        }
+        p:nth-child(2) {
+          font-family: 'Evolventa-Regular';
+          margin-top: 0.5vw;
+        }
+      }
+    }
+  }
+
+  .style_fonts {
+    section {
+      width: 64vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2vw;
+      margin-left: 0;
+
+      div {
+        width: 100%;
+        background-color: var(--black);
+        border-radius: 0.5vw;
+        padding: 1.6vw 2.8vw;
+      }
+      div:nth-child(1) {
+        height: 16.5vw;
+        p {
+          font-family: 'benzin-bold';
+          font-size: 12rem;
+          color: var(--white);
+        }
+      }
+      div:nth-child(2) {
+        height: 13vw;
+        p {
+          color: var(--yellow);
+          font-size: 4.8rem;
+          font-family: 'benzin-bold';
+          margin-top: 1.2vw;
+        }
+      }
+      div:nth-child(3) {
+        height: 11vw;
+        p {
+          color: var(--white);
+          font-size: 1.6rem;
+          font-family: 'benzin-bold';
+          margin-top: 1.5vw;
+          line-height: 2rem;
+        }
       }
     }
   }

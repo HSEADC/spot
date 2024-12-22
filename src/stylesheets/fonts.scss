@@ -15,22 +15,17 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: 'druk wide cyr-bold';
-  src: url('../fonts/drukwidecyr-bold.otf') format('opentype');
+  font-family: 'benzin-bold';
+  src: url('../fonts/benzin-bold.ttf') format('truetype');
   font-weight: 900;
 }
 @font-face {
-  font-family: 'gotham pro';
-  src: url('../fonts/gothampro.ttf') format('truetype');
+  font-family: 'Evolventa-Regular';
+  src: url('../fonts/Evolventa-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 @font-face {
-  font-family: 'gotham pro_medium';
-  src: url('../fonts/gothampro_medium.ttf') format('truetype');
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'gotham pro_bold';
-  src: url('../fonts/gothampro_bold.ttf') format('truetype');
+  font-family: 'Evolventa-Bold';
+  src: url('../fonts/Evolventa-Regular.ttf') format('truetype');
   font-weight: 900;
 }
