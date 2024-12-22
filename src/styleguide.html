@@ -46,271 +46,354 @@
     />
 
     <analytics></analytics>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        // Отслеживаем клики на ссылки внутри nav
+        $('nav a').on('click', function (e) {
+          e.preventDefault() // Предотвращаем действие по умолчанию
+
+          // Получаем ID элемента, к которому нужно прокрутить
+          var targetId = $(this).attr('href')
+          var scrollTo = $(targetId) // Находим целевой элемент по ID
+
+          if (scrollTo.length) {
+            // Плавный скролл к целевому элементу
+            $('html, body').animate(
+              {
+                scrollTop: scrollTo.offset().top // Прокрутка к элементу
+              },
+              1000 // Скорость прокрутки в миллисекундах
+            )
+          }
+        })
+      })
+    </script>
   </head>
   <body class="styleguide">
-    <section class="cover">
+    <nav class="leftNav">
+      <a href="#0"><img src="images/logoWhite.webp" alt="logo" /></a>
+      <a href="#1">О бренде</a>
+      <a href="#2">Логотип</a>
+      <a href="#3">Цвета</a>
+      <a href="#4">Шрифты</a>
+      <a href="#5">Носители</a>
+    </nav>
+
+    <section class="cover" id="0">
       <img src="../src/images/logoDark.webp" alt="logo" />
       <h3>Стайлгайд<br />2024</h3>
     </section>
-    <nav>
-      <img src="images/logoWhite.webp" alt="logo" />
-      <h4>О бренде</h4>
-      <h4>Логотип</h4>
-      <h4>Цвета</h4>
-      <h4>Шрифты</h4>
-      <h4>Носители</h4>
-    </nav>
-    <section class="style_about">
+
+    <section class="style">
+      <section class="style_about">
+        <hgroup>
+          <h1 id="1">Бренд</h1>
+          <p>
+            SPOT&nbsp;&mdash; это уникальная платформа и&nbsp;комьюнити,
+            объединяющее райдеров всех уровней: от&nbsp;новичков
+            до&nbsp;профессионалов. Мы&nbsp;вдохновляем на развитие
+            в&nbsp;уличном спорте, помогая осваивать новые трюки, находить
+            лучшие места для катания и&nbsp;делиться опытом
+            с&nbsp;единомышленниками.
+          </p>
+        </hgroup>
+        <hgroup>
+          <h1>Миссия</h1>
+          <p>
+            Помочь райдерам раскрывать свой потенциал и&nbsp;прийти
+            к&nbsp;лучшей версии себя.
+          </p>
+        </hgroup>
+        <hgroup>
+          <h1>Ton of Voice</h1>
+          <p>
+            Мы&nbsp;говорим просто и&nbsp;понятно, как старший брат, который
+            всегда рядом, чтобы поддержать и&nbsp;вдохновить. Наш тон
+            дружелюбный, динамичный и немного дерзкий, чтобы соответствовать
+            духу уличного спорта.
+          </p>
+        </hgroup>
+      </section>
       <hgroup>
-        <h1>Бренд</h1>
+        <h1>Характер</h1>
         <p>
-          SPOT&nbsp;&mdash; это уникальная платформа и&nbsp;комьюнити,
-          объединяющее райдеров всех уровней: от&nbsp;новичков
-          до&nbsp;профессионалов. Мы&nbsp;вдохновляем на развитие в&nbsp;уличном
-          спорте, помогая осваивать новые трюки, находить лучшие места для
-          катания и&nbsp;делиться опытом с&nbsp;единомышленниками.
+          Энергичный.&nbsp;Уверенный. <br />
+          Открытый.&nbsp;Смелый. <br />
+          Свободный.&nbsp;Творческий. <br />
+          Целеустремленный.
         </p>
       </hgroup>
-      <hgroup>
-        <h1>Миссия</h1>
-        <p>
-          Помочь райдерам раскрывать свой потенциал и&nbsp;прийти к&nbsp;лучшей
-          версии себя.
-        </p>
-      </hgroup>
-      <hgroup>
-        <h1>Ton of Voice</h1>
-        <p>
-          Мы&nbsp;говорим просто и&nbsp;понятно, как старший брат, который
-          всегда рядом, чтобы поддержать и&nbsp;вдохновить. Наш тон дружелюбный,
-          динамичный и немного дерзкий, чтобы соответствовать духу уличного
-          спорта.
-        </p>
-      </hgroup>
-    </section>
-    <hgroup>
-      <h1>Характер</h1>
-      <p>
-        Энергичный.&nbsp;Уверенный. <br />
-        Открытый.&nbsp;Смелый. <br />
-        Свободный.&nbsp;Творческий. <br />
-        Целеустремленный.
-      </p>
-    </hgroup>
-    <section class="style_logo">
-      <hgroup>
-        <h1>Логотип</h1>
-        <p>
-          Логотип медиа-сервиса SPOT выполнен с&nbsp;использованием жирного
-          шрифта и&nbsp;динамичных форм, которые отражают силу, уверенность
-          и&nbsp;энергичный характер бренда. Наклон букв символизирует движение
-          и&nbsp;стремление вперед. Логотип не&nbsp;только визуально
-          привлекателен, но&nbsp;и&nbsp;отражает ценности бренда.
-          Он&nbsp;передает ощущение динамики, свободы и&nbsp;стремления к новым
-          высотам, что делает его идеальным символом для медиа-сервиса, который
-          поддерживает, обучает и&nbsp;вдохновляет.
-        </p>
-      </hgroup>
-      <hgroup>
-        <h1>Нейминг</h1>
-        <p>
-          Нейминг &laquo;SPOT&raquo; символизирует место для катания, где
-          райдеры выполняют трюки. Медиа создаёт некий спот, который создает
-          пространство для&nbsp;развития, общения и&nbsp;обмена опытом,
-          объединяя всех, кто увлечен уличным спортом и&nbsp;культурой.
-        </p>
-      </hgroup>
-    </section>
-    <img src="images/logoDark.webp" alt="logo" />
-    <section class="style_color">
-      <hgroup>
-        <h1>Цвета логотипа</h1>
-        <p>
-          Логотип медиа-сервиса SPOT выполнен с&nbsp;использованием жирного
-          шрифта и&nbsp;динамичных форм, которые отражают силу, уверенность
-          и&nbsp;энергичный характер бренда. Наклон букв символизирует движение
-          и&nbsp;стремление вперед. Логотип не&nbsp;только визуально
-          привлекателен, но&nbsp;и&nbsp;отражает ценности бренда.
-          Он&nbsp;передает ощущение динамики, свободы и&nbsp;стремления
-          к&nbsp;новым высотам, что делает его идеальным символом для
-          медиа-сервиса, который поддерживает, обучает и&nbsp;вдохновляет.
-        </p>
-      </hgroup>
-      <section>
-        <div>
-          <img src="images/logoYellow.webp" alt="logo" />
-        </div>
-        <div>
-          <img src="images/logoDark.webp" alt="logo" />
-        </div>
-        <div>
-          <img src="images/logoYellow.webp" alt="logo" />
-        </div>
-        <div>
+      <section class="style_logo">
+        <hgroup>
+          <h1 id="2">Логотип</h1>
+          <p>
+            Логотип медиа-сервиса SPOT выполнен с&nbsp;использованием жирного
+            шрифта и&nbsp;динамичных форм, которые отражают силу, уверенность
+            и&nbsp;энергичный характер бренда. Наклон букв символизирует
+            движение и&nbsp;стремление вперед. Логотип не&nbsp;только визуально
+            привлекателен, но&nbsp;и&nbsp;отражает ценности бренда.
+            Он&nbsp;передает ощущение динамики, свободы и&nbsp;стремления к
+            новым высотам, что делает его идеальным символом для медиа-сервиса,
+            который поддерживает, обучает и&nbsp;вдохновляет.
+          </p>
+        </hgroup>
+        <hgroup>
+          <h1>Нейминг</h1>
+          <p>
+            Нейминг &laquo;SPOT&raquo; символизирует место для катания, где
+            райдеры выполняют трюки. Медиа создаёт некий спот, который создает
+            пространство для&nbsp;развития, общения и&nbsp;обмена опытом,
+            объединяя всех, кто увлечен уличным спортом и&nbsp;культурой.
+          </p>
+        </hgroup>
+      </section>
+      <img src="images/logoDark.webp" alt="logo" />
+      <section class="style_color">
+        <hgroup>
+          <h1 id="3">Цвета логотипа</h1>
+          <p>
+            Наш логотип может быть выполнен  в&nbsp;жёлтом, чёрном и&nbsp;белых
+            цветах. Выбирайте цвет логотипа для достижения максимальной
+            контрастности и&nbsp;четкости. Если у&nbsp;вас темный фон,
+            используйте жёлтый или белый цвет лого. Если у&nbsp;вас светлый фон,
+            вам следует использовать чёрный логотип. При наложении на&nbsp;фото
+            убедитесь, что логотип четкий и&nbsp;разборчивый. Никогда
+            не&nbsp;используйте логотип в&nbsp;других или второстепенных цветах.
+          </p>
+        </hgroup>
+        <section>
           <div>
-            <img src="images/logoWhite.webp" alt="logo" />
+            <img src="images/logoYellow.webp" alt="logo" />
           </div>
-          <div class="lastLogo">
+          <div>
             <img src="images/logoDark.webp" alt="logo" />
           </div>
+          <div>
+            <img src="images/logoYellow.webp" alt="logo" />
+          </div>
+          <div>
+            <div>
+              <img src="images/logoWhite.webp" alt="logo" />
+            </div>
+            <div class="lastLogo">
+              <img src="images/logoDark.webp" alt="logo" />
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="style_space">
+        <hgroup>
+          <h1>Охранное поле</h1>
+          <p>
+            Чтобы наш логотип выглядел хорошо в&nbsp;любом месте, ему нужно
+            охранное поле. У&nbsp;нас оно равно высоте знака.
+          </p>
+        </hgroup>
+        <div>
+          <img src="images/styleguide/style_photo2.webp" alt="logo spacing" />
         </div>
       </section>
-    </section>
-    <section class="style_space">
-      <hgroup>
-        <h1>Охранное поле</h1>
-        <p>
-          Чтобы наш логотип выглядел хорошо в&nbsp;любом месте, ему нужно
-          охранное поле. У&nbsp;нас оно равно высоте знака.
-        </p>
-      </hgroup>
-      <div>
-        <img src="images/styleguide/style_photo2.webp" alt="logo spacing" />
-      </div>
-    </section>
-    <section class="style_sign">
-      <hgroup>
-        <h1>Знак</h1>
-        <p>
-          Знаком логотипа SPOT является буква &laquo;S&raquo;, которая
-          символизирует движение, гибкость и&nbsp;динамичность&nbsp;&mdash;
-          ключевые элементы уличного спорта. Изогнутая форма буквы отражает
-          непрерывное движение и&nbsp;стремление к&nbsp;новым вершинам, как
-          уличный спорт, где каждый момент&nbsp;&mdash; это шаг
-          к&nbsp;улучшению, новым трюкам и&nbsp;приключениям.
-        </p>
-      </hgroup>
-      <section>
+      <section class="style_sign">
+        <hgroup>
+          <h1>Знак</h1>
+          <p>
+            Знаком логотипа SPOT является буква &laquo;S&raquo;, которая
+            символизирует движение, гибкость и&nbsp;динамичность&nbsp;&mdash;
+            ключевые элементы уличного спорта. Изогнутая форма буквы отражает
+            непрерывное движение и&nbsp;стремление к&nbsp;новым вершинам, как
+            уличный спорт, где каждый момент&nbsp;&mdash; это шаг
+            к&nbsp;улучшению, новым трюкам и&nbsp;приключениям.
+          </p>
+        </hgroup>
+        <section>
+          <div>
+            <img src="images/signYellow.webp" alt="yellow sign" />
+          </div>
+          <div>
+            <img src="images/signDark.webp" alt="dark sign" />
+          </div>
+          <div>
+            <img src="../src/images/signWhite.webp" alt="white sign" />
+          </div>
+        </section>
+      </section>
+      <section class="style_pattern">
+        <hgroup>
+          <h1>Паттерн</h1>
+          <p>
+            Чтобы наш логотип выглядел хорошо  в&nbsp;любом месте, ему нужно
+            охранное поле. У&nbsp;нас оно равно высоте знака.
+          </p>
+        </hgroup>
+        <img src="images/styleguide/style_pattern.webp" alt="pattern" />
+      </section>
+      <section class="style_forbidden">
+        <hgroup>
+          <h1>Как нельзя:</h1>
+          <p>
+            1-2. Запрещается изменять пропорции логотипа. <br />3. Запрещается
+            изменять угол наклона логотипа. <br />4. Запрещается использовать
+            другой цвет, кроме корпоративного. <br />5. Запрещается применение
+            дополнительных эффектов. <br />6. Запрещается менять непрозрачность
+            логотипа. <br />7. Запрещается применять градиент. <br />8.
+            Запрещается использовать обводку.
+          </p>
+        </hgroup>
         <div>
-          <img src="images/signYellow.webp" alt="yellow sign" />
-        </div>
-        <div>
-          <img src="images/signDark.webp" alt="dark sign" />
-        </div>
-        <div>
-          <img src="../src/images/signWhite.webp" alt="white sign" />
+          <img src="images/styleguide/style_logo1.webp" alt="logo invalid" />
+          <img src="images/styleguide/style_logo2.webp" alt="logo invalid" />
+          <img src="images/styleguide/style_logo3.webp" alt="logo invalid" />
+          <img src="images/styleguide/style_logo4.webp" alt="logo invalid" />
+          <img src="images/styleguide/style_logo5.webp" alt="logo invalid" />
+          <img src="images/styleguide/style_logo6.webp" alt="logo invalid" />
+          <img src="images/styleguide/style_logo7.webp" alt="logo invalid" />
+          <img src="images/styleguide/style_logo8.webp" alt="logo invalid" />
         </div>
       </section>
-    </section>
-    <section class="style_pattern">
-      <hgroup>
-        <h1>Паттерн</h1>
-        <p>
-          Чтобы наш логотип выглядел хорошо  в&nbsp;любом месте, ему нужно
-          охранное поле. У&nbsp;нас оно равно высоте знака.
-        </p>
-      </hgroup>
-      <img src="images/styleguide/style_pattern.webp" alt="pattern" />
-    </section>
-    <section class="style_forbidden">
-      <hgroup>
-        <h1>Как нельзя:</h1>
-        <p>
-          1-2. Запрещается изменять пропорции логотипа. <br />3. Запрещается
-          изменять угол наклона логотипа. <br />4. Запрещается использовать
-          другой цвет, кроме корпоративного. <br />5. Запрещается применение
-          дополнительных эффектов. <br />6. Запрещается менять непрозрачность
-          логотипа. <br />7. Запрещается применять градиент. <br />8.
-          Запрещается использовать обводку.
-        </p>
-      </hgroup>
-      <div>
-        <img src="images/styleguide/style_logo1.webp" alt="logo invalid" />
-        <img src="images/styleguide/style_logo2.webp" alt="logo invalid" />
-        <img src="images/styleguide/style_logo3.webp" alt="logo invalid" />
-        <img src="images/styleguide/style_logo4.webp" alt="logo invalid" />
-        <img src="images/styleguide/style_logo5.webp" alt="logo invalid" />
-        <img src="images/styleguide/style_logo6.webp" alt="logo invalid" />
-        <img src="images/styleguide/style_logo7.webp" alt="logo invalid" />
-        <img src="images/styleguide/style_logo8.webp" alt="logo invalid" />
-      </div>
-    </section>
-    <section class="style_colors">
-      <hgroup>
-        <h1>Цвета</h1>
-        <p>
-          Преобладающим цветом является желтый. Он&nbsp;будет использоваться
-          в&nbsp;качестве основного цвета и базовый цвет во&nbsp;всех его
-          сочетаниях. Другие цвета, которые дополнят фирменный стиль будет
-          черный, светло-серый и&nbsp;белый.
-        </p>
-      </hgroup>
-      <section>
-        <div>
-          <p>Y</p>
+      <section class="style_colors">
+        <hgroup>
+          <h1>Цвета</h1>
           <p>
-            HEX: F1FD53 <br />
-            RGB: 241, 253, 83 <br />
-            CMYK: 5%, 0%, 67%, 1%
+            Преобладающим цветом является желтый. Он&nbsp;будет использоваться
+            в&nbsp;качестве основного цвета и базовый цвет во&nbsp;всех его
+            сочетаниях. Другие цвета, которые дополнят фирменный стиль будет
+            черный, светло-серый и&nbsp;белый.
           </p>
-        </div>
-        <div>
-          <p>B</p>
+        </hgroup>
+        <section>
+          <div>
+            <p>Y</p>
+            <p>
+              HEX: F1FD53 <br />
+              RGB: 241, 253, 83 <br />
+              CMYK: 5%, 0%, 67%, 1%
+            </p>
+          </div>
+          <div>
+            <p>B</p>
+            <p>
+              HEX: 0D0D0D <br />
+              RGB: 13, 13, 13 <br />
+              CMYK: 0%, 0%, 0%, 95%
+            </p>
+          </div>
+          <div>
+            <p>G</p>
+            <p>
+              HEX: F3F4F5 <br />
+              RGB: 243, 244, 245 <br />
+              CMYK: 1%, 0%, 0%, 4%
+            </p>
+          </div>
+          <div>
+            <p>W</p>
+            <p>
+              HEX: FFFFFF <br />
+              RGB: 255, 255, 255 <br />
+              CMYK: 0%, 0%, 0%, 0%
+            </p>
+          </div>
+        </section>
+      </section>
+      <section class="style_fonts">
+        <hgroup>
+          <h1 id="4">Основной шрифт</h1>
           <p>
-            HEX: 0D0D0D <br />
-            RGB: 13, 13, 13 <br />
-            CMYK: 0%, 0%, 0%, 95%
+            Для визуального стиля медиа-сервиса SPOT выбран шрифт Benzin,
+            который идеально отражает характер бренда. Benzin используется для
+            заголовков, подзаголовков и&nbsp;ключевых элементов дизайна. Его
+            жирные, мощные и&nbsp;динамичные формы подчеркивают энергию, силу
+            и&nbsp;современность бренда, визуально поддерживая ассоциации
+            с&nbsp;активным образом жизни и&nbsp;уличной культурой.
           </p>
-        </div>
-        <div>
-          <p>G</p>
+        </hgroup>
+        <section>
+          <div>
+            <h2>Benzin</h2>
+            <p>AaБбВв</p>
+          </div>
+          <div>
+            <p>Живи.&nbsp;Рискуй. <br />Превосходи&nbsp;себя!</p>
+          </div>
+          <div>
+            <h2>Benzin Bold</h2>
+            <p>
+              абвгдеёжзийклмнопрстуфхцчшщъыьэюя
+              <br />АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ <br />1234567890!@#$%^&*
+            </p>
+          </div>
+        </section>
+      </section>
+      <section class="style_fontsSecond">
+        <hgroup>
+          <h1>Второстепенный</h1>
           <p>
-            HEX: F3F4F5 <br />
-            RGB: 243, 244, 245 <br />
-            CMYK: 1%, 0%, 0%, 4%
+            В&nbsp;брендбуке SPOT в&nbsp;качестве второстепенного шрифта выбран
+            Evolventa. Этот шрифт идеально дополняет динамику и&nbsp;мощь
+            заголовочного шрифта Benzin, добавляя визуального баланса
+            и&nbsp;удобочитаемости текстам. Использование Evolventa помогает
+            создавать чистый, профессиональный образ бренда, поддерживая его
+            энергичный и&nbsp;целеустремленный характер.
           </p>
-        </div>
-        <div>
-          <p>W</p>
+        </hgroup>
+        <section>
+          <div>
+            <h2>Evolventa</h2>
+            <p>AaБбВвГг</p>
+          </div>
+          <div>
+            <p>Живи.&nbsp;Рискуй. <br />Превосходи&nbsp;себя!</p>
+          </div>
+          <div>
+            <hgroup>
+              <h2>Evolventa Regular</h2>
+              <p>
+                абвгдеёжзийклмнопрстуф <br />хцчшщъыьэюя
+                <br />АБВГДЕЁЖЗИЙКЛМНОПРСТ <br />УФХЦЧШЩЪЫЬЭЮЯ
+                <br />1234567890!@#$%^&*
+              </p>
+            </hgroup>
+            <hgroup>
+              <h2>Evolventa Bold</h2>
+              <p>
+                абвгдеёжзийклмнопрстуф <br />хцчшщъыьэюя
+                <br />АБВГДЕЁЖЗИЙКЛМНОПРСТ br УФХЦЧШЩЪЫЬЭЮЯ
+                <br />1234567890!@#$%^&*
+              </p>
+            </hgroup>
+          </div>
+        </section>
+      </section>
+      <section class="style_grid">
+        <hgroup>
+          <h1>Сетка</h1>
           <p>
-            HEX: FFFFFF <br />
-            RGB: 255, 255, 255 <br />
-            CMYK: 0%, 0%, 0%, 0%
+            В&nbsp;медиа-сервисе SPOT используется&nbsp;12-колоночная модульная
+            сетка для обеспечения визуальной структуры и&nbsp;единого стиля. Она
+            универсальна, адаптивна и&nbsp;поддерживает гармоничное размещение
+            элементов на&nbsp;любых устройствах. Сетка позволяет гибко дробить
+            контент, создавая удобные и&nbsp;эстетичные интерфейсы
           </p>
+        </hgroup>
+        <div>
+          <img src="images/styleguide/style_photo4.webp" alt="grid" />
         </div>
       </section>
-    </section>
-    <section class="style_fonts">
-      <hgroup>
-        <h1>Основной шрифт</h1>
-        <p>
-          Для визуального стиля медиа-сервиса SPOT выбран шрифт Druk Wide Cyr,
-          который идеально отражает характер бренда. Druk Wide Cyr используется
-          для заголовков, подзаголовков и&nbsp;ключевых элементов дизайна. Его
-          жирные, мощные и&nbsp;динамичные формы подчеркивают энергию, силу
-          и&nbsp;современность бренда, визуально поддерживая ассоциации
-          с&nbsp;активным образом жизни и&nbsp;уличной культурой.
-        </p>
-      </hgroup>
-      <section>
-        <div>
-          <h2>Benzin</h2>
-          <p>AaБбВв</p>
-        </div>
-        <div>
-          <p>Живи.&nbsp;Рискуй. <br />Превосходи&nbsp;себя!</p>
-        </div>
-        <div>
-          <h2>Be Bold</h2>
+      <section class="style_branding">
+        <hgroup>
+          <h1 id="5">Носители</h1>
           <p>
-            абвгдеёжзийклмнопрстуфхцчшщъыьэюя
-            <br />АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ <br />1234567890!@#$%^&*
+            Чтобы наш логотип выглядел хорошо в&nbsp;любом месте, ему нужно
+            охранное поле. У&nbsp;нас оно равно высоте знака.
           </p>
+        </hgroup>
+        <div>
+          <img src="images/styleguide/style_photo5.webp" alt="media" />
+          <img src="images/styleguide/style_photo6.webp" alt="visiting card" />
+          <img src="images/styleguide/style_photo7.webp" alt="poster" />
         </div>
       </section>
-    </section>
-    <section class="style_fontsSecond">
-      <hgroup>
-        <h1></h1>
-        <p>
-          В&nbsp;брендбуке SPOT в&nbsp;качестве второстепенного шрифта выбран
-          Gotham Pro. Этот шрифт идеально дополняет динамику и&nbsp;мощь
-          заголовочного шрифта Druk Wide Cyr, добавляя визуального баланса
-          и&nbsp;удобочитаемости текстам. Использование Gotham Pro помогает
-          создавать чистый, профессиональный образ бренда, поддерживая его
-          энергичный и&nbsp;целеустремленный характер.
-        </p>
-      </hgroup>
     </section>
   </body>
 </html>
