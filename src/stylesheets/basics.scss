@@ -21,33 +21,20 @@ nav {
   padding: 0 1.5vw;
 }
 nav > a {
-  font-size: 2.5rem;
-  text-decoration: none;
   color: white;
 }
 
 body {
   h1 {
-    font-family: 'Muller Next Wide Trial', sans-serif;
+    font-family: 'Benzin-Bold', sans-serif;
   }
-  nav > a,
   p {
-    font-family: 'Hoves Pro Trial', sans-serif;
+    font-family: 'Evolventa-Regular', sans-serif;
+    font-size: 1.125rem;
   }
-}
-h1 {
-  font-size: 5rem;
-  color: var(--red);
-  font-weight: 700;
-}
-h2 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  color: var(--blue);
-  font-weight: 700;
-}
-p {
-  font-size: 2rem;
-  color: black;
-  font-weight: 400;
+  a {
+    font-family: 'Evolventa-Bold', sans-serif;
+    text-decoration: none;
+    font-size: 1.125rem;
+  }
 }
