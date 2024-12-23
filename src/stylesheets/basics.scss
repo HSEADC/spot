@@ -27,10 +27,36 @@ nav > a {
 body {
   h1 {
     font-family: 'Benzin-Bold', sans-serif;
+    font-size: 6.4rem;
+    text-transform: uppercase;
+    color: var(--yellow);
+  }
+  h2 {
+    font-family: 'Benzin-Bold', sans-serif;
+    font-size: 4.1rem;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+  h3 {
+    font-family: 'Benzin-Bold', sans-serif;
+    font-size: 2.375rem;
+    color: var(--black);
+  }
+  h4 {
+    font-family: 'Evolventa-Bold', sans-serif;
+    font-size: 2rem;
+    color: var(--yellow);
+  }
+  h5 {
+    font-family: 'Benzin-Bold', sans-serif;
+    font-size: 5.2rem;
+    text-transform: uppercase;
+    color: var(--yellow);
   }
   p {
     font-family: 'Evolventa-Regular', sans-serif;
     font-size: 1.125rem;
+    color: var(--black);
   }
   a {
     font-family: 'Evolventa-Bold', sans-serif;
