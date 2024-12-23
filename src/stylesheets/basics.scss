@@ -14,12 +14,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2vw 3.5vw 0 3.5vw;
+  margin: 2vw 0;
   background-color: var(--white);
-  width: 93%;
+  width: 100%;
   height: 6vw;
-  padding: 0 1.5vw;
-  border: 0.2vw solid black;
+  padding: 0 3.5vw;
 
   .navSpace {
     width: 40%;
@@ -35,6 +34,7 @@ nav {
     color: var(--black);
     img {
       width: 11%;
+      margin-left: 2vw;
     }
   }
 

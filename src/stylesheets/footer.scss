@@ -5,15 +5,20 @@ footer {
   position: relative;
   left: 0;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
 
-  a,
-  p {
+  a {
     color: var(--yellow);
+  }
+
+  p {
+    color: var(--text);
   }
 
   section:nth-child(1) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1vw;
     width: 11.3%;
     height: auto;
@@ -41,8 +46,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 13.75%;
+    width: 25%;
     margin-right: 3.5%;
+    background-color: antiquewhite;
 
     section {
       display: flex;

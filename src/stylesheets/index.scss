@@ -233,31 +233,40 @@ body.index {
       flex-direction: column;
       width: 46%;
       height: 25.5vw;
+
+      p {
+        width: 53%;
+        margin-top: 2vw;
+      }
     }
 
     img {
-      width: 62%;
       height: auto;
+      width: 45.5%;
     }
   }
   form {
     margin-top: 4vw;
-    margin-left: 4vw;
     display: flex;
-    gap: 1vw;
+    justify-content: space-between;
 
     input {
-      font-size: 2rem;
-      height: 3rem;
-      border-radius: 0.5rem;
-      padding: 0 1rem;
+      font-size: 1.125rem;
+      padding: 1rem 2rem;
+      border-radius: 0.5vw;
     }
 
     #email {
-      border: 0.2vw solid #eee;
+      border: 0.1vw solid var(--black);
+      background-color: var(--white);
+      color: var(--grey);
+      font-family: 'Evolventa-Regular', sans-serif;
+      width: 72%;
     }
     #button {
-      border: none;
+      background-color: var(--black);
+      color: var(--yellow);
+      font-family: 'Evolventa-Bold', sans-serif;
     }
   }
 }
