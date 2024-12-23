@@ -1,12 +1,20 @@
 footer {
   width: 100%;
   background-color: var(--black);
-  padding: 2.2rem;
+  padding: 3vw 3.5vw;
   position: relative;
   left: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
+
+  .tg-icon {
+    fill: #f1fd53;
+
+    &:hover {
+      fill: white;
+    }
+  }
 
   a {
     color: var(--yellow);
@@ -15,30 +23,41 @@ footer {
   p {
     color: var(--text);
   }
-
   section:nth-child(1) {
     display: flex;
     flex-direction: row;
-    gap: 1vw;
-    width: 11.3%;
+    width: 100%;
     height: auto;
-    margin-left: 3.5%;
-
-    img {
-      width: 11.2%;
-      height: auto;
-    }
-    .social_icons {
-      width: 8vw;
-      height: 6vw;
-      a {
-        width: 27.5%;
-        height: 5vw;
-        display: block;
+    justify-content: space-between;
+    // logo
+    section:nth-child(1) {
+      img {
+        width: 11.2%;
+        height: auto;
       }
-      a:nth-child(1) svg:hover g path:first-of-type {
-        fill: #2aabee;
-        transition: all 0.3s ease-out;
+      .social_icons {
+        width: 8vw;
+        height: 6vw;
+        a {
+          width: 27.5%;
+          height: 5vw;
+          display: block;
+        }
+        a:nth-child(1) svg:hover g path:first-of-type {
+          fill: #2aabee;
+          transition: all 0.3s ease-out;
+        }
+      }
+    }
+    section:nth-child(2) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 20%;
+      gap: 3vw;
+      section {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
@@ -46,20 +65,5 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 25%;
-    margin-right: 3.5%;
-    background-color: antiquewhite;
-
-    section {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  section:nth-child(3) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 93%;
-    margin-left: 3.5%;
   }
 }
