@@ -5,7 +5,6 @@ footer {
   position: relative;
   left: 0;
   bottom: 0;
-  margin-top: 3vw;
 
   a,
   p {
@@ -25,9 +24,16 @@ footer {
       height: auto;
     }
     .social_icons {
+      width: 8vw;
+      height: 6vw;
       a {
         width: 27.5%;
-        height: auto;
+        height: 5vw;
+        display: block;
+      }
+      a:nth-child(1) svg:hover g path:first-of-type {
+        fill: #2aabee;
+        transition: all 0.3s ease-out;
       }
     }
   }

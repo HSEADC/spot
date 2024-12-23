@@ -14,16 +14,49 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2vw auto;
-  background-color: black;
-  width: 100%;
+  margin: 2vw 3.5vw 0 3.5vw;
+  background-color: var(--white);
+  width: 93%;
   height: 6vw;
   padding: 0 1.5vw;
-}
-nav > a {
-  color: white;
+  border: 0.2vw solid black;
+
+  .navSpace {
+    width: 40%;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+  }
+  a {
+    color: var(--black);
+    img {
+      width: 11%;
+    }
+  }
+
+  .navFind {
+    width: 2vw;
+    height: 2vw;
+    background-image: url('../images/searchIcon.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  a:nth-child(5) {
+    color: var(--yellow);
+    background-color: var(--black);
+    padding: 1rem 2rem;
+    border-radius: 0.5vw;
+  }
 }
 
+.none {
+  display: none;
+}
 body {
   h1 {
     font-family: 'Benzin-Bold', sans-serif;
@@ -36,16 +69,17 @@ body {
     font-size: 4.1rem;
     text-transform: uppercase;
     color: var(--black);
+    line-height: 5vw;
   }
-  h3 {
+  h4 {
     font-family: 'Benzin-Bold', sans-serif;
     font-size: 2.375rem;
     color: var(--black);
   }
-  h4 {
+  h3 {
     font-family: 'Evolventa-Bold', sans-serif;
     font-size: 2rem;
-    color: var(--yellow);
+    color: var(--black);
   }
   h5 {
     font-family: 'Benzin-Bold', sans-serif;
@@ -62,5 +96,129 @@ body {
     font-family: 'Evolventa-Bold', sans-serif;
     text-decoration: none;
     font-size: 1.125rem;
+  }
+
+  div.card_location {
+    width: 30%;
+    height: 28.5vw;
+    border: 0.1vw solid var(--black);
+    border-radius: 3vw 0 3vw 0;
+    display: flex;
+    flex-direction: column;
+
+    img.location_img {
+      border-radius: 3vw 0 0 0;
+      width: 100%;
+      height: 48%;
+    }
+
+    div {
+      width: 100%;
+      height: 52%;
+      background-color: var(--white);
+      display: flex;
+      flex-direction: column;
+      border-radius: 0 0 3vw 0;
+      padding: 1.5vw 1.7vw;
+      gap: 2vw;
+
+      hgroup.card_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: start;
+        gap: 1vw;
+        margin-top: 0;
+      }
+      section.location_tag {
+        display: flex;
+        align-items: center;
+        gap: 1.4vw;
+        justify-content: flex-start;
+        p {
+          background-color: var(--yellow);
+          padding: 0.6vw 1vw;
+          justify-content: center;
+          border-radius: 0.5vw;
+        }
+      }
+    }
+  }
+
+  div.card_tips {
+    width: 45.5%;
+    height: 21vw;
+    border: 0.1vw solid var(--black);
+    border-radius: 3vw 0 3vw 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      width: 62%;
+      height: auto;
+      background-color: var(--grey);
+      border-radius: 3vw 0 0 0;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5vw 1.7vw;
+      gap: 5vw;
+
+      hgroup.card_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: start;
+        gap: 1vw;
+        margin-top: 0;
+      }
+      section.tips_tag {
+        display: flex;
+        align-items: center;
+        gap: 1.4vw;
+        justify-content: flex-start;
+        p {
+          background-color: var(--black);
+          padding: 1.2vw 2vw;
+          justify-content: center;
+          color: var(--yellow);
+          border-radius: 0.5vw;
+        }
+      }
+    }
+
+    img {
+      width: 38%;
+      height: auto;
+      border-radius: 0 0 3vw 0;
+    }
+  }
+
+  div.card_chill {
+    width: 30%;
+    height: 28.5vw;
+    border: 0.1vw solid var(--black);
+    border-radius: 3vw 0 3vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../images/main/main_photo8.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5vw 1.7vw;
+
+    section.chill_tag {
+      display: flex;
+      align-items: center;
+      gap: 1.4vw;
+      justify-content: flex-start;
+    }
+
+    p {
+      background-color: var(--yellow);
+      padding: 0.6vw 1vw;
+      justify-content: center;
+      border-radius: 0.5vw;
+    }
   }
 }
