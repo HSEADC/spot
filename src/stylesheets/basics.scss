@@ -32,9 +32,9 @@ nav {
   }
   a {
     color: var(--black);
+    width: 11%;
     img {
-      width: 11%;
-      margin-left: 2vw;
+      width: 100%;
     }
   }
 
@@ -51,6 +51,7 @@ nav {
     background-color: var(--black);
     padding: 1rem 2rem;
     border-radius: 0.5vw;
+    width: 12vw;
   }
 }
 
@@ -86,6 +87,7 @@ body {
     font-size: 5.2rem;
     text-transform: uppercase;
     color: var(--yellow);
+    display: block;
   }
   p {
     font-family: 'Evolventa-Regular', sans-serif;
@@ -96,6 +98,7 @@ body {
     font-family: 'Evolventa-Bold', sans-serif;
     text-decoration: none;
     font-size: 1.125rem;
+    text-align: center;
   }
 
   div.card_location {
@@ -136,11 +139,13 @@ body {
         gap: 1.4vw;
         justify-content: flex-start;
         margin-top: 1vw;
+        flex-direction: row;
         p {
           background-color: var(--yellow);
           padding: 0.6vw 1vw;
           justify-content: center;
           border-radius: 0.5vw;
+          padding: 1vw 2vw;
         }
       }
     }
@@ -163,7 +168,7 @@ body {
       display: flex;
       flex-direction: column;
       padding: 1.5vw 1.7vw;
-      gap: 5vw;
+      gap: 3vw;
 
       hgroup.card_text {
         display: flex;
@@ -220,6 +225,116 @@ body {
       padding: 0.6vw 1vw;
       justify-content: center;
       border-radius: 0.5vw;
+    }
+  }
+
+  div.card_tricks {
+    width: 46%;
+    height: 25.5vw;
+    background-color: var(--yellow);
+    border: 0.1vw solid var(--black);
+    border-radius: 3vw 0 3vw 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vw;
+    width: 60%;
+    margin-left: 20%;
+    align-items: center;
+    div:nth-child(1) {
+      background-color: var(--black);
+      width: 8.2%;
+      height: 4.1vw;
+      margin-right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 91.8%;
+
+      img {
+        width: 35%;
+        height: auto;
+      }
+    }
+
+    hgroup {
+      display: flex;
+      flex-direction: column;
+      gap: 5vw;
+      margin-top: 6vw;
+      width: 60%;
+      text-align: center;
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+          color: var(--black);
+          background-color: var(--white);
+          padding: 1vw 2vw;
+          border-radius: 0.5vw;
+          text-align: center;
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 410px) {
+  body {
+    h1 {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 1.875rem;
+    }
+    h4 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+
+    div.card_tricks {
+      width: 100%;
+      height: 50vw;
+      margin-left: 0;
+      border-radius: 8vw 0 8vw 0;
+      hgroup {
+        div {
+          p {
+            padding: 2vw 0;
+          }
+        }
+      }
+    }
+
+    div.card_location {
+      width: 100%;
+      height: 80vw;
+      border-radius: 8vw 0 8vw 0;
+
+      div {
+        border-radius: 0 0 8vw 0;
+        padding: 4vw 6vw;
+      }
+    }
+
+    div.card_tips {
+      width: 100%;
+      height: 80vw;
+      flex-direction: column;
+      border-radius: 8vw 0 8vw 0;
+      justify-content: flex-start;
+      div {
+        width: 100%;
+        border-radius: 0 0 8vw 0;
+        height: 52%;
+        margin-top: 48%;
+      }
     }
   }
 }
