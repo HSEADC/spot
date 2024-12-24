@@ -11,7 +11,7 @@ body.chill {
 
   .chill_one {
     width: 100%;
-    height: 120vw;
+    min-height: 120vw;
     display: flex;
     flex-direction: column;
     gap: 1vw;
@@ -29,4 +29,21 @@ body.chill {
 }
 body.chill1 {
   background-color: aqua;
+}
+@media screen and (max-width: 500px) {
+  body.chill {
+    .cover {
+      h1 {
+        font-size: 3rem;
+      }
+      h5 {
+        font-size: 3rem;
+      }
+    }
+    .chill_one {
+      section {
+        gap: 6vw;
+      }
+    }
+  }
 }

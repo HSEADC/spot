@@ -11,7 +11,7 @@ body.tricks {
 
   .tricks_one {
     width: 100%;
-    height: 115vw;
+    min-height: 100vw;
     display: flex;
     flex-direction: column;
     gap: 1vw;
@@ -124,7 +124,7 @@ body.tricks {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 45vw;
+    min-height: 45vw;
     padding: 3.5vw;
 
     .card_tricks {
@@ -134,7 +134,7 @@ body.tricks {
     }
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 500px) {
   body.tricks {
     h3 {
       font-size: 1rem;
