@@ -52,8 +52,9 @@ nav {
   a:nth-child(5) {
     color: var(--yellow);
     background-color: var(--black);
-    padding: 1rem 2rem;
+    padding: 1vw 2vw;
     border-radius: 0.5vw;
+    text-align: center;
     width: 12vw;
   }
 
@@ -246,6 +247,9 @@ body {
           color: var(--yellow);
           border-radius: 0.5vw;
         }
+        p:hover {
+          color: var(--white);
+        }
       }
     }
 
@@ -293,7 +297,7 @@ body {
     border-radius: 3vw 0 3vw 0;
     display: flex;
     flex-direction: column;
-    margin-top: 6vw;
+    margin-top: 0;
     width: 60%;
     margin-left: 20%;
     align-items: center;
@@ -374,10 +378,17 @@ body {
       height: 50vw;
       margin-left: 0;
       border-radius: 8vw 0 8vw 0;
+      div:nth-child(1) {
+        width: 12%;
+        height: 12vw;
+        margin-left: 88%;
+      }
       hgroup {
         div {
+          margin-top: 10vw;
           p {
-            padding: 2vw 0;
+            padding: 2vw 4vw;
+            border-radius: 1.2vw;
           }
         }
       }

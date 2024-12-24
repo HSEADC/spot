@@ -134,3 +134,66 @@ body.tricks {
     }
   }
 }
+@media screen and (max-width: 410px) {
+  body.tricks {
+    h3 {
+      font-size: 1rem;
+    }
+    .cover {
+      background-position: -95vw;
+      h1 {
+        font-size: 3.125rem;
+      }
+
+      h5 {
+        font-size: 2rem;
+      }
+    }
+    .tricks_one {
+      height: 400vw;
+      padding: 10vw;
+      hgroup {
+        flex-direction: column;
+        section {
+          width: 100%;
+          margin-top: 2vw;
+        }
+      }
+      hgroup:nth-child(1) {
+        align-items: flex-start;
+      }
+      section {
+        gap: 2vw;
+        margin-top: 6vw;
+        div.card_tricks {
+          width: 100%;
+        }
+        #button {
+          padding: 4vw 0;
+          border-radius: 1.2vw;
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+    }
+
+    .tricks_two {
+      height: 30vw;
+      padding: 8vw 10vw;
+      h3 {
+        text-align: center;
+      }
+    }
+
+    .tricks_three {
+      height: 150vw;
+      padding: 10vw;
+      gap: 2vw;
+      div.card_tricks {
+        width: 100%;
+        justify-content: center;
+        margin-top: 2vw;
+      }
+    }
+  }
+}

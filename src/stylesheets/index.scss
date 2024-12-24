@@ -269,7 +269,8 @@ body.index {
           text-align: center;
         }
       }
-      div {
+      div.card_tricks {
+        margin-top: 8vw;
         div:nth-child(1) {
           width: 12%;
           height: 12vw;
@@ -287,6 +288,7 @@ body.index {
       padding: 20vw 10vw;
       height: 340vw;
       hgroup {
+        align-items: flex-start;
         flex-direction: column;
         gap: 0;
         a {
@@ -331,6 +333,7 @@ body.index {
       padding: 20vw 10vw;
       hgroup {
         flex-direction: column;
+        align-items: flex-start;
         gap: 0;
         a {
           margin-top: 280vw;
