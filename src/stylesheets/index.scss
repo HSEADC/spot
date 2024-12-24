@@ -131,6 +131,16 @@ body.index {
         color: var(--white);
       }
     }
+    .card_tips {
+      div:nth-child(2) {
+        background-image: url('../images/tips/tips_photo1.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 40%;
+        border-radius: 0 0 3vw 0;
+        background-position: center;
+      }
+    }
   }
 
   .main_five {
