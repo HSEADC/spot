@@ -8,6 +8,7 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   scroll-behavior: smooth;
+  background-color: var(--white);
 }
 nav {
   position: fixed;
@@ -121,7 +122,36 @@ body {
     font-size: 1.125rem;
     text-align: center;
   }
-
+  .cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 93%;
+    height: 50vw;
+    margin: 9vw 3.5vw 0 3.5vw;
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    hgroup {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        text-align: center;
+      }
+      h5 {
+        text-align: center;
+      }
+      p {
+        color: var(--yellow);
+        text-align: center;
+        width: 40%;
+        margin-top: 2vw;
+      }
+    }
+  }
   div.card_location {
     width: 30%;
     height: 28.5vw;
@@ -329,7 +359,12 @@ body {
     p {
       font-size: 1rem;
     }
-
+    .cover {
+      height: 230vw;
+      background-position: -60vw;
+      margin: 0;
+      width: 100%;
+    }
     div.card_tricks {
       width: 100%;
       height: 50vw;
