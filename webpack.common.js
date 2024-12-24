@@ -118,29 +118,10 @@ module.exports = {
     // }),
     // Section 'Chill' articles
     new HtmlWebpackPlugin({
-      template: './src/chill/chill_films.html',
-      filename: './chill/chill_films.html'
+      template: './src/chill/chill1.html',
+      filename: './chill/chill1.html'
     }),
-    new HtmlWebpackPlugin({
-      template: './src/chill/chill_history.html',
-      filename: './chill/chill_history.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/chill/chill_interview.html',
-      filename: './chill/chill_interview.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/chill/chill_playlist.html',
-      filename: './chill/chill_playlist.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/chill/chill_selection.html',
-      filename: './chill/chill_selection.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/chill/chill_slangs.html',
-      filename: './chill/chill_slangs.html'
-    }),
+
     // // Section 'Tips' articles
     // new HtmlWebpackPlugin({
     //   template: './src/tips/tips-articles.html',

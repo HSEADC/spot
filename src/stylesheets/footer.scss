@@ -85,13 +85,13 @@ footer {
     gap: 4vw;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 500px) {
   footer {
     a {
       text-align: start;
       font-family: 'Evolventa-Regular', sans-serif;
     }
-    height: 100vw;
+    height: 80vw;
     padding: 10vw 10vw;
 
     section:nth-child(1) {

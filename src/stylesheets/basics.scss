@@ -23,8 +23,17 @@ nav {
   a:hover {
     color: var(--yellow);
   }
-  .navSpace {
-    width: 40%;
+  div {
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+    .navFind ~ a {
+      color: var(--yellow);
+      background-color: var(--black);
+      padding: 1vw 2vw;
+      border-radius: 0.5vw;
+      text-align: center;
+    }
   }
   section {
     display: flex;
@@ -35,9 +44,10 @@ nav {
   }
   a {
     color: var(--black);
-    width: 11%;
+    display: flex;
+
     img {
-      width: 100%;
+      width: 30%;
     }
   }
 
@@ -47,14 +57,6 @@ nav {
     background-image: url('../images/searchIcon.webp');
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  a:nth-child(5) {
-    color: var(--yellow);
-    background-color: var(--black);
-    padding: 1rem 2rem;
-    border-radius: 0.5vw;
-    width: 12vw;
   }
 
   a:nth-child(5):hover {
@@ -160,7 +162,7 @@ body {
   }
   div.card_location {
     width: 32%;
-    height: 28.5vw;
+    min-height: 28.5vw;
     border: 0.1vw solid var(--black);
     border-radius: 3vw 0 3vw 0;
     display: flex;
@@ -169,12 +171,10 @@ body {
     img.location_img {
       border-radius: 3vw 0 0 0;
       width: 100%;
-      height: 48%;
     }
 
     div {
       width: 100%;
-      height: 52%;
       background-color: var(--white);
       display: flex;
       flex-direction: column;
@@ -208,15 +208,18 @@ body {
   }
 
   div.card_tips {
+    width: 49%;
+    margin-left: 0;
+    margin-top: 2vw;
     width: 45.5%;
-    height: 21vw;
+    min-height: 21vw;
     border: 0.1vw solid var(--black);
     border-radius: 3vw 0 3vw 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    div {
+    div:nth-child(1) {
       width: 62%;
       height: auto;
       background-color: var(--grey);
@@ -246,28 +249,31 @@ body {
           color: var(--yellow);
           border-radius: 0.5vw;
         }
+        p:hover {
+          color: var(--white);
+        }
       }
     }
-
-    img {
-      width: 38%;
-      height: auto;
+    div:nth-child(2) {
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 40%;
       border-radius: 0 0 3vw 0;
     }
   }
 
   div.card_chill {
     width: 32%;
-    height: 28.5vw;
+    min-height: 28.5vw;
     border: 0.1vw solid var(--black);
     border-radius: 3vw 0 3vw 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-image: url('../images/main/main_photo8.webp');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1.5vw 1.7vw;
+    gap: 10vw;
 
     section.chill_tag {
       display: flex;
@@ -287,13 +293,12 @@ body {
 
   div.card_tricks {
     width: 46%;
-    height: 25.5vw;
     background-color: var(--yellow);
     border: 0.1vw solid var(--black);
     border-radius: 3vw 0 3vw 0;
     display: flex;
     flex-direction: column;
-    margin-top: 6vw;
+    margin-top: 0;
     width: 60%;
     margin-left: 20%;
     align-items: center;
@@ -324,6 +329,7 @@ body {
         display: flex;
         flex-direction: row;
         gap: 1vw;
+        margin-bottom: 2vw;
         p {
           color: var(--black);
           background-color: var(--white);
@@ -335,7 +341,7 @@ body {
     }
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 500px) {
   nav {
     display: none;
   }
@@ -374,53 +380,91 @@ body {
       height: 50vw;
       margin-left: 0;
       border-radius: 8vw 0 8vw 0;
+      div:nth-child(1) {
+        width: 12%;
+        height: 12vw;
+        margin-left: 88%;
+      }
       hgroup {
         div {
+          margin-top: 10vw;
           p {
-            padding: 2vw 0;
+            padding: 2vw 4vw;
+            border-radius: 1.2vw;
           }
         }
       }
     }
 
-    div.card_location,
-    div.card_chill {
+    div.card_location {
       width: 100%;
-      height: 80vw;
       border-radius: 8vw 0 8vw 0;
-
       div {
         border-radius: 0 0 8vw 0;
         padding: 4vw 6vw;
       }
     }
     div.card_chill {
+      width: 100%;
+      border-radius: 8vw 0 8vw 0;
+      gap: 40vw;
       padding: 4vw 6vw;
+
+      div {
+        border-radius: 0 0 8vw 0;
+        padding: 4vw 6vw;
+      }
       p {
         padding: 1vw 2vw;
       }
     }
+
     div.card_tips {
       width: 100%;
       height: 100vw;
-      flex-direction: column;
+      flex-direction: column-reverse;
       border-radius: 8vw 0 8vw 0;
       justify-content: flex-start;
       div {
         width: 100%;
         border-radius: 0 0 8vw 0;
-        height: 45%;
-        margin-top: 68%;
-        gap: 2vw;
-        padding: 4vw 2vw;
-      }
-
-      img {
-        width: 100%;
         height: 55%;
-        border-radius: 8vw 0 0 0;
-        margin-top: -125%;
+        gap: 2vw;
+        padding: 8vw 10vw;
       }
+      div:nth-child(1) {
+        width: 100%;
+        height: 45%;
+        border-radius: 0 0 8vw 0;
+        padding: 5vw;
+      }
+      div:nth-child(2) {
+        width: 100%;
+        border-radius: 8vw 0 0 0;
+        margin-top: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    h1 {
+      font-size: 3.5rem;
+    }
+    h2 {
+      font-size: 3.2rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 2rem;
+    }
+    h5 {
+      font-size: 3.2rem;
+    }
+    p {
+      font-size: 1rem;
     }
   }
 }

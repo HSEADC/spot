@@ -16,7 +16,7 @@ body.index {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 40vw;
+    min-height: 40vw;
     display: flex;
     flex-direction: row;
     gap: 1vw;
@@ -36,12 +36,12 @@ body.index {
         }
       }
       a {
+        max-width: 50%;
         color: var(--yellow);
         background-color: var(--black);
         padding: 1rem 2rem;
         border-radius: 0.5vw;
         margin-top: 5vw;
-        width: 31%;
       }
 
       a:hover {
@@ -52,7 +52,7 @@ body.index {
 
   .main_two {
     width: 100%;
-    height: 30vw;
+    min-height: 30vw;
     background-color: var(--black);
     background-image: url('../images/main/main_photo3.webp');
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@ body.index {
 
   .main_three {
     width: 100%;
-    height: 52vw;
+    min-height: 52vw;
     background-color: var(--grey);
     display: flex;
     flex-direction: column;
@@ -78,7 +78,6 @@ body.index {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      gap: 40vw;
       a {
         color: var(--yellow);
         background-color: var(--black);
@@ -102,14 +101,14 @@ body.index {
 
   .main_four {
     width: 100%;
-    height: 35vw;
+    min-height: 35vw;
     background-color: var(--yellow);
     padding: 7vw 3.5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    section {
+    section:nth-child(1) {
       width: 46%;
       height: 25.5vw;
       display: flex;
@@ -126,17 +125,27 @@ body.index {
         padding: 1.2vw 2vw;
         border-radius: 0.5vw;
         margin-top: 3vw;
-        width: 25%;
+        max-width: 50%;
       }
       a:hover {
         color: var(--white);
+      }
+    }
+    .card_tips {
+      div:nth-child(2) {
+        background-image: url('../images/tips/tips_photo1.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 40%;
+        border-radius: 0 0 3vw 0;
+        background-position: center;
       }
     }
   }
 
   .main_five {
     width: 100%;
-    height: 52vw;
+    min-height: 52vw;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -170,7 +179,7 @@ body.index {
 
   .main_six {
     width: 100%;
-    height: 40vw;
+    min-height: 40vw;
     background-color: var(--grey);
     display: flex;
     flex-direction: row;
@@ -226,11 +235,7 @@ body.index {
   }
 }
 
-@media screen and (max-width: 1023px) {
-}
-@media screen and (max-width: 767px) {
-}
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 500px) {
   body.index {
     h5 {
       display: none;
@@ -248,7 +253,7 @@ body.index {
       }
     }
     .main_one {
-      height: 155vw;
+      min-height: 155vw;
       background-position: -2vw;
       flex-direction: column;
       padding: 20vw 10vw;
@@ -265,11 +270,12 @@ body.index {
         }
         a {
           border-radius: 1vw;
-          width: 100%;
+          max-width: 100%;
           text-align: center;
         }
       }
-      div {
+      div.card_tricks {
+        margin-top: 8vw;
         div:nth-child(1) {
           width: 12%;
           height: 12vw;
@@ -279,18 +285,18 @@ body.index {
     }
 
     .main_two {
-      height: 100vw;
+      min-height: 100vw;
       padding: 10vw 8vw;
       background-position: -100vw;
     }
     .main_three {
       padding: 20vw 10vw;
-      height: 340vw;
       hgroup {
+        align-items: flex-start;
         flex-direction: column;
         gap: 0;
         a {
-          margin-top: 280vw;
+          margin-top: 10vw;
           width: 80vw;
           padding: 4vw 2vw;
           border-radius: 1vw;
@@ -299,17 +305,22 @@ body.index {
       section {
         flex-direction: column;
         gap: 5vw;
-        margin-top: -280vw;
       }
     }
 
     .main_four {
-      height: 230vw;
+      min-height: 230vw;
       padding: 20vw 10vw;
       flex-direction: column;
       justify-content: flex-start;
       gap: 50vw;
-      section {
+      .card_tips {
+        div:nth-child(2) {
+          width: 100%;
+          border-radius: 8vw 0 0 0;
+        }
+      }
+      section:nth-child(1) {
         width: 100%;
         hgroup {
           p {
@@ -318,7 +329,7 @@ body.index {
           }
         }
         a {
-          width: 80vw;
+          max-width: 100%;
           padding: 4vw 2vw;
           border-radius: 1vw;
           margin-top: 10vw;
@@ -327,13 +338,13 @@ body.index {
     }
 
     .main_five {
-      height: 340vw;
       padding: 20vw 10vw;
       hgroup {
         flex-direction: column;
+        align-items: flex-start;
         gap: 0;
         a {
-          margin-top: 280vw;
+          margin-top: 10vw;
           width: 80vw;
           padding: 4vw 2vw;
           border-radius: 1vw;
@@ -342,12 +353,11 @@ body.index {
       section {
         flex-direction: column;
         gap: 5vw;
-        margin-top: -280vw;
       }
     }
 
     .main_six {
-      height: 200vw;
+      min-height: 200vw;
       padding: 20vw 10vw;
       flex-direction: column;
       justify-content: flex-start;
@@ -362,7 +372,7 @@ body.index {
         width: 100%;
         margin-top: 80vw;
         p {
-          width: 53%;
+          width: 100%;
         }
       }
       form {
@@ -379,5 +389,9 @@ body.index {
         }
       }
     }
+  }
+}
+@media screen and (max-width: 1024px) {
+  body.index {
   }
 }
