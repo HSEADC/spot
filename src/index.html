@@ -43,25 +43,21 @@
     />
 
     <analytics></analytics>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </head>
 
   <body class="index">
-    <nav>
-      <a href="index.html">LOGO</a>
-      <a href="tricks.html">трюки</a>
-      <a href="spots.html">локации</a>
-      <a href="tips.html">полезно</a>
-      <a href="chill.html">фан</a>
-      <a href="about.html">подписаться</a>
-    </nav>
-
+    <navPartial></navPartial>
     <section class="main_cover">
       <hgroup>
-        <h1>Живи.&nbsp;Рискуй.</h1>
+        <h1>Живи. Рискуй.</h1>
         <h5>Превосходи себя</h5>
+        <h5 id="text" class="none">Делай!</h5>
         <p>
           Медиа для райдеров, которые готовы рисковать и&nbsp;пробовать новое,
-          ценят адреналин, яркие эмоции и&nbsp;хотят превзойти самих себя
+          ценят адреналин, яркие эмоции и&nbsp;хотят превзойти себя
         </p>
       </hgroup>
     </section>
@@ -76,57 +72,80 @@
           </p>
         </hgroup>
 
-        <a href="tricks.html">в раздел</a>
+        <a href="tricks.html">в&nbsp;раздел</a>
       </section>
-      <section>
+      <div class="card_tricks">
         <div><img src="images/flipIcon.webp" alt="flip icon" /></div>
         <hgroup>
-          <h3>«Милкшейк»</h3>
+          <h4>«Милкшейк»</h4>
           <div>
             <p>средний</p>
             <p>скейт</p>
           </div>
         </hgroup>
-      </section>
+      </div>
     </section>
 
     <section class="main_two">
-      <h4>Помогаем райдерам <br />раскрыть свой <br />потенциал</h4>
+      <h3>Помогаем райдерам <br />раскрыть свой <br />потенциал</h3>
     </section>
 
     <section class="main_three">
       <hgroup>
         <h2>Локации</h2>
-        <a href="spots.html">в раздел</a>
+        <a href="spots.html">в&nbsp;раздел</a>
       </hgroup>
       <section>
-        <div>
+        <div class="card_location">
+          <img
+            src="images/main/main_photo4.webp"
+            alt="photo"
+            class="location_img"
+          />
           <div>
-            <hgroup>
+            <hgroup class="card_text">
               <h3>Скейт парк «ЦСКА»</h3>
               <p>Москва, ул. Ходынский бульвар, 8 м. ЦСКА</p>
             </hgroup>
-            <p>открытый</p>
-            <p>обучение</p>
+            <section class="location_tag">
+              <p>открытый</p>
+              <p>обучение</p>
+            </section>
           </div>
         </div>
-        <div>
+        <div class="card_location">
+          <img
+            src="images/main/main_photo5.webp"
+            alt="photo"
+            class="location_img"
+          />
+
           <div>
-            <hgroup>
+            <hgroup class="card_text">
               <h3>«Rampstroy house»</h3>
               <p>Москва, ш. Энтузиастов, 31с36 м. Шоссе Энтузиастов</p>
             </hgroup>
-            <p>крытый</p>
-            <p>спорт-комплекс</p>
+            <section class="location_tag">
+              <p>крытый</p>
+              <p>спорт-комплекс</p>
+            </section>
           </div>
         </div>
-        <div>
+        <div class="card_location">
+          <img
+            src="images/main/main_photo6.webp"
+            alt="photo"
+            class="location_img"
+          />
+
           <div>
-            <hgroup>
+            <hgroup class="card_text">
               <h3>Экстрим-кластер»</h3>
               <p>Москва, 1-я Лукино ул., 1 м. Новопеределкино</p>
             </hgroup>
-            <p>открытый</p>
+            <section class="location_tag">
+              <p>открытый</p>
+            </section>
           </div>
         </div>
       </section>
@@ -134,57 +153,70 @@
 
     <section class="main_four">
       <section>
-        <h2>Полезно</h2>
-        <p>
-          Тесты на разные тематики помогают разобраться в деталях подготовки и
-          самого катания, получить рекоммендации и запомнить их
-        </p>
-        <a href="tips.html">в раздел</a>
+        <hgroup>
+          <h2>Полезно</h2>
+          <p>
+            Тесты на&nbsp;разные тематики помогают разобраться в&nbsp;деталях
+            подготовки и самого катания, получить рекоммендации
+            и&nbsp;запомнить&nbsp;их
+          </p>
+        </hgroup>
+
+        <a href="tips.html">в&nbsp;раздел</a>
       </section>
-      <section>
-        <section>
-          <hgroup>
-            <h4>Как выбрать нужную экипировку</h4>
+
+      <div class="card_tips">
+        <div>
+          <hgroup class="card_text">
+            <h3>Как выбрать нужную экипировку</h3>
             <p>
-              Расскажем какая экипировка нужна именно тебе, в зависимости от
-              целей и уровня
+              Расскажем какая экипировка нужна именно тебе, в&nbsp;зависимости
+              от целей и&nbsp;уровня
             </p>
           </hgroup>
-          <p>пройти тест</p>
-        </section>
+          <section class="tips_tag">
+            <p>пройти&nbsp;тест</p>
+          </section>
+        </div>
         <img src="images/main/main_photo7.webp" alt="photo" />
-      </section>
+      </div>
     </section>
 
     <section class="main_five">
       <hgroup>
         <h2>Фан</h2>
-        <a href="chill.html">в раздел</a>
+        <a href="chill.html">в&nbsp;раздел</a>
       </hgroup>
       <section>
-        <div>
-          <h4>Лучшие документалки про райдеров на вечер</h4>
-          <p>фильмы</p>
+        <div class="card_chill">
+          <h3>Лучшие документалки про&nbsp;райдеров на&nbsp;вечер</h3>
+          <section class="chill_tag">
+            <p>фильмы</p>
+          </section>
         </div>
-        <div>
-          <h4>Сленговые слова, чтобы говорить на одном языке</h4>
-          <p>сленг</p>
+        <div class="card_chill">
+          <h3>Сленговые слова, чтобы говорить на&nbsp;одном языке</h3>
+          <section class="chill_tag">
+            <p>сленг</p>
+          </section>
         </div>
-        <div>
-          <h4>Музыкальная пауза с Тони Хоуком для тренировки</h4>
-          <p>музыка</p>
-          <p>личности</p>
+        <div class="card_chill">
+          <h3>Музыкальная пауза с&nbsp;Тони Хоуком для&nbsp;тренировки</h3>
+          <section class="chill_tag">
+            <p>музыка</p>
+            <p>личности</p>
+          </section>
         </div>
       </section>
     </section>
 
-    <section class="main_six">
+    <section id="subscribe" class="main_six">
       <section>
         <hgroup>
           <h2>Подпишись на новости</h2>
           <p>
-            Так ты самым первым будешь узнавать о новинках, свежих историях и
-            получать эксклюзивный материал
+            Так ты&nbsp;самым первым будешь узнавать о&nbsp;новинках, свежих
+            историях и получать эксклюзивный материал
           </p>
         </hgroup>
         <!-- modify this form HTML and place wherever you want your form -->
@@ -194,10 +226,9 @@
           method="POST"
         >
           <!-- <label>Email:</label> -->
-          <input type="email" name="email" id="email" placeholder="E-mail" />
-          <input type="submit" id="button" value="Отправить" />
+          <input type="email" name="email" id="email" placeholder="e-mail" />
+          <input type="submit" id="button" value="отправить" />
           <!-- <button id="my-form-button">Отправить</button> -->
-          <p id="my-form-status"></p>
         </form>
       </section>
       <img src="images/main/main_photo9.webp" alt="photo" />

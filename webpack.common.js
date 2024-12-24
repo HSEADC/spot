@@ -164,6 +164,14 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/nav.html'),
+        location: 'navPartial',
+        template_filename: '*',
+        priority: 'replace'
+      }
     ])
   ],
   optimization: {
