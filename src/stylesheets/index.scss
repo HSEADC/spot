@@ -313,6 +313,8 @@ body.index {
       height: 230vw;
       padding: 20vw 10vw;
       flex-direction: column;
+      justify-content: flex-start;
+      gap: 50vw;
       section {
         width: 100%;
         hgroup {
@@ -326,6 +328,59 @@ body.index {
           padding: 4vw 2vw;
           border-radius: 1vw;
           margin-top: 10vw;
+        }
+      }
+    }
+
+    .main_five {
+      height: 340vw;
+      padding: 20vw 10vw;
+      hgroup {
+        flex-direction: column;
+        gap: 0;
+        a {
+          margin-top: 280vw;
+          width: 80vw;
+          padding: 4vw 2vw;
+          border-radius: 1vw;
+        }
+      }
+      section {
+        flex-direction: column;
+        gap: 5vw;
+        margin-top: -280vw;
+      }
+    }
+
+    .main_six {
+      height: 200vw;
+      padding: 20vw 10vw;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      img {
+        width: 100%;
+        margin-top: -100vw;
+      }
+
+      section {
+        width: 100%;
+        margin-top: 80vw;
+        p {
+          width: 53%;
+        }
+      }
+      form {
+        flex-direction: column;
+        gap: 5vw;
+
+        #button {
+          border-radius: 1vw;
+        }
+
+        #email {
+          border-radius: 1vw;
+          width: 100%;
         }
       }
     }

@@ -29,7 +29,7 @@ footer {
       justify-content: space-between;
       img {
         width: 100%;
-        height: 2vw;
+        height: auto;
       }
       .social_icons {
         width: 8vw;
@@ -78,6 +78,39 @@ footer {
   section:nth-child(2) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 4vw;
+  }
+}
+@media screen and (max-width: 410px) {
+  footer {
+    a {
+      text-align: start;
+      font-family: 'Evolventa-Regular', sans-serif;
+    }
+    height: 100vw;
+    padding: 10vw 10vw;
+
+    section:nth-child(1) {
+      height: 50vw;
+      justify-content: space-between;
+
+      section:nth-child(1) {
+        flex-direction: column;
+        gap: 5vw;
+        width: 50%;
+
+        .social_icons {
+          width: 40vw;
+        }
+      }
+      section:nth-child(2) {
+        flex-direction: column;
+        width: 30%;
+      }
+    }
+    section:nth-child(2) {
+      flex-direction: column;
+    }
   }
 }
