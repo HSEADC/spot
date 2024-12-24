@@ -1,11 +1,17 @@
 body.tricks {
   .cover {
     background-image: url('../images/tricks/tricks_photo.webp');
+    h1 {
+      font-size: 7.1rem;
+    }
+    h3 {
+      font-size: 7.1rem;
+    }
   }
 
   .tricks_one {
     width: 100%;
-    height: 125vw;
+    height: 115vw;
     display: flex;
     flex-direction: column;
     gap: 1vw;
@@ -44,6 +50,7 @@ body.tricks {
       div.card_tricks {
         width: 49%;
         margin-left: 0;
+        margin-top: 2vw;
 
         div {
           background-color: var(--black);

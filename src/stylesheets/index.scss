@@ -3,10 +3,6 @@ body.index {
     background-image: url('../images/main/main_photo1.webp');
 
     hgroup {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
       p {
         color: var(--white);
       }
@@ -35,7 +31,7 @@ body.index {
       flex-direction: column;
       hgroup {
         p {
-          width: 53%;
+          width: 60%;
           margin-top: 2vw;
         }
       }
@@ -113,7 +109,7 @@ body.index {
       flex-direction: column;
       hgroup {
         p {
-          width: 53%;
+          width: 60%;
           margin-top: 2vw;
         }
       }
@@ -185,6 +181,7 @@ body.index {
     img {
       height: auto;
       width: 45.5%;
+      border-radius: 3vw 0 3vw 0;
     }
     form {
       margin-top: 4vw;
@@ -342,6 +339,7 @@ body.index {
       img {
         width: 100%;
         margin-top: -100vw;
+        border-radius: 8vw 0 8vw 0;
       }
 
       section {
