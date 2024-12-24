@@ -43,6 +43,10 @@ body.index {
         margin-top: 5vw;
         width: 31%;
       }
+
+      a:hover {
+        color: var(--white);
+      }
     }
   }
 
@@ -80,6 +84,9 @@ body.index {
         background-color: var(--black);
         padding: 1vw 2vw;
         border-radius: 0.5vw;
+      }
+      a:hover {
+        color: var(--white);
       }
     }
 
@@ -121,6 +128,9 @@ body.index {
         margin-top: 3vw;
         width: 25%;
       }
+      a:hover {
+        color: var(--white);
+      }
     }
   }
 
@@ -143,6 +153,9 @@ body.index {
         background-color: var(--black);
         padding: 1rem 2rem;
         border-radius: 0.5vw;
+      }
+      a:hover {
+        color: var(--white);
       }
     }
     section {
@@ -205,6 +218,9 @@ body.index {
         background-color: var(--black);
         color: var(--yellow);
         font-family: 'Evolventa-Bold', sans-serif;
+      }
+      #button:hover {
+        color: var(--white);
       }
     }
   }
