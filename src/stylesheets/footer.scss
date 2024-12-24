@@ -11,6 +11,9 @@ footer {
   a {
     color: var(--yellow);
   }
+  a:hover {
+    color: var(--white);
+  }
 
   p {
     color: var(--text);
@@ -48,7 +51,7 @@ footer {
 
           &:hover {
             fill: #2aabee;
-            transition: all 0.3s ease-out;
+            transition: all 0.1s ease-out;
           }
         }
         .vk-icon {
@@ -56,7 +59,7 @@ footer {
 
           &:hover {
             fill: #0077ff;
-            transition: all 0.3s ease-out;
+            transition: all 0.1s ease-out;
           }
         }
       }

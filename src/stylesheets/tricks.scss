@@ -1,3 +1,136 @@
 body.tricks {
-  background-color: white;
+  .cover {
+    background-image: url('../images/tricks/tricks_photo.webp');
+    h1 {
+      font-size: 7.1rem;
+    }
+    h3 {
+      font-size: 7.1rem;
+    }
+  }
+
+  .tricks_one {
+    width: 100%;
+    height: 115vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 8vw 3.5vw;
+    hgroup {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      section {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        button {
+          background-color: var(--white);
+          color: var(--black);
+          padding: 0.8vw 2vw;
+          border-radius: 0.5vw;
+          border: 0.1vw solid var(--black);
+          font-family: 'Evolventa-Bold', sans-serif;
+          font-size: 1.125rem;
+          margin: 0;
+        }
+        button:nth-child(1) {
+          background-color: var(--yellow);
+          border: 0;
+        }
+      }
+    }
+    section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      div.card_tricks {
+        width: 49%;
+        margin-left: 0;
+        margin-top: 2vw;
+
+        div {
+          background-color: var(--black);
+        }
+      }
+
+      div:nth-child(1),
+      div:nth-child(4) {
+        background-color: var(--grey);
+        hgroup {
+          div {
+            background-color: var(--grey);
+          }
+        }
+      }
+      div:nth-child(2),
+      div:nth-child(5) {
+        background-color: var(--white);
+        hgroup {
+          div {
+            background-color: var(--white);
+          }
+        }
+      }
+      div:nth-child(3),
+      div:nth-child(6) {
+        hgroup {
+          div {
+            background-color: var(--yellow);
+          }
+        }
+      }
+      div:nth-child(1),
+      div:nth-child(2),
+      div:nth-child(4),
+      div:nth-child(5) {
+        hgroup {
+          div {
+            p {
+              background-color: var(--yellow);
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      background-color: var(--black);
+      color: var(--yellow);
+      padding: 1vw 3vw;
+      border-radius: 0.5vw;
+      border: 0;
+      font-family: 'Evolventa-Bold', sans-serif;
+      font-size: 1.125rem;
+      margin-top: 3vw;
+      margin-left: 40vw;
+    }
+  }
+
+  .tricks_two {
+    width: 100%;
+    height: 12vw;
+    background-color: var(--grey);
+    padding: 3.5vw;
+  }
+
+  .tricks_three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45vw;
+    padding: 3.5vw;
+
+    .card_tricks {
+      width: 49%;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
 }

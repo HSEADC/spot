@@ -1,29 +1,10 @@
 body.index {
-  background-color: white;
-
-  .main_cover {
+  .cover {
     background-image: url('../images/main/main_photo1.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 93%;
-    height: 50vw;
-    margin: 9vw 3.5vw 0 3.5vw;
-    border-radius: 0.5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     hgroup {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
       p {
         color: var(--white);
-        text-align: center;
-        width: 40%;
-        margin-top: 2vw;
       }
     }
   }
@@ -50,7 +31,7 @@ body.index {
       flex-direction: column;
       hgroup {
         p {
-          width: 53%;
+          width: 60%;
           margin-top: 2vw;
         }
       }
@@ -61,6 +42,10 @@ body.index {
         border-radius: 0.5vw;
         margin-top: 5vw;
         width: 31%;
+      }
+
+      a:hover {
+        color: var(--white);
       }
     }
   }
@@ -100,6 +85,9 @@ body.index {
         padding: 1vw 2vw;
         border-radius: 0.5vw;
       }
+      a:hover {
+        color: var(--white);
+      }
     }
 
     section {
@@ -128,7 +116,7 @@ body.index {
       flex-direction: column;
       hgroup {
         p {
-          width: 53%;
+          width: 60%;
           margin-top: 2vw;
         }
       }
@@ -139,6 +127,9 @@ body.index {
         border-radius: 0.5vw;
         margin-top: 3vw;
         width: 25%;
+      }
+      a:hover {
+        color: var(--white);
       }
     }
   }
@@ -162,6 +153,9 @@ body.index {
         background-color: var(--black);
         padding: 1rem 2rem;
         border-radius: 0.5vw;
+      }
+      a:hover {
+        color: var(--white);
       }
     }
     section {
@@ -200,6 +194,7 @@ body.index {
     img {
       height: auto;
       width: 45.5%;
+      border-radius: 3vw 0 3vw 0;
     }
     form {
       margin-top: 4vw;
@@ -224,6 +219,9 @@ body.index {
         color: var(--yellow);
         font-family: 'Evolventa-Bold', sans-serif;
       }
+      #button:hover {
+        color: var(--white);
+      }
     }
   }
 }
@@ -242,11 +240,7 @@ body.index {
       display: block;
       font-size: 3.6rem;
     }
-    .main_cover {
-      height: 230vw;
-      background-position: -60vw;
-      margin: 0;
-      width: 100%;
+    .cover {
       hgroup {
         p {
           width: 80%;
@@ -361,6 +355,7 @@ body.index {
       img {
         width: 100%;
         margin-top: -100vw;
+        border-radius: 8vw 0 8vw 0;
       }
 
       section {
