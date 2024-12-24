@@ -19,7 +19,7 @@ body.about {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 40vw;
+    min-height: 40vw;
     display: flex;
     flex-direction: row;
     gap: 10vw;
@@ -38,7 +38,7 @@ body.about {
   }
   .about_two {
     width: 100%;
-    height: 30vw;
+    min-height: 30vw;
     background-color: var(--black);
     background-image: url('../images/about/about_photo2.webp');
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ body.about {
   }
   .about_three {
     width: 100%;
-    height: 40vw;
+    min-height: 40vw;
     background-color: var(--grey);
     display: flex;
     flex-direction: row;
@@ -106,6 +106,65 @@ body.about {
         background-color: var(--black);
         color: var(--yellow);
         font-family: 'Evolventa-Bold', sans-serif;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  body.about {
+    .cover {
+      h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+      h5 {
+        font-size: 2.3rem;
+      }
+      p {
+        width: 80%;
+      }
+    }
+    .about_one {
+      flex-direction: column;
+      padding: 10vw 10vw;
+      hgroup {
+        p {
+          width: 100%;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .about_two {
+      padding: 10vw 10vw;
+      background-position: -70vw;
+      hgroup {
+        p {
+          width: 100%;
+        }
+      }
+    }
+    .about_three {
+      padding: 10vw 10vw;
+      flex-direction: column-reverse;
+      form {
+        flex-direction: column;
+        gap: 4vw;
+
+        #email {
+          width: 100%;
+        }
+      }
+      section {
+        width: 100%;
+        height: auto;
+        p {
+          width: 100%;
+        }
+      }
+      img {
+        width: 100%;
       }
     }
   }

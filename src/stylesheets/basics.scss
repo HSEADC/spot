@@ -422,16 +422,26 @@ body {
     div.card_tips {
       width: 100%;
       height: 100vw;
-      flex-direction: column;
+      flex-direction: column-reverse;
       border-radius: 8vw 0 8vw 0;
       justify-content: flex-start;
       div {
         width: 100%;
         border-radius: 0 0 8vw 0;
-        height: 45%;
-        margin-top: 68%;
+        height: 55%;
         gap: 2vw;
-        padding: 4vw 2vw;
+        padding: 8vw 10vw;
+      }
+      div:nth-child(1) {
+        width: 100%;
+        height: 45%;
+        border-radius: 0 0 8vw 0;
+        padding: 5vw;
+      }
+      div:nth-child(2) {
+        width: 100%;
+        border-radius: 8vw 0 0 0;
+        margin-top: 0;
       }
     }
   }
@@ -441,7 +451,9 @@ body {
     h1 {
       font-size: 3.5rem;
     }
-
+    h2 {
+      font-size: 3.2rem;
+    }
     h3 {
       font-size: 1.5rem;
     }

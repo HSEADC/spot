@@ -96,11 +96,51 @@ body.tips {
         font-size: 4.5rem;
       }
     }
-
+    .tips_one {
+      & div.card_tips {
+        hgroup {
+          width: 100%;
+        }
+        div:nth-child(2) {
+          width: 100%;
+          border-radius: 8vw 0 0 0;
+        }
+      }
+    }
     .tips_two {
       section {
         div.card_tips {
           width: 100%;
+        }
+        .card_tips:nth-child(1) {
+          div:nth-child(2) {
+            background-image: url('../images/tips/tips_photo2-1.webp');
+          }
+        }
+        .card_tips:nth-child(2) {
+          div:nth-child(2) {
+            background-image: url('../images/tips/tips_photo3-1.webp');
+          }
+        }
+        .card_tips:nth-child(3) {
+          div:nth-child(2) {
+            background-image: url('../images/tips/tips_photo4-1.webp');
+          }
+        }
+        .card_tips:nth-child(4) {
+          div:nth-child(2) {
+            background-image: url('../images/tips/tips_photo5-1.webp');
+          }
+        }
+        .card_tips:nth-child(5) {
+          div:nth-child(2) {
+            background-image: url('../images/tips/tips_photo6-1.webp');
+          }
+        }
+        .card_tips:nth-child(6) {
+          div:nth-child(2) {
+            background-image: url('../images/tips/tips_photo7-1.webp');
+          }
         }
       }
     }
