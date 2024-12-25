@@ -294,7 +294,8 @@ body {
     }
   }
 
-  div.card_tricks {
+  a.card_tricks {
+    text-align: center;
     width: 46%;
     background-color: var(--yellow);
     border: 0.1vw solid var(--black);
@@ -378,7 +379,7 @@ body {
       margin: 0;
       width: 100%;
     }
-    div.card_tricks {
+    a.card_tricks {
       width: 100%;
       height: 50vw;
       margin-left: 0;
