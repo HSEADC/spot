@@ -121,6 +121,10 @@ module.exports = {
       template: './src/chill/chill1.html',
       filename: './chill/chill1.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips1.html',
+      filename: './tips/tips1.html'
+    }),
 
     // // Section 'Tips' articles
     // new HtmlWebpackPlugin({
