@@ -31,6 +31,7 @@ body.chill1 {
   border-color: blue;
   display: flex;
   flex-direction: column;
+  align-items: center;
   .coverMini {
     background-image: url('../images/chill/chill1_photo.webp');
     background-size: cover;
@@ -43,6 +44,54 @@ body.chill1 {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .chillHead,
+  .yellow,
+  .chillOne,
+  .chillTwo,
+  .chillThree,
+  .chillFour {
+    width: 100%;
+    display: flex;
+    gap: 4vw;
+    padding: 4vw;
+    div {
+      width: 20%;
+      p {
+        width: 100%;
+      }
+    }
+  }
+  .chillHead {
+    h2 {
+      width: 70%;
+    }
+  }
+  .yellow {
+    background-color: var(--yellow);
+    padding: 4vw;
+    hgroup {
+      width: 70%;
+      p {
+        width: 70%;
+      }
+    }
+  }
+  .chillOne {
+    hgroup {
+      width: 70%;
+      p {
+        width: 70%;
+      }
+    }
+  }
+  .chillFour {
+    display: flex;
+    flex-direction: column;
+    section {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
 @media screen and (max-width: 500px) {
