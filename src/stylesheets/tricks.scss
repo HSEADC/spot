@@ -46,9 +46,9 @@ body.tricks {
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
+      gap: 1.2vw;
 
-      div.card_tricks {
-        width: 49%;
+      a.card_tricks {
         margin-left: 0;
         margin-top: 2vw;
 
@@ -57,8 +57,8 @@ body.tricks {
         }
       }
 
-      div:nth-child(1),
-      div:nth-child(4) {
+      a:nth-child(1),
+      a:nth-child(4) {
         background-color: var(--grey);
         hgroup {
           div {
@@ -66,17 +66,16 @@ body.tricks {
           }
         }
       }
-      div:nth-child(2),
-      div:nth-child(5) {
-        background-color: var(--white);
+      a:nth-child(2),
+      a:nth-child(5) {
         hgroup {
           div {
             background-color: var(--white);
           }
         }
       }
-      div:nth-child(3),
-      div:nth-child(6) {
+      a:nth-child(3),
+      a:nth-child(6) {
         hgroup {
           div {
             background-color: var(--yellow);
@@ -128,7 +127,6 @@ body.tricks {
     padding: 3.5vw;
 
     .card_tricks {
-      width: 49%;
       margin-left: 0;
       margin-top: 0;
     }

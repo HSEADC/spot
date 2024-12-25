@@ -111,11 +111,11 @@ module.exports = {
     //   template: './src/art/art-articles.html',
     //   filename: './art/art-articles.html'
     // }),
-    // // Section 'Spots' articles
-    // new HtmlWebpackPlugin({
-    //   template: './src/skateboarding/skateboarding-articles.html',
-    //   filename: './skateboarding/skateboarding-articles.html'
-    // }),
+    // Section 'Spots' articles
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots1.html',
+      filename: './spots/spots1.html'
+    }),
     // Section 'Chill' articles
     new HtmlWebpackPlugin({
       template: './src/chill/chill1.html',
