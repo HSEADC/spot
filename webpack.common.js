@@ -106,11 +106,11 @@ module.exports = {
       filename: './styleguide.html'
     }),
 
-    // // Section 'Tricks' articles
-    // new HtmlWebpackPlugin({
-    //   template: './src/art/art-articles.html',
-    //   filename: './art/art-articles.html'
-    // }),
+    // Section 'Tricks' articles
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricks1.html',
+      filename: './tricks/tricks1.html'
+    }),
     // Section 'Spots' articles
     new HtmlWebpackPlugin({
       template: './src/spots/spots1.html',

@@ -22,7 +22,6 @@ body.spots {
   }
 }
 body.spots1 {
-  border-color: blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,8 +33,7 @@ body.spots1 {
   .yellow,
   .spotsOne,
   .spotsTwo,
-  .spotsThree,
-  .spotsFour {
+  .spotsThree {
     width: 100%;
     display: flex;
     gap: 4vw;
@@ -80,14 +78,8 @@ body.spots1 {
       }
     }
   }
+
   .spotsThree {
-    section {
-      img {
-        width: 90%;
-      }
-    }
-  }
-  .spotsFour {
     display: flex;
     flex-direction: column;
     section {
@@ -95,12 +87,15 @@ body.spots1 {
       flex-direction: row;
       justify-content: space-between;
       div {
-        width: 32%;
+        width: 100%;
         section {
           p {
             width: auto;
           }
         }
+      }
+      img {
+        width: 100%;
       }
     }
   }
@@ -115,7 +110,7 @@ body.spots1 {
   }
   body.spots1 {
     img.coverMini {
-      margin-left: -100vw;
+      margin-left: 50vw;
     }
     .spotsHead,
     .yellow,
@@ -135,13 +130,7 @@ body.spots1 {
         }
       }
     }
-    .spotsThree {
-      section {
-        img {
-          width: 100%;
-        }
-      }
-    }
+
     .spotsTwo {
       section {
         img {
@@ -149,13 +138,21 @@ body.spots1 {
         }
       }
     }
-    .spotsFour {
+    .spotsThree {
+      flex-direction: column;
+
       section {
         flex-direction: column;
-        gap: 6vw;
+        gap: 10vw;
         align-items: center;
         div {
           width: 98%;
+          p {
+            width: 100%;
+          }
+        }
+        img {
+          width: 100%;
         }
       }
     }
