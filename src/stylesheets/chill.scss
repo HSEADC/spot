@@ -32,18 +32,9 @@ body.chill1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .coverMini {
-    background-image: url('../images/chill/chill1_photo.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 93%;
-    height: 40vw;
+  img.coverMini {
     margin: 9vw 3.5vw 0 3.5vw;
     border-radius: 0.5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .chillHead,
   .yellow,
@@ -80,8 +71,25 @@ body.chill1 {
   .chillOne {
     hgroup {
       width: 70%;
+      h3 {
+        margin-bottom: 1rem;
+      }
       p {
         width: 70%;
+      }
+    }
+  }
+  .chillTwo {
+    section {
+      img {
+        width: 90%;
+      }
+    }
+  }
+  .chillThree {
+    section {
+      img {
+        width: 90%;
       }
     }
   }
@@ -91,6 +99,15 @@ body.chill1 {
     section {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      div {
+        width: 32%;
+        section {
+          p {
+            width: auto;
+          }
+        }
+      }
     }
   }
 }
@@ -107,6 +124,54 @@ body.chill1 {
     .chill_one {
       section {
         gap: 6vw;
+      }
+    }
+  }
+
+  body.chill1 {
+    img.coverMini {
+      margin-left: 200vw;
+    }
+    .chillHead,
+    .yellow,
+    .chillOne,
+    .chillTwo,
+    .chillThree {
+      div:nth-child(1) {
+        display: none;
+      }
+    }
+    .yellow,
+    .chillOne {
+      hgroup {
+        width: 100%;
+        p {
+          width: 90%;
+        }
+      }
+    }
+    .chillThree {
+      section {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .chillTwo {
+      section {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .chillFour {
+      section {
+        flex-direction: column;
+        gap: 6vw;
+        align-items: center;
+        div {
+          width: 98%;
+        }
       }
     }
   }
