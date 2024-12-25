@@ -17,7 +17,7 @@ body.tips {
     gap: 1vw;
     padding: 8vw 3.5vw;
 
-    div.card_tips {
+    a.card_tips {
       width: 100%;
       min-height: 35vw;
       hgroup {
@@ -97,7 +97,7 @@ body.tips {
       }
     }
     .tips_one {
-      & div.card_tips {
+      & a.card_tips {
         hgroup {
           width: 100%;
         }
@@ -109,7 +109,7 @@ body.tips {
     }
     .tips_two {
       section {
-        div.card_tips {
+        a.card_tips {
           width: 100%;
         }
         .card_tips:nth-child(1) {
