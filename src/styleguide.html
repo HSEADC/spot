@@ -46,60 +46,6 @@
     />
 
     <analytics></analytics>
-    <!-- <script src="js/jquery-3.6.1.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        // Отслеживаем клики на ссылки внутри nav
-        $('nav a').on('click', function (e) {
-          e.preventDefault() // Предотвращаем действие по умолчанию
-
-          // Получаем ID элемента, к которому нужно прокрутить
-          var targetId = $(this).attr('href')
-          var scrollTo = $(targetId) // Находим целевой элемент по ID
-
-          if (scrollTo.length) {
-            // Плавный скролл к целевому элементу
-            $('html, body').animate(
-              {
-                scrollTop: scrollTo.offset().top // Прокрутка к элементу
-              },
-              1000 // Скорость прокрутки в миллисекундах
-            )
-          }
-        })
-      })
-    </script> -->
-
-    <script src="js/jquery-3.6.1.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        const sections = $('section[id]') // Находим все секции с атрибутом id
-        const navLinks = $('nav a') // Находим все ссылки в меню
-
-        $(window).on('scroll', function () {
-          const scrollPosition = $(window).scrollTop() // Текущая позиция скролла
-
-          // Проверяем каждую секцию
-          sections.each(function () {
-            const section = $(this)
-            const sectionTop = section.offset().top - 50 // Позиция секции с учетом небольшого отступа
-            const sectionBottom = sectionTop + section.outerHeight() // Нижняя граница секции
-
-            // Если позиция скролла находится в пределах секции
-            if (
-              scrollPosition >= sectionTop &&
-              scrollPosition < sectionBottom
-            ) {
-              const sectionId = section.attr('id') // Получаем ID текущей секции
-
-              // Добавляем активный класс к соответствующей ссылке
-              navLinks.removeClass('active') // Убираем класс у всех ссылок
-              $(`nav a[href="#${sectionId}"]`).addClass('active') // Добавляем класс текущей
-            }
-          })
-        })
-      })
-    </script>
   </head>
   <body class="styleguide">
     <nav class="leftNav">
