@@ -28,7 +28,22 @@ body.chill {
   }
 }
 body.chill1 {
-  background-color: aqua;
+  border-color: blue;
+  display: flex;
+  flex-direction: column;
+  .coverMini {
+    background-image: url('../images/chill/chill1_photo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 93%;
+    height: 40vw;
+    margin: 9vw 3.5vw 0 3.5vw;
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 500px) {
   body.chill {

@@ -81,6 +81,7 @@ body.styleguide {
     padding: 22vw 12vw;
     margin: 0;
     gap: 0;
+    align-items: flex-start;
 
     img {
       width: 35.3%;
@@ -558,6 +559,27 @@ body.styleguide {
       .style_branding {
         div {
           width: 58vw;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  body.styleguide {
+    nav.leftNav {
+      a {
+        font-size: 1rem;
+      }
+    }
+    .style {
+      section,
+      section + hgroup {
+        gap: 3rem;
+      }
+      section + hgroup {
+        p {
+          font-size: 3rem;
+          line-height: 3rem;
         }
       }
     }
