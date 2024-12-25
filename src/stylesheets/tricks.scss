@@ -134,6 +134,71 @@ body.tricks {
 }
 
 body.tricks1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img.coverMini {
+    margin: 9vw 3.5vw 0 3.5vw;
+    border-radius: 0.5vw;
+  }
+  .tricksHead,
+  .tricksOne,
+  .tricksTwo,
+  .tricksThree {
+    width: 100%;
+    display: flex;
+    gap: 4vw;
+    padding: 4vw;
+    div {
+      p {
+        width: 100%;
+      }
+    }
+  }
+  .tricksHead {
+    h2 {
+      width: 70%;
+    }
+  }
+
+  .tricksOne {
+    hgroup {
+      width: 70%;
+      h3 {
+        margin-bottom: 1rem;
+      }
+      p {
+        width: 70%;
+      }
+    }
+  }
+  .tricksTwo {
+    section {
+      img {
+        width: 90%;
+      }
+    }
+  }
+
+  .tricksThree {
+    display: flex;
+    flex-direction: column;
+    section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      div {
+        section {
+          p {
+            width: auto;
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 @media screen and (max-width: 500px) {
   body.tricks {
@@ -194,6 +259,54 @@ body.tricks1 {
         width: 100%;
         justify-content: center;
         margin-top: 2vw;
+      }
+    }
+  }
+
+  body.tricks1 {
+    img.coverMini {
+      margin-left: 50vw;
+    }
+    .tricksHead,
+    .tricksOne,
+    .tricksTwo,
+    .tricksThree {
+      div:nth-child(1) {
+        display: none;
+      }
+    }
+    .tricksOne {
+      hgroup {
+        width: 100%;
+        p {
+          width: 90%;
+        }
+      }
+    }
+
+    .tricksTwo {
+      section {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .tricksThree {
+      flex-direction: column;
+
+      section {
+        flex-direction: column;
+        gap: 10vw;
+        align-items: center;
+        div {
+          width: 98%;
+          p {
+            width: 100%;
+          }
+        }
+        img {
+          width: 100%;
+        }
       }
     }
   }

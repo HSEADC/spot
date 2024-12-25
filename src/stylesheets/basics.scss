@@ -303,7 +303,7 @@ body {
     flex-direction: column;
     margin-top: 0;
     align-items: center;
-    div:nth-child(1) {
+    a:nth-child(1) {
       background-color: var(--black);
       width: 8.2%;
       height: 4.1vw;
@@ -316,6 +316,16 @@ body {
       img {
         width: 35%;
         height: auto;
+      }
+    }
+    div:nth-child(1) {
+      width: 11%;
+      margin-left: 89%;
+      background-color: var(--black);
+      padding: 1vw;
+
+      img {
+        width: 70%;
       }
     }
 
