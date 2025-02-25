@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body.styleguide {
   background-color: var(--white);
   width: 100%;
@@ -8,6 +11,14 @@ body.styleguide {
     font-weight: 900;
     color: var(--black);
     text-transform: none;
+    width: 24vw;
+    font-weight: 900;
+    text-transform: none;
+    margin-top: 0;
+    color: var(--black);
+    font-family: benzin-bold;
+    font-size: 1.625rem;
+    line-height: 3.7rem;
   }
   h2 {
     font-size: 1rem;
@@ -61,6 +72,7 @@ body.styleguide {
       color: var(--white);
       width: 100%;
       text-align: start;
+      display: flex;
     }
     a:nth-child(5) {
       padding: 0;

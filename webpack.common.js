@@ -125,6 +125,11 @@ module.exports = {
       template: './src/tips/tips1.html',
       filename: './tips/tips1.html'
     }),
+    // Components
+    new HtmlWebpackPlugin({
+      template: './src/components.html',
+      filename: './components.html'
+    }),
 
     // // Section 'Tips' articles
     // new HtmlWebpackPlugin({

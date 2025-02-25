@@ -1,0 +1,120 @@
+/*
+WRAPPERS
+_________________________________________________________________________________________
+*/
+
+.W_TricksMainHeader {
+  margin: 0 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.W_BannerQuote {
+  display: flex;
+  align-items: center;
+  height: 30vh;
+
+  p {
+    color: var(--white);
+    margin-left: 8%;
+
+    b {
+      color: var(--yellow);
+    }
+  }
+}
+
+.W_BannerNumbers {
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  height: 30vh;
+}
+
+.W_BannerQuestion {
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  padding-left: 8%;
+
+  p {
+    color: var(--white);
+  }
+}
+
+.W_BannerSkateboards {
+  display: flex;
+  align-items: center;
+  height: 40vh;
+  justify-content: center;
+
+  p {
+    color: var(--white);
+  }
+}
+
+.W_BannerCTA {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 30vh;
+  padding-left: 8%;
+  gap: 15px;
+
+  h2 {
+    color: var(--white);
+    width: 55%;
+  }
+}
+
+.W_LocationMainHeader {
+  margin: 0 30px;
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 50px 0;
+
+  .M_TricksHeaderColumn {
+    margin: 0 0 4% 8%;
+    h1 {
+      color: var(--white);
+    }
+  }
+}
+
+.W_Menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: fit-content;
+}
+
+.W_LocationCardData {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px;
+}
+
+.W_LocationTextWithHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 35%;
+  .A_BodyText {
+    color: var(--text);
+  }
+}
+
+.W_FooterMenuLogo {
+  display: flex;
+  gap: 80px;
+}
+
+.W_HseAuthors {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

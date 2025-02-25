@@ -1,0 +1,84 @@
+/*
+MOLECULES
+_________________________________________________________________________________________
+*/
+
+.M_Fact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.M_TricksHeaderRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.M_TricksHeaderColumn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.M_TricksTextWithHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.M_MailInput {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.M_HeaderWithIcon {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.M_ItalicText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+
+  h3 {
+    color: var(--yellow);
+  }
+}
+
+.M_LocationCardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+  h4 {
+    color: var(--yellow);
+  }
+
+  p {
+    color: var(--white);
+  }
+}
+
+.M_ListedParagraph {
+  display: flex;
+  gap: 20px;
+  width: 45%;
+}
+
+.M_TestCardData {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
