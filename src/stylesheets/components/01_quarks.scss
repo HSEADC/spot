@@ -1,0 +1,126 @@
+/*
+QUARKS
+_________________________________________________________________________________________
+*/
+
+.Q_BgWhite {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.Q_BgYellow {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.Q_BgBlackTxtWhite {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.Q_BgBlackTxtYellow {
+  background-color: var(--black);
+  color: var(--yellow);
+}
+
+.Q_ButtonStroke {
+  background-color: none;
+  border: solid 1.5px var(--black);
+}
+
+.Q_Row {
+  gap: 10px;
+}
+
+.Q_Column {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Q_HeaderWidth {
+  width: 35%;
+}
+
+.Q_BodyTextWidth {
+  width: 60%;
+}
+
+.Q_TricksMainPhoto {
+  background-image: url(../../images/components/01_Quarks/tricks_main_photo.webp);
+  border-radius: 50px 0;
+  width: 100%;
+  height: 60vh;
+  background-size: contain;
+}
+
+.Q_BannerPattern {
+  background-image: url(../../images/components/01_Quarks/banner_pattern.webp);
+  width: 100%;
+  background-size: cover;
+}
+
+.Q_BannerQuestion {
+  background-image: url(../../images/components/01_Quarks/banner_question.webp);
+  width: 100%;
+  background-size: cover;
+  background-position: -270px;
+}
+
+.Q_BannerSkateboards {
+  background-image: url(../../images/components/01_Quarks/banner_skateboards.webp);
+  width: 100%;
+  background-size: cover;
+}
+
+.Q_LocationMainPhoto {
+  background-image: url(../../images/components/01_Quarks/location_main_photo.webp);
+  background-size: cover;
+}
+
+.Q_TricksPhoto1 {
+  background-image: url(../../images/components/01_Quarks/tricks_photo_1.webp);
+  background-size: cover;
+  border-radius: 50px 0;
+  height: 60vh;
+  width: 40%;
+}
+
+.Q_TricksPhoto2 {
+  background-image: url(../../images/components/01_Quarks/tricks_photo_2.webp);
+  background-size: cover;
+  border-radius: 50px 0;
+  height: 60vh;
+  width: 60%;
+}
+
+.Q_CardScooter {
+  background-image: url(../../images/components/01_Quarks/card_scooter.webp);
+  background-size: cover;
+  border-radius: 50px 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+.Q_CardSkateboard {
+  background-image: url(../../images/components/01_Quarks/card_skateboard.webp);
+  background-size: cover;
+  border-radius: 50px 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+.Q_CardBMX {
+  background-image: url(../../images/components/01_Quarks/card_bmx.webp);
+  background-size: cover;
+  border-radius: 50px 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+.Q_FooterBg {
+  background-image: url(../../images/components/01_Quarks/footer_bg.webp);
+  background-size: cover;
+}
