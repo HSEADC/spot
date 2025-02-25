@@ -11,6 +11,7 @@
 @import 'stylesheets/spots.scss';
 @import 'stylesheets/styleguide.scss';
 @import 'stylesheets/footer.scss';
+@import 'stylesheets/components.scss';
 /* Components */
 @import 'stylesheets/components/01_quarks.scss';
 @import 'stylesheets/components/02_atoms.scss';

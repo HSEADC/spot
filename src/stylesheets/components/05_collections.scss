@@ -1,0 +1,77 @@
+/*
+COLLECTIONS
+_________________________________________________________________________________________
+*/
+
+.C_Tags {
+  display: flex;
+}
+
+.C_Facts {
+  display: flex;
+  gap: 80px;
+  margin: 0 8%;
+}
+
+.C_HeaderMenuSections {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+  *:hover {
+    text-decoration: underline 2px;
+    cursor: pointer;
+  }
+}
+
+.C_HeaderMenuSectionsFooter {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+  * {
+    color: var(--white);
+  }
+
+  *:hover {
+    text-decoration: underline 2px;
+    cursor: pointer;
+  }
+}
+
+.C_TricksPhotos {
+  width: 100%;
+  padding: 0 8%;
+  display: flex;
+  gap: 20px;
+}
+
+.C_Social {
+  display: flex;
+  gap: 20px;
+}
+
+.C_ListedParagrapgh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.C_Cards {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin: 30px;
+}
+
+.C_Authors {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+
+  p {
+    color: var(--white);
+  }
+}

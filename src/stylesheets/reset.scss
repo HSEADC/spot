@@ -42,7 +42,6 @@ sub,
 sup,
 tt,
 var,
-b,
 u,
 i,
 center,
@@ -83,7 +82,9 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+button,
+input {
   margin: 0;
   padding: 0;
   border: 0;
