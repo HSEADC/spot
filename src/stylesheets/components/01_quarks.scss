@@ -119,7 +119,26 @@ ________________________________________________________________________________
   height: 100%;
   background-position: center;
 }
-
+.Q_SectionHeaderTricks {
+  background-image: url(../../images/components/01_Quarks/Q_MainPhotoTricks.webp);
+  background-size: cover;
+  background-position: center;
+}
+.Q_SectionHeaderTips {
+  background-image: url(../../images/components/01_Quarks/Q_MainPhotoTips.webp);
+  background-size: cover;
+  background-position: center;
+}
+.Q_SectionHeaderSpots {
+  background-image: url(../../images/components/01_Quarks/Q_MainPhotoSpots.webp);
+  background-size: cover;
+  background-position: center;
+}
+.Q_SectionHeaderFun {
+  background-image: url(../../images/components/01_Quarks/Q_MainPhotoFun.webp);
+  background-size: cover;
+  background-position: center;
+}
 .Q_FooterBg {
   background-image: url(../../images/components/01_Quarks/footer_bg.webp);
   background-size: cover;

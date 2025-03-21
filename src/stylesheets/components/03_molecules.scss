@@ -85,8 +85,9 @@ ________________________________________________________________________________
 .M_TrickTags {
   display: flex;
   width: 80%;
-  flex-direction: column;
-  justify-content: center;
+  height: 1.5rem;
+  flex-direction: row;
+  justify-content: start;
   align-items: flex-start;
   gap: 0.3125rem;
 }

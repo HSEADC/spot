@@ -352,6 +352,12 @@ body {
     }
   }
 }
+
+.W_HeaderWithFilter {
+  .A_Header1 {
+    color: var(--black);
+  }
+}
 @media screen and (max-width: 500px) {
   nav {
     display: none;

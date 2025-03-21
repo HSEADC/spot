@@ -118,3 +118,19 @@ ________________________________________________________________________________
   justify-content: space-between;
   align-items: flex-end;
 }
+/*start*/
+.W_SectionHeader {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.W_HeaderWithFilter {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.125rem;
+}

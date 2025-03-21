@@ -34,6 +34,8 @@
       </button>
       <button class="A_Button A_TextButton Q_ButtonStroke">Подписаться</button>
       <button class="A_Button A_TextButton Q_BgYellow">Подписаться</button>
+      <div class="A_FilterTag">Все</div>
+      <div class="A_FilterTag active">Скутер</div>
       <img src="images/components/02_Atoms/icon_ok.webp" class="A_Icons" />
       <img src="images/components/02_Atoms/icon_idea.webp" class="A_Icons" />
       <img src="images/components/02_Atoms/icon_smile.webp" class="A_Icons" />
@@ -135,6 +137,15 @@
     <!-- -----------ВРЭППЕРЫ------------ -->
     <section class="componentss">
       <h1 class="A_Header1, components_headers">Wrappers</h1>
+      <div class="W_HeaderWithFilter">
+        <h1 class="A_Header1">Трюки</h1>
+        <div class="C_FilterTags">
+          <div class="A_FilterTag active">Все</div>
+          <div class="A_FilterTag">Скейт</div>
+          <div class="A_FilterTag">BMX</div>
+          <div class="A_FilterTag">Скутер</div>
+        </div>
+      </div>
       <div class="W_TricksMainHeader">
         <div class="M_TricksHeaderRow">
           <h1 class="A_Header1">Олли</h1>
@@ -144,6 +155,12 @@
           </div>
         </div>
         <div class="Q_TricksMainPhoto"></div>
+      </div>
+      <div class="W_SectionHeader Q_SectionHeaderTricks">
+        <h1 class="A_Header1">Трюки</h1>
+      </div>
+      <div class="W_HeaderWithFilter">
+        <h1 class="A_Header1">Трюки</h1>
       </div>
       <div class="Q_BannerPattern W_BannerQuote">
         <h2 class="A_Quote">
@@ -292,6 +309,12 @@
     <!-- -----------КОЛЛЕКЦИИ------------ -->
     <section class="componentss">
       <h1 class="A_Header1, components_headers">Collections</h1>
+      <div class="C_FilterTags">
+        <div class="A_FilterTag active">Все</div>
+        <div class="A_FilterTag">Скейт</div>
+        <div class="A_FilterTag">BMX</div>
+        <div class="A_FilterTag">Скутер</div>
+      </div>
       <div class="C_Tags Q_Row">
         <tag class="A_Tag Q_BgYellow">Средний</tag>
         <tag class="A_Tag Q_BgYellow">Скейт</tag>
@@ -404,26 +427,26 @@
         </div>
       </div>
       <div class="C_Cards">
-        <div class="Q_CardScooter O_TrickCard">
+        <div class="O_TrickCard Q_CardSkateboard">
           <div class="M_TrickTags">
-            <div class="A_LevelIconMid"></div>
+            <div class="A_LevelIcon A_LevelIconEasy"></div>
+            <p class="A_BodyText">Средний</p>
+          </div>
+          <h4 class="A_HeaderCards">Кикфлип</h4>
+        </div>
+        <div class="O_TrickCard Q_CardBMX">
+          <div class="M_TrickTags">
+            <div class="A_LevelIcon A_LevelIconHard"></div>
+            <p class="A_BodyText">Средний</p>
+          </div>
+          <h4 class="A_HeaderCards">Барспин</h4>
+        </div>
+        <div class="O_TrickCard Q_CardScooter">
+          <div class="M_TrickTags">
+            <div class="A_LevelIcon A_LevelIconMid"></div>
             <p class="A_BodyText">Средний</p>
           </div>
           <h4 class="A_HeaderCards">Тэйлвип</h4>
-        </div>
-        <div class="Q_CardSkateboard O_TrickCard">
-          <h4 class="A_HeaderCards">Кикфлип</h4>
-          <div class="C_Tags Q_Column">
-            <tag class="A_Tag Q_BgYellow">Скейт</tag>
-            <tag class="A_Tag Q_BgYellow">Средний</tag>
-          </div>
-        </div>
-        <div class="Q_CardBMX O_TrickCard">
-          <h4 class="A_HeaderCards">Barspin</h4>
-          <div class="C_Tags Q_Column">
-            <tag class="A_Tag Q_BgYellow">Bmx</tag>
-            <tag class="A_Tag Q_BgYellow">Средний</tag>
-          </div>
         </div>
       </div>
       <div class="C_Cards">

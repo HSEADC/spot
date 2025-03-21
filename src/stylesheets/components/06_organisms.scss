@@ -13,14 +13,21 @@ ________________________________________________________________________________
 }
 
 .O_TrickCard {
-  width: 31%;
-  height: 25vh;
+  width: 31.9%;
+  min-height: 35vh;
   background-color: var(--black);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 3.12rem 1.88rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.8rem;
 
+  .M_TrickTags {
+    .A_BodyText {
+      color: var(--yellow);
+    }
+  }
   .A_HeaderCards {
     color: var(--white);
   }

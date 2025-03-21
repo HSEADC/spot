@@ -16,7 +16,7 @@ ________________________________________________________________________________
   font-family: 'Benzin-Bold', sans-serif;
   font-size: 4.6rem;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--white);
   letter-spacing: 3%;
   line-height: normal;
 }
@@ -51,7 +51,7 @@ ________________________________________________________________________________
 
 .A_HeaderCards {
   font-family: 'Benzin-Bold', sans-serif;
-  font-size: 1.7rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: var(--black);
   letter-spacing: 3%;
@@ -167,15 +167,49 @@ ________________________________________________________________________________
   width: 25px;
   height: 25px;
 }
-
-.A_LevelIconMid {
-  background-image: url('../images/components/02_Atoms/A_LevelIconMid.webp');
-  background-size: cover;
-  width: 100%;
+/*start*/
+.A_LevelIcon {
+  width: 10%;
   height: 100%;
+}
+.A_LevelIconEasy {
+  background-image: url(../../images/components/02_Atoms/A_LevelIconEasy.webp);
+  background-size: cover;
   background-position: center;
 }
-
+.A_LevelIconMid {
+  background-image: url(../../images/components/02_Atoms/A_LevelIconMid.webp);
+  background-size: cover;
+  background-position: center;
+}
+.A_LevelIconHard {
+  background-image: url(../../images/components/02_Atoms/A_LevelIconHard.webp);
+  background-size: cover;
+  background-position: center;
+}
+.A_FilterTag {
+  display: inline-flex;
+  padding: 0.875rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--grey, #6d6d6d);
+  width: fit-content;
+  color: var(--grey);
+  font-size: 1.125rem;
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-weight: 600;
+  &.active {
+    background-color: var(--grey);
+    color: var(--yellow);
+  }
+  &:hover {
+    background-color: var(--grey);
+    color: var(--yellow);
+  }
+}
 @media screen and (max-width: 500px) {
   .A_Header0 {
     font-size: 5.5rem;
