@@ -149,10 +149,11 @@ ________________________________________________________________________________
   background-position: center;
 }
 .Q_LogoWithTg {
-  width: 28.5%;
+  width: 26%;
   background-image: url(../../images/components/01_Quarks/Q_LogoWithTg.webp);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .Q_FooterBg {
   background-image: url(../../images/components/01_Quarks/footer_bg.webp);

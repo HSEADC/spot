@@ -10,51 +10,6 @@ body {
   scroll-behavior: smooth;
   background-color: var(--white);
 }
-nav {
-  position: sticky;
-  a:hover {
-    color: var(--yellow);
-  }
-  div {
-    display: flex;
-    gap: 4vw;
-    align-items: center;
-    .navFind ~ a {
-      color: var(--yellow);
-      background-color: var(--black);
-      padding: 1vw 2vw;
-      border-radius: 0.5vw;
-      text-align: center;
-    }
-  }
-  section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2vw;
-  }
-  a {
-    color: var(--black);
-    display: flex;
-
-    img {
-      width: 30%;
-    }
-  }
-
-  .navFind {
-    width: 2vw;
-    height: 2vw;
-    background-image: url('../images/searchIcon.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  a:nth-child(5):hover {
-    color: var(--white);
-  }
-}
 
 nav.navMobile {
   width: 90%;
