@@ -46,7 +46,7 @@ function filterAll() {
     let classList = tag.className.split(' ')
     if (tag.classList.contains('all')) {
       cards.forEach((card) => {
-        card.style.cssText = 'display: block;'
+        card.style.cssText = 'display: flex;'
       })
     }
   })
@@ -77,7 +77,7 @@ function filterByTag() {
   tagList.forEach((tagName) => {
     cards.forEach((card) => {
       if (card.classList.contains(tagName)) {
-        card.style.cssText = 'display: block;'
+        card.style.cssText = 'display: flex;'
       }
     })
   })

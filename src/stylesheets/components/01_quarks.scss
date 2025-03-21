@@ -100,6 +100,9 @@ ________________________________________________________________________________
   width: 100%;
   height: 100%;
   background-position: center;
+  &:hover {
+    background-image: url(../../images/components/01_Quarks/card_scooterYellow.webp);
+  }
 }
 
 .Q_CardSkateboard {
@@ -109,6 +112,9 @@ ________________________________________________________________________________
   width: 100%;
   height: 100%;
   background-position: center;
+  &:hover {
+    background-image: url(../../images/components/01_Quarks/card_skaetboardYellow.webp);
+  }
 }
 
 .Q_CardBMX {
@@ -118,6 +124,9 @@ ________________________________________________________________________________
   width: 100%;
   height: 100%;
   background-position: center;
+  &:hover {
+    background-image: url(../../images/components/01_Quarks/card_bmxYellow.webp);
+  }
 }
 .Q_SectionHeaderTricks {
   background-image: url(../../images/components/01_Quarks/Q_MainPhotoTricks.webp);
