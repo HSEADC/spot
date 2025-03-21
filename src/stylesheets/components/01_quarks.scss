@@ -113,7 +113,7 @@ ________________________________________________________________________________
   height: 100%;
   background-position: center;
   &:hover {
-    background-image: url(../../images/components/01_Quarks/card_skaetboardYellow.webp);
+    background-image: url(../../images/components/01_Quarks/card_skateboardYellow.webp);
   }
 }
 
@@ -145,6 +145,12 @@ ________________________________________________________________________________
 }
 .Q_SectionHeaderFun {
   background-image: url(../../images/components/01_Quarks/Q_MainPhotoFun.webp);
+  background-size: cover;
+  background-position: center;
+}
+.Q_LogoWithTg {
+  width: 28.5%;
+  background-image: url(../../images/components/01_Quarks/Q_LogoWithTg.webp);
   background-size: cover;
   background-position: center;
 }

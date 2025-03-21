@@ -55,7 +55,7 @@ ________________________________________________________________________________
   text-transform: uppercase;
   color: var(--black);
   letter-spacing: 3%;
-  line-height: 1.8rem;
+  line-height: 2.5rem;
 }
 
 .A_BodyText {
@@ -95,7 +95,20 @@ ________________________________________________________________________________
     }
   }
 }
-
+.A_ButtonSmall {
+  display: inline-flex;
+  padding: 0.625rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--white);
+  border-radius: 0.375rem;
+  color: var(--black, #1a1a1a);
+  font-family: 'Inter-Regular';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+}
 .A_FactText {
   font-family: 'Inter-Regular';
   font-size: 1.125rem;

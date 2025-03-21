@@ -91,3 +91,10 @@ ________________________________________________________________________________
   align-items: flex-start;
   gap: 0.3125rem;
 }
+.M_BannerTextWithButton {
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
