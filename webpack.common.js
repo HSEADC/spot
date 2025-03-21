@@ -89,7 +89,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/tricks.html',
       filename: './tricks.html',
-      chunks: ['filterTags']
+      chunks: ['index', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots.html',
