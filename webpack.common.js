@@ -9,7 +9,7 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    filterTags: './src/javascripts/filterTags.js'
+    filterTags: './src/js/filterTags.js'
   },
   output: {
     filename: '[name].js',
