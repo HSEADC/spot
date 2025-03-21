@@ -168,6 +168,14 @@ ________________________________________________________________________________
   height: 25px;
 }
 
+.A_LevelIconMid {
+  background-image: url('images/components/02_Atoms/A_LevelIconMid.webp');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
 @media screen and (max-width: 500px) {
   .A_Header0 {
     font-size: 5.5rem;

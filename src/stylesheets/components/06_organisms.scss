@@ -14,11 +14,12 @@ ________________________________________________________________________________
 
 .O_TrickCard {
   width: 31%;
-  height: 50vh;
+  height: 25vh;
+  background-color: var(--black);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px;
+  padding: 3.12rem 1.88rem;
 
   .A_HeaderCards {
     color: var(--white);

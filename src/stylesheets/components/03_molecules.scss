@@ -82,3 +82,11 @@ ________________________________________________________________________________
   justify-content: space-between;
   height: 50%;
 }
+.M_TrickTags {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.3125rem;
+}
