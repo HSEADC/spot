@@ -4,12 +4,20 @@ ________________________________________________________________________________
 */
 
 .O_Header {
-  background-color: var(--white);
+  background-color: var(--black);
   display: flex;
   width: 100%;
   padding: 30px;
   justify-content: space-between;
   align-items: center;
+  padding: 1.6rem 3.125rem;
+  .W_Menu {
+    .C_HeaderMenuSections {
+      .A_TextButton {
+        color: var(--white);
+      }
+    }
+  }
 }
 
 .O_TrickCard {
