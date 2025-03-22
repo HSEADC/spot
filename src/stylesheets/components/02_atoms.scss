@@ -201,18 +201,21 @@ ________________________________________________________________________________
 }
 .A_LevelIconEasy {
   background-image: url(../../images/components/02_Atoms/A_LevelIconEasy.webp);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .A_LevelIconMid {
   background-image: url(../../images/components/02_Atoms/A_LevelIconMid.webp);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .A_LevelIconHard {
   background-image: url(../../images/components/02_Atoms/A_LevelIconHard.webp);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .A_FilterTag {
   display: inline-flex;

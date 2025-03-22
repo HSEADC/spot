@@ -25,10 +25,10 @@ ________________________________________________________________________________
   width: 31.5%;
   min-height: 32vh;
   background-color: var(--black);
-  display: flex;
   flex-direction: column;
-  padding: 3.12rem 1.88rem;
-  justify-content: center;
+  padding: 2rem 1.88rem;
+  display: flex;
+  justify-content: flex-end;
   align-items: flex-start;
   gap: 0.8rem;
 
@@ -37,13 +37,19 @@ ________________________________________________________________________________
       color: var(--yellow);
     }
   }
+
   .A_HeaderCards {
     color: var(--white);
+  }
+  &:hover {
+    .grey {
+      color: var(--grey);
+    }
   }
 }
 .O_SmallBanner {
   width: 80%;
-  height: 16.25rem;
+  min-height: 16.25rem;
   margin-left: 10%;
   margin-top: 5rem;
   margin-bottom: 5rem;
