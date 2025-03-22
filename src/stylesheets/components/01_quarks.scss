@@ -100,6 +100,8 @@ ________________________________________________________________________________
   width: 100%;
   height: 100%;
   background-position: center;
+  transition: background-image 0.2s ease-in-out, color 0.2s ease-in-out;
+
   &:hover {
     background-image: url(../../images/components/01_Quarks/card_scooterYellow.webp);
   }
@@ -111,6 +113,8 @@ ________________________________________________________________________________
   width: 100%;
   height: 100%;
   background-position: center;
+  transition: background-image 0.2s ease-in-out, color 0.2s ease-in-out;
+
   &:hover {
     background-image: url(../../images/components/01_Quarks/card_skateboardYellow.webp);
   }
@@ -123,6 +127,7 @@ ________________________________________________________________________________
   width: 100%;
   height: 100%;
   background-position: center;
+  transition: background-image 0.2s ease-in-out, color 0.2s ease-in-out;
   &:hover {
     background-image: url(../../images/components/01_Quarks/card_bmxYellow.webp);
   }

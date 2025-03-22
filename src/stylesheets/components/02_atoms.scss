@@ -108,6 +108,10 @@ ________________________________________________________________________________
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  &:hover {
+    background-color: var(--yellow);
+  }
 }
 .A_FactText {
   font-family: 'Inter-Regular';
@@ -127,7 +131,7 @@ ________________________________________________________________________________
 
 .A_Tag {
   font-family: 'Inter-Regular';
-  font-size: 1.125rem;
+  font-size: 0.8rem;
   text-align: center;
   width: fit-content;
   padding: 6px 24px;
@@ -246,6 +250,8 @@ ________________________________________________________________________________
   font-family: 'Inter-Regular';
   font-style: normal;
   font-weight: 600;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
   &.active {
     background-color: var(--grey);
     color: var(--yellow);
@@ -256,12 +262,14 @@ ________________________________________________________________________________
   }
 }
 .A_ArrowYellow {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   width: 10%;
   background-image: url(../../images/components/02_Atoms/A_ArrowYellow.webp);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 @media screen and (max-width: 500px) {
   .A_Header0 {

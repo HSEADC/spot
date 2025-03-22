@@ -13,9 +13,43 @@ ________________________________________________________________________________
   align-items: center;
   padding: 1.6rem 3.125rem;
   .W_Menu {
+    .A_ButtonSmall {
+      position: relative; /* Add this line */
+      display: inline-block; /* Ensures proper sizing */
+      color: black;
+      background-color: white;
+      cursor: pointer;
+      overflow: hidden; /* Ensures ::before stays within bounds */
+      transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+      &::before {
+        content: 'Гоу с нами!';
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: -100%; /* Start position (hidden) */
+        width: 100%;
+        height: 100%;
+        background-color: yellow;
+        transition: left 0.5s ease-in-out;
+        z-index: -1; /* Puts behind text */
+      }
+      &:hover {
+        color: black; /* Keep text visible */
+      }
+
+      &:hover::before {
+        left: 0; /* Slide in yellow color */
+        z-index: 1;
+      }
+    }
+
     .C_HeaderMenuSections {
       .A_TextButton {
         color: var(--white);
+        transition: text-decoration-color 0.2s ease-in-out,
+          color 0.2s ease-in-out;
         &:hover {
           text-decoration-line: underline;
           text-decoration-style: solid;
@@ -50,6 +84,7 @@ ________________________________________________________________________________
   }
   &:hover {
     .grey {
+      transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
       color: var(--grey);
     }
   }
@@ -94,7 +129,8 @@ ________________________________________________________________________________
 
   &:hover {
     .A_ArrowYellow {
-      display: block;
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
