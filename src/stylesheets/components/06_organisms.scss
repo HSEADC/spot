@@ -75,17 +75,18 @@ ________________________________________________________________________________
 }
 .O_LocationCard {
   width: 48%;
-  min-height: 35vh;
+  min-height: 45vh;
   display: flex;
   flex-direction: column;
   border-radius: 50px 0;
   overflow: hidden;
-  .Q_LocationCardPhoto {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  padding: 1.88rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  .A_BodyText {
+    color: var(--white);
   }
   .W_LocationCardInfo {
     .M_LocationCardHeader {
