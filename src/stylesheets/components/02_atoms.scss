@@ -135,10 +135,19 @@ ________________________________________________________________________________
   letter-spacing: 1%;
 }
 
-.A_Logo {
+.A_LogoYellow {
   width: 9.5rem;
   height: 1.2rem;
   background-image: url(../../images/logoYellow.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.A_LogoBlack {
+  width: 9.5rem;
+  height: 1.2rem;
+  background-image: url(../../images/logoDark.webp);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
