@@ -26,6 +26,15 @@ ________________________________________________________________________________
   min-height: 40vh;
   .O_FooterMenuLogoSocial {
     .W_FooterMenuLogo {
+      .A_TextButton {
+        color: var(--white);
+        &:hover {
+          text-decoration-line: underline;
+          text-decoration-style: solid;
+          text-decoration-skip-ink: auto;
+          text-decoration-color: var(--yellow);
+        }
+      }
       .A_LogoYellow {
         width: 10rem;
         height: 1.5rem;

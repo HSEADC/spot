@@ -73,14 +73,24 @@ ________________________________________________________________________________
   }
 }
 .O_LocationCard {
-  width: 31%;
-  height: fit-content;
+  width: 48%;
+  min-height: 35vh;
   display: flex;
   flex-direction: column;
   border-radius: 50px 0;
   overflow: hidden;
-  background-color: var(--black);
-  border: solid 1.5px var(--black);
+  justify-content: flex-end;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .W_LocationCardInfo {
+    .M_LocationCardHeader {
+      .A_HeaderCards {
+        color: var(--white);
+      }
+    }
+  }
 }
 
 .O_FunCard {
