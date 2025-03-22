@@ -255,6 +255,12 @@ ________________________________________________________________________________
     color: var(--yellow);
   }
 }
+.A_ArrowYellow {
+  background-image: url(../../images/components/02_Atoms/A_ArrowYellow.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 @media screen and (max-width: 500px) {
   .A_Header0 {
     font-size: 5.5rem;
