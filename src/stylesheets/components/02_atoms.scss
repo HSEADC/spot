@@ -155,8 +155,8 @@ ________________________________________________________________________________
 }
 
 .A_HseLogo {
-  width: 140px;
-  height: fit-content;
+  width: 10rem;
+  height: 4rem;
   background-image: url(../../images/components/02_Atoms/HSE_logo.webp);
   background-size: contain;
   background-position: center;
@@ -165,9 +165,19 @@ ________________________________________________________________________________
 }
 
 .A_SocialNetworks {
-  width: 40px;
+  width: 2rem;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
-
+.tg {
+  background-image: url(../../images/components/02_Atoms/tg.webp);
+}
+.vk {
+  background-image: url(../../images/components/02_Atoms/vk.webp);
+}
 .A_Icons {
   border-radius: 10px 0;
   width: 40px;
