@@ -93,7 +93,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/spots.html',
-      filename: './spots.html'
+      filename: './spots.html',
+      chunks: ['index', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill.html',

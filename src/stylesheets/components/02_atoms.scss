@@ -130,7 +130,7 @@ ________________________________________________________________________________
   font-size: 1.125rem;
   text-align: center;
   width: fit-content;
-  padding: 8px 24px;
+  padding: 6px 24px;
   border-radius: 0.18rem;
   letter-spacing: 1%;
 }
@@ -155,7 +155,7 @@ ________________________________________________________________________________
 }
 
 .A_HseLogo {
-  width: 10rem;
+  width: 8rem;
   height: 4rem;
   background-image: url(../../images/components/02_Atoms/HSE_logo.webp);
   background-size: contain;
@@ -256,6 +256,8 @@ ________________________________________________________________________________
   }
 }
 .A_ArrowYellow {
+  display: none;
+  width: 10%;
   background-image: url(../../images/components/02_Atoms/A_ArrowYellow.webp);
   background-size: contain;
   background-position: center;
