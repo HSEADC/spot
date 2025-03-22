@@ -37,6 +37,7 @@ ________________________________________________________________________________
   justify-content: flex-end;
   align-items: flex-start;
   gap: 0.8rem;
+  border-radius: 50px 0;
 
   .M_TrickTags {
     .A_BodyText {
@@ -79,10 +80,12 @@ ________________________________________________________________________________
   flex-direction: column;
   border-radius: 50px 0;
   overflow: hidden;
-  justify-content: flex-end;
   .Q_LocationCardPhoto {
     width: 100%;
     height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .W_LocationCardInfo {
     .M_LocationCardHeader {
