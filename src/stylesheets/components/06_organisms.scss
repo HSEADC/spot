@@ -156,8 +156,7 @@ ________________________________________________________________________________
   }
 }
 
-.O_TestCard {
-  width: 31%;
+.O_ArticleCard {
   height: 55vh;
   display: flex;
   flex-direction: column;
@@ -166,7 +165,7 @@ ________________________________________________________________________________
   background-color: var(--white);
   border: solid 1.5px var(--black);
 
-  img {
+  .A_TipsCardPhoto {
     border-radius: 40px 0;
   }
 }
