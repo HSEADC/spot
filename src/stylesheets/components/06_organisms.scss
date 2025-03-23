@@ -157,7 +157,6 @@ ________________________________________________________________________________
 }
 
 .O_ArticleCard {
-  padding: 1.88rem;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -167,6 +166,7 @@ ________________________________________________________________________________
   justify-content: flex-start;
   .A_BodyText {
     color: var(--grey);
+    font-style: italic;
   }
 }
 

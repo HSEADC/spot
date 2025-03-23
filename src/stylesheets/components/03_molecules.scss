@@ -75,6 +75,8 @@ ________________________________________________________________________________
   width: 45%;
 }
 .M_ArticleCardData {
+  padding: 1.88rem;
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -85,6 +87,7 @@ ________________________________________________________________________________
   justify-content: space-between;
   height: 50%;
   gap: 0.8rem;
+  overflow: hidden;
 }
 .M_ArticleCardTags {
   display: flex;
@@ -94,7 +97,7 @@ ________________________________________________________________________________
 .M_Time {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.6rem;
   align-items: center;
 }
 .M_TrickTags {
