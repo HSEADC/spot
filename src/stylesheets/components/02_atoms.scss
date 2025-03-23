@@ -264,7 +264,7 @@ ________________________________________________________________________________
 .A_ArrowYellow {
   opacity: 0;
   visibility: hidden;
-  width: 10%;
+  width: 2rem;
   background-image: url(../../images/components/02_Atoms/A_ArrowYellow.webp);
   background-size: contain;
   background-position: center;
@@ -277,6 +277,38 @@ ________________________________________________________________________________
 .A_IconTimer {
   width: 1rem;
   height: 1.2rem;
+}
+.A_IconCover {
+  width: 7%;
+  height: 6rem;
+  margin-left: 3.125rem;
+  margin-top: -3.125rem;
+  background-color: var(--yellow);
+  border-radius: 1.125rem 0;
+}
+.A_IconCoverSkate {
+  background-image: url(../../images/components/02_Atoms/A_IconCoverSkate.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.A_IconCoverLocation {
+  background-image: url(../../images/components/02_Atoms/A_IconCoverLocation.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.A_IconCoverFile {
+  background-image: url(../../images/components/02_Atoms/A_IconCoverFile.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.A_IconCoverSmile {
+  background-image: url(../../images/components/02_Atoms/A_IconCoverSmile.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 500px) {
   .A_Header0 {

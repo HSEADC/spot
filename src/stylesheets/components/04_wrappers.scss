@@ -3,13 +3,6 @@ WRAPPERS
 _________________________________________________________________________________________
 */
 
-.W_TricksMainHeader {
-  margin: 0 8%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
 .W_BannerQuote {
   display: flex;
   align-items: center;
@@ -120,20 +113,17 @@ ________________________________________________________________________________
   align-items: flex-end;
 }
 /*start*/
-.W_SectionHeader {
+.W_SectionCover {
   width: 100%;
-  min-height: 60vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 .W_HeaderWithFilter {
-  margin-top: 3rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3.125rem 3.125rem 2rem 3.125rem;
+  padding: 2rem 3.125rem 2rem 3.125rem;
 }
 .W_TrickTagsName {
   display: flex;

@@ -144,29 +144,44 @@ ________________________________________________________________________________
   width: 31.5%;
 }
 .O_FunCard {
-  width: 31%;
-  height: 35vh;
+  width: 31.5%;
+  min-height: 35vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-
+  border-radius: 50px 0;
+  overflow: hidden;
+  padding: 1.88rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  text-align: left;
+  gap: 10px;
   .A_HeaderCards {
     color: var(--white);
+  }
+  &:hover {
+    .A_ArrowYellow {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
 
 .O_ArticleCard {
   min-height: 50vh;
-  display: flex;
   flex-direction: column;
   border-radius: 50px 0;
   overflow: hidden;
   background-color: var(--midgrey);
   justify-content: flex-start;
+  transition: box-shadow 0.3s ease-in-out;
   .A_BodyText {
     color: var(--grey);
     font-style: italic;
+  }
+  &:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
   }
 }
 
