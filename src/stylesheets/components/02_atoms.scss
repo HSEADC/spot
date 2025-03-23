@@ -271,6 +271,13 @@ ________________________________________________________________________________
   background-repeat: no-repeat;
   transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
 }
+.A_ArticleCardPhoto {
+  width: 100%;
+}
+.A_IconTimer {
+  width: 1.4rem;
+  height: 1.6rem;
+}
 @media screen and (max-width: 500px) {
   .A_Header0 {
     font-size: 5.5rem;

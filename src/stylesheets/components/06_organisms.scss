@@ -157,16 +157,16 @@ ________________________________________________________________________________
 }
 
 .O_ArticleCard {
-  height: 55vh;
+  padding: 1.88rem;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   border-radius: 50px 0;
   overflow: hidden;
-  background-color: var(--white);
-  border: solid 1.5px var(--black);
-
-  .A_TipsCardPhoto {
-    border-radius: 40px 0;
+  background-color: var(--midgrey);
+  justify-content: flex-start;
+  .A_BodyText {
+    color: var(--grey);
   }
 }
 

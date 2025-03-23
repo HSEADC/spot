@@ -74,13 +74,28 @@ ________________________________________________________________________________
   gap: 20px;
   width: 45%;
 }
-
 .M_ArticleCardData {
-  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.M_ArticleHeaderWithDescription {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 50%;
+  gap: 0.8rem;
+}
+.M_ArticleCardTags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.M_Time {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
 }
 .M_TrickTags {
   display: flex;
