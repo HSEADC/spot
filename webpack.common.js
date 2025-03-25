@@ -189,8 +189,32 @@ module.exports = {
     }),
     // Section 'Chill' articles
     new HtmlWebpackPlugin({
-      template: './src/chill/chill1.html',
-      filename: './chill/chill1.html'
+      template: './src/chill/funSlangs1.html',
+      filename: './chill/funSlangs1.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/funSlangs2.html',
+      filename: './chill/funSlangs2.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/funSlangs3.html',
+      filename: './chill/funSlangs3.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/funSlangs4.html',
+      filename: './chill/funSlangs4.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/funSlangs5.html',
+      filename: './chill/funSlangs5.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/funSlangs6.html',
+      filename: './chill/funSlangs6.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/funSlangs7.html',
+      filename: './chill/funSlangs7.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/tips/tips1.html',
