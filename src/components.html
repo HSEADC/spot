@@ -20,20 +20,21 @@
       <p class="A_FactText">год изобретения олли Аланом «Олли» Гельфандом</p>
       <tag class="A_Tag Q_BgWhite">Средний</tag>
       <tag class="A_Tag Q_BgYellow">Средний</tag>
-      <tag class="A_Tag Q_BgYellow">Средний</tag>
       <h2 class="A_Quote">
         «Если ты умеешь делать олли, ты&nbspможешь всё» — Тони Хок
       </h2>
-      <img src="images/components/02_Atoms/logo_black.webp" class="A_Logo" />
-      <img src="images/components/02_Atoms/logo_yellow.webp" class="A_Logo" />
-      <img src="images/components/02_Atoms/HSE_logo.webp" class="A_HseLogo" />
-      <img src="images/components/02_Atoms/tg.webp" class="A_SocialNetworks" />
-      <img src="images/components/02_Atoms/vk.webp" class="A_SocialNetworks" />
+      <div class="A_LogoYellow"></div>
+      <div class="A_LogoBlack"></div>
+      <div class="A_HseLogo"></div>
+      <div class="A_SocialNetworks tg"></div>
+      <div class="A_SocialNetworks vk"></div>
       <button class="A_Button A_TextButton Q_BgBlackTxtWhite">
         Подписаться
       </button>
       <button class="A_Button A_TextButton Q_ButtonStroke">Подписаться</button>
       <button class="A_Button A_TextButton Q_BgYellow">Подписаться</button>
+      <div class="A_FilterTag">Все</div>
+      <div class="A_FilterTag active">Скутер</div>
       <img src="images/components/02_Atoms/icon_ok.webp" class="A_Icons" />
       <img src="images/components/02_Atoms/icon_idea.webp" class="A_Icons" />
       <img src="images/components/02_Atoms/icon_smile.webp" class="A_Icons" />
@@ -73,10 +74,10 @@
           Этот трюк является основой для большинства других элементов, таких как
           флипы, грайнды и&nbsp;граб-трюки. Освоив олли, вы&nbsp;откроете дверь
           в&nbsp;мир уличного катания и&nbsp;скейтпарков. Изобретателем олли
-          считается Алан &laquo;Олли&raquo; Гельфанд, который в&nbsp;конце
-          1970-х придумал, как поднимать скейтборд в&nbsp;воздух, используя
-          щелчок по&nbsp;тейлу. Позже Родни Маллен адаптировал этот трюк для
-          уличного катания, сделав его базой для стрит-стиля.
+          считается Алан &laquo;Олли&raquo; Гельфанд, которыйв&nbsp;конце 1970-х
+          придумал, как поднимать скейтборд в&nbsp;воздух, используя щелчок
+          по&nbsp;тейлу. Позже Родни Маллен адаптировал этот трюк для уличного
+          катания, сделав его базой для стрит-стиля.
         </p>
       </div>
       <div class="M_ButtonTextBodyText">
@@ -135,15 +136,26 @@
     <!-- -----------ВРЭППЕРЫ------------ -->
     <section class="componentss">
       <h1 class="A_Header1, components_headers">Wrappers</h1>
-      <div class="W_TricksMainHeader">
-        <div class="M_TricksHeaderRow">
-          <h1 class="A_Header1">Олли</h1>
-          <div class="C_Tags Q_Row">
-            <tag class="A_Tag Q_BgYellow">Средний</tag>
-            <tag class="A_Tag Q_BgYellow">Скейт</tag>
-          </div>
+      <div class="W_HeaderWithFilter">
+        <h1 class="A_Header1">Трюки</h1>
+        <div class="C_FilterTags">
+          <div class="A_FilterTag active">Все</div>
+          <div class="A_FilterTag">Скейт</div>
+          <div class="A_FilterTag">BMX</div>
+          <div class="A_FilterTag">Скутер</div>
         </div>
-        <div class="Q_TricksMainPhoto"></div>
+      </div>
+
+      <div class="W_SectionCover">
+        <img
+          src="images/components/01_Quarks/Q_MainPhotoTricks.webp"
+          alt=""
+          class="Q_SectionHeaderPhoto"
+        />
+        <div class="A_IconCover A_IconCoverSkate"></div>
+      </div>
+      <div class="W_HeaderWithFilter">
+        <h1 class="A_Header1">Трюки</h1>
       </div>
       <div class="Q_BannerPattern W_BannerQuote">
         <h2 class="A_Quote">
@@ -266,13 +278,24 @@
         </p>
       </div>
       <div class="W_FooterMenuLogo">
-        <img src="images/components/02_Atoms/logo_yellow.webp" class="A_Logo" />
+        <a href="https://hseadc.github.io/spot/" class="A_LogoYellow"></a>
         <div class="C_HeaderMenuSectionsFooter">
-          <p class="A_TextButton">Главная</p>
-          <p class="A_TextButton">Локации</p>
-          <p class="A_TextButton">Полезно</p>
-          <p class="A_TextButton">Фан</p>
-          <p class="A_TextButton">О нас</p>
+          <a
+            href="https://hseadc.github.io/spot/tricks.html"
+            class="A_TextButton"
+            >Трюки</a
+          >
+          <a
+            href="https://hseadc.github.io/spot/spots.html"
+            class="A_TextButton"
+            >Локации</a
+          >
+          <a href="https://hseadc.github.io/spot/tips.html" class="A_TextButton"
+            >Статьи</a
+          >
+          <a href="https://hseadc.github.io/spot/fun.html" class="A_TextButton"
+            >Фан</a
+          >
         </div>
       </div>
       <div class="W_HseAuthors">
@@ -292,6 +315,12 @@
     <!-- -----------КОЛЛЕКЦИИ------------ -->
     <section class="componentss">
       <h1 class="A_Header1, components_headers">Collections</h1>
+      <div class="C_FilterTags">
+        <div class="A_FilterTag active">Все</div>
+        <div class="A_FilterTag">Скейт</div>
+        <div class="A_FilterTag">BMX</div>
+        <div class="A_FilterTag">Скутер</div>
+      </div>
       <div class="C_Tags Q_Row">
         <tag class="A_Tag Q_BgYellow">Средний</tag>
         <tag class="A_Tag Q_BgYellow">Скейт</tag>
@@ -403,87 +432,109 @@
           </p>
         </div>
       </div>
+
       <div class="C_Cards">
-        <div class="Q_CardScooter O_TrickCard">
-          <h4 class="A_HeaderCards">Тэйлвип</h4>
-          <div class="C_Tags Q_Column">
-            <tag class="A_Tag Q_BgYellow">Скутер</tag>
-            <tag class="A_Tag Q_BgYellow">Средний</tag>
+        <div class="O_TrickCard Q_CardSkateboard">
+          <div class="W_TrickTagsName">
+            <div class="M_TrickTags">
+              <div class="A_LevelIcon A_LevelIconEasy"></div>
+              <p class="A_BodyText">Средний</p>
+            </div>
+            <h4 class="A_HeaderCards">Кикфлип</h4>
+          </div>
+          <p class="A_BodyText grey">Развернуть</p>
+        </div>
+        <div class="O_TrickCard Q_CardBMX">
+          <div class="W_TrickTagsName">
+            <div class="M_TrickTags">
+              <div class="A_LevelIcon A_LevelIconEasy"></div>
+              <p class="A_BodyText">Средний</p>
+            </div>
+            <h4 class="A_HeaderCards">Кикфлип</h4>
+          </div>
+          <p class="A_BodyText grey">Развернуть</p>
+        </div>
+        <div class="O_TrickCard Q_CardScooter">
+          <div class="W_TrickTagsName">
+            <div class="M_TrickTags">
+              <div class="A_LevelIcon A_LevelIconEasy"></div>
+              <p class="A_BodyText">Средний</p>
+            </div>
+            <h4 class="A_HeaderCards">Кикфлип</h4>
+          </div>
+          <p class="A_BodyText grey">Развернуть</p>
+        </div>
+      </div>
+
+      <div class="C_Cards">
+        <div class="O_LocationCard O_Small Q_LocSmall1">
+          <div class="W_LocationCardInfo">
+            <div class="M_LocationCardHeader">
+              <tag class="A_Tag Q_BgYellow">Новички</tag>
+              <h4 class="A_HeaderCards">Скейт парк «ЦСКА»</h4>
+            </div>
+            <div class="W_AddressInfo">
+              <p class="A_BodyText">Москва, ул. Ходынский бульвар, 8</p>
+              <div class="M_MetroInfoArrow">
+                <div class="W_MetroInfo">
+                  <img
+                    src="images/components/02_Atoms/A_Metro1.svg"
+                    alt=""
+                    class="Q_MetroLogo"
+                  />
+                  <p class="A_BodyText">ЦСКА</p>
+                </div>
+                <div class="A_ArrowYellow"></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="Q_CardSkateboard O_TrickCard">
-          <h4 class="A_HeaderCards">Кикфлип</h4>
-          <div class="C_Tags Q_Column">
-            <tag class="A_Tag Q_BgYellow">Скейт</tag>
-            <tag class="A_Tag Q_BgYellow">Средний</tag>
+        <div class="O_LocationCard O_Small Q_LocSmall1">
+          <div class="W_LocationCardInfo">
+            <div class="M_LocationCardHeader">
+              <tag class="A_Tag Q_BgYellow">Новички</tag>
+              <h4 class="A_HeaderCards">Скейт парк «ЦСКА»</h4>
+            </div>
+            <div class="W_AddressInfo">
+              <p class="A_BodyText">Москва, ул. Ходынский бульвар, 8</p>
+              <div class="M_MetroInfoArrow">
+                <div class="W_MetroInfo">
+                  <img
+                    src="images/components/02_Atoms/A_Metro1.svg"
+                    alt=""
+                    class="Q_MetroLogo"
+                  />
+                  <p class="A_BodyText">ЦСКА</p>
+                </div>
+                <div class="A_ArrowYellow"></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="Q_CardBMX O_TrickCard">
-          <h4 class="A_HeaderCards">Barspin</h4>
-          <div class="C_Tags Q_Column">
-            <tag class="A_Tag Q_BgYellow">Bmx</tag>
-            <tag class="A_Tag Q_BgYellow">Средний</tag>
+        <div class="O_LocationCard O_Small Q_LocSmall1">
+          <div class="W_LocationCardInfo">
+            <div class="M_LocationCardHeader">
+              <tag class="A_Tag Q_BgYellow">Новички</tag>
+              <h4 class="A_HeaderCards">Скейт парк «ЦСКА»</h4>
+            </div>
+            <div class="W_AddressInfo">
+              <p class="A_BodyText">Москва, ул. Ходынский бульвар, 8</p>
+              <div class="M_MetroInfoArrow">
+                <div class="W_MetroInfo">
+                  <img
+                    src="images/components/02_Atoms/A_Metro1.svg"
+                    alt=""
+                    class="Q_MetroLogo"
+                  />
+                  <p class="A_BodyText">ЦСКА</p>
+                </div>
+                <div class="A_ArrowYellow"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="C_Cards">
-        <div class="O_LocationCard">
-          <img
-            src="images/components/02_Atoms/location_card_1.webp"
-            class="A_LocationCardPhoto"
-          />
-          <div class="W_LocationCardData">
-            <div class="M_LocationCardHeader">
-              <h4 class="A_HeaderCards">Памп трек</h4>
-              <p class="A_BodyText">
-                Москва, ул. Большая Черкизовская, 23 <br />
-                м. Черкизовская
-              </p>
-            </div>
-            <div class="C_Tags Q_Row">
-              <tag class="A_Tag Q_BgWhite">Открытый</tag>
-              <tag class="A_Tag Q_BgWhite">Новички</tag>
-            </div>
-          </div>
-        </div>
-        <div class="O_LocationCard">
-          <img
-            src="images/components/02_Atoms/location_card_2.webp"
-            class="A_LocationCardPhoto"
-          />
-          <div class="W_LocationCardData">
-            <div class="M_LocationCardHeader">
-              <h4 class="A_HeaderCards">Красная Пресня</h4>
-              <p class="A_BodyText">
-                Москва, ул. Мантулинская, д. 5с20 <br />
-                м. Деловой центр
-              </p>
-            </div>
-            <div class="C_Tags Q_Row">
-              <tag class="A_Tag Q_BgWhite">Эксперименты</tag>
-              <tag class="A_Tag Q_BgWhite">Парк</tag>
-            </div>
-          </div>
-        </div>
-        <div class="O_LocationCard">
-          <img
-            src="images/components/02_Atoms/location_card_3.webp"
-            class="A_LocationCardPhoto"
-          />
-          <div class="W_LocationCardData">
-            <div class="M_LocationCardHeader">
-              <h4 class="A_HeaderCards">Bunny hop</h4>
-              <p class="A_BodyText">
-                Москва, ул. Смольная дом 24А <br />
-                м. Речной вокзал
-              </p>
-            </div>
-            <div class="C_Tags Q_Row">
-              <tag class="A_Tag Q_BgWhite">Крытый</tag>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="C_Cards">
         <div class="Q_CardScooter O_FunCard">
           <h4 class="A_HeaderCards">Говори на&nbsp;языке райдеров</h4>
@@ -498,43 +549,72 @@
           <tag class="A_Tag Q_BgYellow">Фильмы</tag>
         </div>
       </div>
+
       <div class="C_Cards">
-        <div class="O_TestCard">
-          <img
-            src="images/components/02_Atoms/test_card_1.webp"
-            class="A_LocationCardPhoto"
-          />
-          <div class="M_TestCardData">
-            <h4 class="A_HeaderCards">Как выбрать нужную экипировку</h4>
-            <button class="A_Button A_TextButton Q_BgBlackTxtWhite">
-              Пройти тест
-            </button>
+        <div class="O_ArticleCard O_Small">
+          <img src="images/tips/Q_TipCard1.webp" class="A_ArticleCardPhoto" />
+          <div class="M_ArticleCardData">
+            <div class="M_ArticleCardTags">
+              <tag class="A_Tag Q_BgYellow">Личности</tag>
+              <div class="M_Time">
+                <img
+                  src="images/components/02_Atoms/A_IconTimer.webp"
+                  alt=""
+                  class="A_IconTimer"
+                />
+                <p class="A_BodyText">5 мин</p>
+              </div>
+            </div>
+            <div class="M_ArticleHeaderWithDescription">
+              <h4 class="A_HeaderCards">Легенды bmx культуры</h4>
+              <p class="A_BodyText">
+                Расскажем о том, как не превратиться в жертву своей же страсти.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="O_TestCard">
-          <img
-            src="images/components/02_Atoms/test_card_2.webp"
-            class="A_LocationCardPhoto"
-          />
-          <div class="M_TestCardData">
-            <h4 class="A_HeaderCards">
-              Выбор своего первого &laquo;друга&raquo;
-            </h4>
-            <button class="A_Button A_TextButton Q_BgBlackTxtWhite">
-              Пройти тест
-            </button>
+        <div class="O_ArticleCard O_Small">
+          <img src="images/tips/Q_TipCard1.webp" class="A_ArticleCardPhoto" />
+          <div class="M_ArticleCardData">
+            <div class="M_ArticleCardTags">
+              <tag class="A_Tag Q_BgYellow">Личности</tag>
+              <div class="M_Time">
+                <img
+                  src="images/components/02_Atoms/A_IconTimer.webp"
+                  alt=""
+                  class="A_IconTimer"
+                />
+                <p class="A_BodyText">5 мин</p>
+              </div>
+            </div>
+            <div class="M_ArticleHeaderWithDescription">
+              <h4 class="A_HeaderCards">Легенды bmx культуры</h4>
+              <p class="A_BodyText">
+                Расскажем о том, как не превратиться в жертву своей же страсти.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="O_TestCard">
-          <img
-            src="images/components/02_Atoms/test_card_3.webp"
-            class="A_LocationCardPhoto"
-          />
-          <div class="M_TestCardData">
-            <h4 class="A_HeaderCards">Скейтбоард, bmx или самокат?</h4>
-            <button class="A_Button A_TextButton Q_BgBlackTxtWhite">
-              Пройти тест
-            </button>
+        <div class="O_ArticleCard O_Small">
+          <img src="images/tips/Q_TipCard1.webp" class="A_ArticleCardPhoto" />
+          <div class="M_ArticleCardData">
+            <div class="M_ArticleCardTags">
+              <tag class="A_Tag Q_BgYellow">Личности</tag>
+              <div class="M_Time">
+                <img
+                  src="images/components/02_Atoms/A_IconTimer.webp"
+                  alt=""
+                  class="A_IconTimer"
+                />
+                <p class="A_BodyText">5 мин</p>
+              </div>
+            </div>
+            <div class="M_ArticleHeaderWithDescription">
+              <h4 class="A_HeaderCards">Легенды bmx культуры</h4>
+              <p class="A_BodyText">
+                Расскажем о том, как не превратиться в жертву своей же страсти.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -552,75 +632,196 @@
     <!-- -----------ОРГАНИЗМЫ------------ -->
     <section class="componentss">
       <h1 class="A_Header1, components_headers">Organisms</h1>
+      <div class="O_SmallBanner">
+        <div class="M_BannerTextWithButton">
+          <h4 class="A_HeaderCards">
+            Эксклюзивные споты только в&nbsp;нашем телеграмм
+          </h4>
+          <a href="https://t.me/hsedesign" class="A_ButtonSmall">Погнали!</a>
+        </div>
+        <div class="Q_LogoWithTg"></div>
+      </div>
       <div class="O_Header">
-        <img src="images/components/02_Atoms/logo_black.webp" class="A_Logo" />
+        <a href="https://hseadc.github.io/spot/" class="A_LogoYellow"> </a>
         <div class="W_Menu">
           <div class="C_HeaderMenuSections">
-            <p class="A_TextButton">Главная</p>
-            <p class="A_TextButton">Локации</p>
-            <p class="A_TextButton">Полезно</p>
-            <p class="A_TextButton">Фан</p>
+            <a
+              href="https://hseadc.github.io/spot/tricks.html"
+              class="A_TextButton"
+              >Трюки</a
+            >
+            <a
+              href="https://hseadc.github.io/spot/spots.html"
+              class="A_TextButton"
+              >Локации</a
+            >
+            <a
+              href="https://hseadc.github.io/spot/tips.html"
+              class="A_TextButton"
+              >Статьи</a
+            >
+            <a
+              href="https://hseadc.github.io/spot/fun.html"
+              class="A_TextButton"
+              >Фан</a
+            >
           </div>
-          <img src="images/components/02_Atoms/search.webp" class="A_Search" />
-          <button class="A_Button A_TextButton Q_BgBlackTxtWhite">
-            Подписаться
-          </button>
+          <a href="https://t.me/hsedesign" class="A_ButtonSmall">Гоу с нами!</a>
         </div>
       </div>
-      <div class="Q_CardScooter O_TrickCard">
-        <h4 class="A_HeaderCards">Header cards</h4>
-        <div class="C_Tags Q_Column">
-          <tag class="A_Tag Q_BgYellow">Скутер</tag>
-          <tag class="A_Tag Q_BgYellow">Средний</tag>
+      <div class="O_TrickCard Q_CardSkateboard">
+        <div class="W_TrickTagsName">
+          <div class="M_TrickTags">
+            <div class="A_LevelIcon A_LevelIconEasy"></div>
+            <p class="A_BodyText">Средний</p>
+          </div>
+          <h4 class="A_HeaderCards">Кикфлип</h4>
         </div>
+        <p class="A_BodyText grey">Развернуть</p>
       </div>
-      <div class="O_LocationCard">
-        <img
-          src="images/components/02_Atoms/location_card_1.webp"
-          class="A_LocationCardPhoto"
-        />
-        <div class="W_LocationCardData">
+      <div class="O_LocationCard O_Mid Q_LocMid1">
+        <div class="W_LocationCardInfo">
           <div class="M_LocationCardHeader">
-            <h4 class="A_HeaderCards">Памп трек</h4>
+            <tag class="A_Tag Q_BgYellow">Новички</tag>
+            <h4 class="A_HeaderCards">Скейт парк «ЦСКА»</h4>
+          </div>
+          <div class="W_AddressInfo">
+            <p class="A_BodyText">Москва, ул. Ходынский бульвар, 8</p>
+            <div class="M_MetroInfoArrow">
+              <div class="W_MetroInfo">
+                <img
+                  src="images/components/02_Atoms/A_Metro1.svg"
+                  alt=""
+                  class="Q_MetroLogo"
+                />
+                <p class="A_BodyText">ЦСКА</p>
+              </div>
+              <div class="A_ArrowYellow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="O_LocationCard O_Big Q_LocBig1">
+        <div class="W_LocationCardInfo">
+          <div class="M_LocationCardHeader">
+            <tag class="A_Tag Q_BgYellow">Новички</tag>
+            <h4 class="A_HeaderCards">Скейт парк «ЦСКА»</h4>
+          </div>
+          <div class="W_AddressInfo">
+            <p class="A_BodyText">Москва, ул. Ходынский бульвар, 8</p>
+            <div class="M_MetroInfoArrow">
+              <div class="W_MetroInfo">
+                <img
+                  src="images/components/02_Atoms/A_Metro1.svg"
+                  alt=""
+                  class="Q_MetroLogo"
+                />
+                <p class="A_BodyText">ЦСКА</p>
+              </div>
+              <div class="A_ArrowYellow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="O_LocationCard O_Small Q_LocSmall1">
+        <div class="W_LocationCardInfo">
+          <div class="M_LocationCardHeader">
+            <tag class="A_Tag Q_BgYellow">Новички</tag>
+            <h4 class="A_HeaderCards">Скейт парк «ЦСКА»</h4>
+          </div>
+          <div class="W_AddressInfo">
+            <p class="A_BodyText">Москва, ул. Ходынский бульвар, 8</p>
+            <div class="M_MetroInfoArrow">
+              <div class="W_MetroInfo">
+                <img
+                  src="images/components/02_Atoms/A_Metro1.svg"
+                  alt=""
+                  class="Q_MetroLogo"
+                />
+                <p class="A_BodyText">ЦСКА</p>
+              </div>
+              <div class="A_ArrowYellow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="O_FunCard Q_FunCard1">
+        <tag class="A_Tag Q_BgYellow">Сленг</tag>
+        <div class="M_FunHeaderArrow">
+          <h4 class="A_HeaderCards">Говори на&nbsp;языке райдеров</h4>
+          <div class="A_ArrowYellow"></div>
+        </div>
+      </div>
+      <div class="O_ArticleCard O_Mid">
+        <img src="images/tips/Q_TipCard2.webp" class="A_ArticleCardPhoto" />
+        <div class="M_ArticleCardData">
+          <div class="M_ArticleCardTags">
+            <tag class="A_Tag Q_BgYellow">Личности</tag>
+            <div class="M_Time">
+              <img
+                src="images/components/02_Atoms/A_IconTimer.webp"
+                alt=""
+                class="A_IconTimer"
+              />
+              <p class="A_BodyText">5 мин</p>
+            </div>
+          </div>
+          <div class="M_ArticleHeaderWithDescription">
+            <h4 class="A_HeaderCards">Легенды bmx культуры</h4>
             <p class="A_BodyText">
-              Москва, ул. Большая Черкизовская, 23 <br />
-              м. Черкизовская
+              Расскажем о том, как не превратиться в жертву своей же страсти.
+              Скейт, самокат, BMX — все это круто, но безопасность — это не
+              просто скучная тема для школьного сочинения.
             </p>
           </div>
-          <div class="C_Tags Q_Row">
-            <tag class="A_Tag Q_BgWhite">Открытый</tag>
-            <tag class="A_Tag Q_BgWhite">Новички</tag>
-          </div>
         </div>
       </div>
-      <div class="Q_CardScooter O_FunCard">
-        <h4 class="A_HeaderCards">Говори на&nbsp;языке райдеров</h4>
-        <tag class="A_Tag Q_BgYellow">Сленг</tag>
-      </div>
-      <div class="O_TestCard">
-        <img
-          src="images/components/02_Atoms/test_card_1.webp"
-          class="A_LocationCardPhoto"
-        />
-        <div class="M_TestCardData">
-          <h4 class="A_HeaderCards">Как выбрать нужную экипировку</h4>
-          <button class="A_Button A_TextButton Q_BgBlackTxtWhite">
-            Пройти тест
-          </button>
+      <div class="O_ArticleCard O_Small">
+        <img src="images/tips/Q_TipCard1.webp" class="A_ArticleCardPhoto" />
+        <div class="M_ArticleCardData">
+          <div class="M_ArticleCardTags">
+            <tag class="A_Tag Q_BgYellow">Личности</tag>
+            <div class="M_Time">
+              <img
+                src="images/components/02_Atoms/A_IconTimer.webp"
+                alt=""
+                class="A_IconTimer"
+              />
+              <p class="A_BodyText">5 мин</p>
+            </div>
+          </div>
+          <div class="M_ArticleHeaderWithDescription">
+            <h4 class="A_HeaderCards">Легенды bmx культуры</h4>
+            <p class="A_BodyText">
+              Расскажем о том, как не превратиться в жертву своей же страсти.
+            </p>
+          </div>
         </div>
       </div>
       <div class="O_FooterMenuLogoSocial">
         <div class="W_FooterMenuLogo">
-          <img
-            src="images/components/02_Atoms/logo_yellow.webp"
-            class="A_Logo"
-          />
+          <a href="https://hseadc.github.io/spot/" class="A_LogoYellow"></a>
           <div class="C_HeaderMenuSectionsFooter">
-            <p class="A_TextButton">Главная</p>
-            <p class="A_TextButton">Локации</p>
-            <p class="A_TextButton">Полезно</p>
-            <p class="A_TextButton">Фан</p>
-            <p class="A_TextButton">О нас</p>
+            <a
+              href="https://hseadc.github.io/spot/tricks.html"
+              class="A_TextButton"
+              >Трюки</a
+            >
+            <a
+              href="https://hseadc.github.io/spot/spots.html"
+              class="A_TextButton"
+              >Локации</a
+            >
+            <a
+              href="https://hseadc.github.io/spot/tips.html"
+              class="A_TextButton"
+              >Статьи</a
+            >
+            <a
+              href="https://hseadc.github.io/spot/fun.html"
+              class="A_TextButton"
+              >Фан</a
+            >
           </div>
         </div>
         <div class="C_Social">
@@ -642,67 +843,84 @@
       <div class="S_FooterWithCards">
         <h2 class="A_Header2">Погрузиться в&nbsp;другие</h2>
         <div class="C_Cards">
-          <div class="Q_CardScooter O_TrickCard">
-            <h4 class="A_HeaderCards">Тэйлвип</h4>
-            <div class="C_Tags Q_Column">
-              <tag class="A_Tag Q_BgYellow">Скутер</tag>
-              <tag class="A_Tag Q_BgYellow">Средний</tag>
+          <div class="O_TrickCard Q_CardSkateboard">
+            <div class="W_TrickTagsName">
+              <div class="M_TrickTags">
+                <div class="A_LevelIcon A_LevelIconEasy"></div>
+                <p class="A_BodyText">Средний</p>
+              </div>
+              <h4 class="A_HeaderCards">Кикфлип</h4>
             </div>
+            <p class="A_BodyText grey">Развернуть</p>
           </div>
-          <div class="Q_CardSkateboard O_TrickCard">
-            <h4 class="A_HeaderCards">Кикфлип</h4>
-            <div class="C_Tags Q_Column">
-              <tag class="A_Tag Q_BgYellow">Скейт</tag>
-              <tag class="A_Tag Q_BgYellow">Средний</tag>
+          <div class="O_TrickCard Q_CardBMX">
+            <div class="W_TrickTagsName">
+              <div class="M_TrickTags">
+                <div class="A_LevelIcon A_LevelIconEasy"></div>
+                <p class="A_BodyText">Средний</p>
+              </div>
+              <h4 class="A_HeaderCards">Кикфлип</h4>
             </div>
+            <p class="A_BodyText grey">Развернуть</p>
           </div>
-          <div class="Q_CardBMX O_TrickCard">
-            <h4 class="A_HeaderCards">Barspin</h4>
-            <div class="C_Tags Q_Column">
-              <tag class="A_Tag Q_BgYellow">Bmx</tag>
-              <tag class="A_Tag Q_BgYellow">Средний</tag>
+          <div class="O_TrickCard Q_CardScooter">
+            <div class="W_TrickTagsName">
+              <div class="M_TrickTags">
+                <div class="A_LevelIcon A_LevelIconEasy"></div>
+                <p class="A_BodyText">Средний</p>
+              </div>
+              <h4 class="A_HeaderCards">Кикфлип</h4>
             </div>
+            <p class="A_BodyText grey">Развернуть</p>
           </div>
         </div>
       </div>
-      <div class="Q_FooterBg S_Footer">
+      <div class="S_Footer">
         <div class="O_FooterMenuLogoSocial">
           <div class="W_FooterMenuLogo">
-            <img
-              src="images/components/02_Atoms/logo_yellow.webp"
-              class="A_Logo"
-            />
+            <a href="https://hseadc.github.io/spot/" class="A_LogoYellow"></a>
             <div class="C_HeaderMenuSectionsFooter">
-              <p class="A_TextButton">Главная</p>
-              <p class="A_TextButton">Локации</p>
-              <p class="A_TextButton">Полезно</p>
-              <p class="A_TextButton">Фан</p>
-              <p class="A_TextButton">О нас</p>
+              <a
+                href="https://hseadc.github.io/spot/tricks.html"
+                class="A_TextButton"
+                >Трюки</a
+              >
+              <a
+                href="https://hseadc.github.io/spot/spots.html"
+                class="A_TextButton"
+                >Локации</a
+              >
+              <a
+                href="https://hseadc.github.io/spot/tips.html"
+                class="A_TextButton"
+                >Статьи</a
+              >
+              <a
+                href="https://hseadc.github.io/spot/fun.html"
+                class="A_TextButton"
+                >Фан</a
+              >
             </div>
           </div>
           <div class="C_Social">
-            <img
-              src="images/components/02_Atoms/tg.webp"
-              class="A_SocialNetworks"
-            />
-            <img
-              src="images/components/02_Atoms/vk.webp"
-              class="A_SocialNetworks"
-            />
+            <a href="https://hsedesign.ru" class="A_SocialNetworks tg"></a>
+            <a
+              href="https://vk.com/club228021421"
+              class="A_SocialNetworks vk"
+            ></a>
           </div>
         </div>
         <div class="W_HseAuthors">
-          <img
-            src="images/components/02_Atoms/HSE_logo.webp"
-            class="A_HseLogo"
-          />
+          <a href="https://hsedesign.ru" class="A_HseLogo"></a>
           <div class="C_Authors">
             <p class="A_BodyText">
-              <b>Создатели</b><br />Далакян Артур<br />Оюунбаатар Наранзаяа<br />Якутина
-              Дарья
+              <b>Создатели</b><br /><br />Далакян Артур<br />Оюунбаатар
+              Наранзаяа<br />Якутина Дарья
             </p>
             <p class="A_BodyText">
-              <b>Кураторы</b><br />Швецова Ксения<br />Комкова Анна
+              <b>Кураторы</b><br />
+              <br />
+              Швецова Ксения<br />Комкова Анна
             </p>
           </div>
         </div>

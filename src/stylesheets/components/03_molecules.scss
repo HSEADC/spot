@@ -3,18 +3,41 @@ MOLECULES
 _________________________________________________________________________________________
 */
 
-.M_Fact {
+.M_HeaderText {
+  width: 35vw;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.M_TricksHeaderRow {
-  width: 100%;
+.M_ButtonArrow {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 10px;
   align-items: center;
+  text-decoration: none;
+
+  .A_TextButton {
+    color: var(--grey);
+  }
+
+  &:hover {
+    .A_TextButton {
+      color: var(--black);
+    }
+
+    svg {
+      path {
+        fill: var(--black);
+      }
+    }
+  }
+}
+
+.M_Fact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 31%;
 }
 
 .M_TricksHeaderColumn {
@@ -72,13 +95,79 @@ ________________________________________________________________________________
 .M_ListedParagraph {
   display: flex;
   gap: 20px;
-  width: 45%;
 }
+.M_ArticleCardData {
+  padding: 1.2rem 1.8rem;
 
-.M_TestCardData {
-  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.M_ArticleHeaderWithDescription {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
   height: 50%;
+  gap: 0.2rem;
+  overflow: hidden;
+}
+.M_ArticleCardTags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.M_Time {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  align-items: center;
+}
+.M_TrickTags {
+  display: flex;
+  width: 80%;
+  height: 1.5rem;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 0.3125rem;
+}
+.M_TrickTagsYellow {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 0.3125rem;
+  background-color: var(--yellow);
+  padding: 6px 24px;
+  border-radius: 0.18rem;
+}
+.M_BannerTextWithButton {
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.M_MetroInfoArrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.M_FunHeaderArrow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  .A_HeaderCards {
+    width: 70%;
+  }
+}
+.M_HeaderPlusTag {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }

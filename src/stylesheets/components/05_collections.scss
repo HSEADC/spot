@@ -9,8 +9,14 @@ ________________________________________________________________________________
 
 .C_Facts {
   display: flex;
-  gap: 80px;
+  justify-content: space-between;
   margin: 0 8%;
+}
+
+.C_TwoPhoto {
+  display: flex;
+  width: 35vw;
+  gap: 20px;
 }
 
 .C_HeaderMenuSections {
@@ -41,12 +47,12 @@ ________________________________________________________________________________
 
 .C_TricksPhotos {
   width: 100%;
-  padding: 0 8%;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .C_Social {
+  height: 2rem;
   display: flex;
   gap: 20px;
 }
@@ -54,16 +60,17 @@ ________________________________________________________________________________
 .C_ListedParagrapgh {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
+  width: 60%;
   gap: 20px;
 }
 
 .C_Cards {
   display: flex;
   width: 100%;
-  gap: 20px;
-  margin: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.8rem;
 }
 
 .C_Authors {
@@ -74,4 +81,10 @@ ________________________________________________________________________________
   p {
     color: var(--white);
   }
+}
+/*start*/
+.C_FilterTags {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }

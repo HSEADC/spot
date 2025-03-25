@@ -4,63 +4,196 @@ ________________________________________________________________________________
 */
 
 .O_Header {
-  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  background-color: var(--black);
   display: flex;
   width: 100%;
   padding: 30px;
   justify-content: space-between;
   align-items: center;
+  padding: 1.6rem 3.125rem;
+  z-index: 1000;
+  .W_Menu {
+    .A_ButtonSmall {
+      position: relative; /* Add this line */
+      display: inline-block; /* Ensures proper sizing */
+      color: black;
+      background-color: white;
+      cursor: pointer;
+      overflow: hidden; /* Ensures ::before stays within bounds */
+      transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+      &::before {
+        content: 'Гоу с нами!';
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: -100%; /* Start position (hidden) */
+        width: 100%;
+        height: 100%;
+        background-color: yellow;
+        transition: left 0.5s ease-in-out;
+        z-index: -1; /* Puts behind text */
+      }
+      &:hover {
+        color: black; /* Keep text visible */
+      }
+
+      &:hover::before {
+        left: 0; /* Slide in yellow color */
+        z-index: 1;
+      }
+    }
+
+    .C_HeaderMenuSections {
+      .A_TextButton {
+        color: var(--white);
+        transition: text-decoration-color 0.2s ease-in-out,
+          color 0.2s ease-in-out;
+        &:hover {
+          text-decoration-line: underline;
+          text-decoration-style: solid;
+          text-decoration-skip-ink: auto;
+          text-decoration-color: var(--yellow);
+        }
+      }
+    }
+  }
+}
+
+.O_TextTwoPhotos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.O_Cards {
+  padding: 0 50px 120px;
 }
 
 .O_TrickCard {
-  width: 31%;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-
-  .A_HeaderCards {
-    color: var(--white);
-  }
-}
-
-.O_LocationCard {
-  width: 31%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  border-radius: 50px 0;
-  overflow: hidden;
+  width: 31.5%;
+  min-height: 32vh;
   background-color: var(--black);
-  border: solid 1.5px var(--black);
-}
-
-.O_FunCard {
-  width: 31%;
-  height: 35vh;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
+  padding: 2rem 1.88rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.8rem;
+  border-radius: 50px 0;
+
+  .M_TrickTags {
+    .A_BodyText {
+      color: var(--yellow);
+    }
+  }
 
   .A_HeaderCards {
     color: var(--white);
   }
+  &:hover {
+    .grey {
+      transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+      color: var(--grey);
+    }
+  }
 }
+.O_SmallBanner {
+  width: 80%;
+  min-height: 16.25rem;
+  margin-left: 10%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  padding: 2.75rem 5rem;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--black);
+  border-radius: 1.25rem;
 
-.O_TestCard {
-  width: 31%;
-  height: 55vh;
+  .M_BannerTextWithButton {
+    .A_HeaderCards {
+      color: var(--white);
+    }
+  }
+}
+.O_LocationCard {
+  min-height: 45vh;
   display: flex;
   flex-direction: column;
   border-radius: 50px 0;
   overflow: hidden;
-  background-color: var(--white);
-  border: solid 1.5px var(--black);
+  padding: 1.88rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  text-align: left;
+  z-index: 2;
+  .A_BodyText {
+    color: var(--white);
+  }
+  .A_HeaderCards {
+    color: var(--white);
+  }
 
-  img {
-    border-radius: 40px 0;
+  &:hover {
+    .A_ArrowYellow {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.O_Mid {
+  width: 48.5%;
+}
+.O_Big {
+  width: 100%;
+}
+.O_Small {
+  width: 31.5%;
+}
+.O_FunCard {
+  width: 31.5%;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px 0;
+  overflow: hidden;
+  padding: 1.88rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  text-align: left;
+  gap: 10px;
+  .A_HeaderCards {
+    color: var(--white);
+  }
+  &:hover {
+    .A_ArrowYellow {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.O_ArticleCard {
+  min-height: 50vh;
+  flex-direction: column;
+  border-radius: 50px 0;
+  overflow: hidden;
+  background-color: var(--midgrey);
+  justify-content: flex-start;
+  transition: box-shadow 0.3s ease-in-out;
+  .A_BodyText {
+    color: var(--grey);
+    font-style: italic;
+  }
+  &:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -68,4 +201,22 @@ ________________________________________________________________________________
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.O_Form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  margin: 160px 0;
+
+  .M_HeaderText {
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+  }
+}
+
+.O_Link {
+  width: fit-content;
 }
