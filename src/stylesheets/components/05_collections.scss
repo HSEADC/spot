@@ -9,7 +9,7 @@ ________________________________________________________________________________
 
 .C_Facts {
   display: flex;
-  gap: 80px;
+  justify-content: space-between;
   margin: 0 8%;
 }
 
@@ -48,7 +48,7 @@ ________________________________________________________________________________
 .C_TricksPhotos {
   width: 100%;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .C_Social {

@@ -114,6 +114,50 @@ module.exports = {
       template: './src/tricks/tricksSkate1.html',
       filename: './tricks/tricksSkate1.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksSkate2.html',
+      filename: './tricks/tricksSkate2.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksSkate3.html',
+      filename: './tricks/tricksSkate3.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksSkate4.html',
+      filename: './tricks/tricksSkate4.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksSkate5.html',
+      filename: './tricks/tricksSkate5.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksSkate6.html',
+      filename: './tricks/tricksSkate6.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksBmx1.html',
+      filename: './tricks/tricksBmx1.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksBmx2.html',
+      filename: './tricks/tricksBmx2.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksBmx3.html',
+      filename: './tricks/tricksBmx3.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksBmx4.html',
+      filename: './tricks/tricksBmx4.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksBmx5.html',
+      filename: './tricks/tricksBmx5.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksBmx6.html',
+      filename: './tricks/tricksBmx6.html'
+    }),
     // Section 'Spots' articles
     new HtmlWebpackPlugin({
       template: './src/spots/spots1.html',

@@ -37,6 +37,7 @@ ________________________________________________________________________________
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 31%;
 }
 
 .M_TricksHeaderColumn {
@@ -164,4 +165,9 @@ ________________________________________________________________________________
   .A_HeaderCards {
     width: 70%;
   }
+}
+.M_HeaderPlusTag {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
