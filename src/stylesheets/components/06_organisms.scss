@@ -5,6 +5,7 @@ ________________________________________________________________________________
 
 .O_Header {
   position: sticky;
+  top: 0;
   background-color: var(--black);
   display: flex;
   width: 100%;
@@ -12,6 +13,7 @@ ________________________________________________________________________________
   justify-content: space-between;
   align-items: center;
   padding: 1.6rem 3.125rem;
+  z-index: 1000;
   .W_Menu {
     .A_ButtonSmall {
       position: relative; /* Add this line */
@@ -59,6 +61,16 @@ ________________________________________________________________________________
       }
     }
   }
+}
+
+.O_TextTwoPhotos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.O_Cards {
+  padding: 0 50px;
 }
 
 .O_TrickCard {
@@ -115,11 +127,11 @@ ________________________________________________________________________________
   border-radius: 50px 0;
   overflow: hidden;
   padding: 1.88rem;
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   justify-content: flex-end;
   text-align: left;
+  z-index: 2;
   .A_BodyText {
     color: var(--white);
   }
@@ -189,4 +201,22 @@ ________________________________________________________________________________
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.O_Form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  margin: 160px 0;
+
+  .M_HeaderText {
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+  }
+}
+
+.O_Link {
+  width: fit-content;
 }

@@ -11,6 +11,49 @@ body {
   background-color: var(--white);
 }
 
+.yellow {
+  color: var(--yellow);
+}
+
+.white {
+  color: var(--white);
+}
+
+.black {
+  color: var(--black);
+}
+
+.grey {
+  color: var(--grey);
+}
+
+.img-animate {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-animate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease-out;
+  z-index: 0;
+}
+
+.img-animate:hover::before {
+  transform: scale(1.06);
+}
+
+.img-animate > * {
+  position: relative;
+  z-index: 2;
+}
+
 nav.navMobile {
   width: 90%;
   height: 10vw;
@@ -67,7 +110,6 @@ body {
     display: block;
   }
   a {
-    font-family: 'Evolventa-Bold', sans-serif;
     text-decoration: none;
     font-size: 1.125rem;
     text-align: center;

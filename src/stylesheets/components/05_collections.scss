@@ -13,6 +13,12 @@ ________________________________________________________________________________
   margin: 0 8%;
 }
 
+.C_TwoPhoto {
+  display: flex;
+  width: 35vw;
+  gap: 20px;
+}
+
 .C_HeaderMenuSections {
   display: flex;
   flex-direction: row;
@@ -63,7 +69,6 @@ ________________________________________________________________________________
 .C_Cards {
   display: flex;
   width: 100%;
-  padding: 0 3.125rem;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1.8rem;

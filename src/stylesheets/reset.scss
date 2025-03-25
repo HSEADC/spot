@@ -92,6 +92,15 @@ input {
   font: inherit;
   vertical-align: baseline;
 }
+
+input {
+  border: none;
+}
+
+input:focus {
+  border: none;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -127,4 +136,26 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--black); /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--yellow); /* цвет плашки */
+  border-radius: 20px 0 20px 0; /* закругления плашки */
+  /* border: 3px solid orange;  padding вокруг плашки */
+}
+
+html,
+body {
+  cursor: url(./../images/components/02_Atoms/default.svg) 16 16, default;
+}
+
+a,
+button {
+  cursor: url(./../images/components/02_Atoms/pointer.svg) 16 16, pointer;
 }

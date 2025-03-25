@@ -3,6 +3,36 @@ MOLECULES
 _________________________________________________________________________________________
 */
 
+.M_HeaderText {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.M_ButtonArrow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+
+  .A_TextButton {
+    color: var(--grey);
+  }
+
+  &:hover {
+    .A_TextButton {
+      color: var(--black);
+    }
+
+    svg {
+      path {
+        fill: var(--black);
+      }
+    }
+  }
+}
+
 .M_Fact {
   display: flex;
   flex-direction: column;
@@ -77,6 +107,8 @@ ________________________________________________________________________________
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
   height: 50%;
   gap: 0.2rem;
   overflow: hidden;
@@ -118,6 +150,7 @@ ________________________________________________________________________________
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
   .A_HeaderCards {
     width: 70%;
   }

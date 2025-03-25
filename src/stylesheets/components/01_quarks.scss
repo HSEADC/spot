@@ -45,6 +45,13 @@ ________________________________________________________________________________
   width: 60%;
 }
 
+.Q_MainCover {
+  background-image: url(../../images/components/01_Quarks/BgMainCover.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .Q_BannerPattern {
   background-image: url(../../images/components/01_Quarks/banner_pattern.webp);
   width: 100%;
@@ -83,10 +90,6 @@ ________________________________________________________________________________
   border-radius: 50px 0;
   height: 60vh;
   width: 60%;
-}
-.Q_FunCard1 {
-  background-image: url(../../images/components/01_Quarks/Q_FunCard1.webp);
-  background-size: cover;
 }
 .Q_CardScooter {
   background-image: url(../../images/components/01_Quarks/card_scooter.webp);
@@ -142,19 +145,60 @@ ________________________________________________________________________________
   background-image: url(../../images/components/01_Quarks/footer_bg.webp);
   background-size: cover;
 }
-.Q_LocMid1 {
-  background-image: url(../../images/spots/spotCardPhotoMid1.webp);
-}
-.Q_LocMid2 {
-  background-image: url(../../images/spots/spotCardPhotoMid2.webp);
-}
-.Q_LocBig1 {
-  background-image: url(../../images/spots/spotCardPhotoBig1.webp);
-}
-.Q_LocSmall1 {
-  background-image: url(../../images/spots/spotCardPhotoSmall1.webp);
-}
 .Q_MetroLogo {
   width: 2.5rem;
   height: 1.4rem;
+}
+.Q_GradientSquare {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(26, 26, 26, 1) 0%,
+    rgba(26, 26, 26, 0) 80%,
+    rgba(26, 26, 26, 0) 100%
+  );
+  z-index: 1;
+}
+
+// ADD IMAGES
+
+.Q_LocPhoto1::before {
+  background-image: url(../../images/spots/Q_SpotCard1.webp);
+}
+.Q_LocPhoto2::before {
+  background-image: url(../../images/spots/Q_SpotCard2.webp);
+}
+.Q_LocPhoto3::before {
+  background-image: url(../../images/spots/Q_SpotCard3.webp);
+}
+.Q_LocPhoto4::before {
+  background-image: url(../../images/spots/Q_SpotCard4.webp);
+}
+.Q_LocPhoto5::before {
+  background-image: url(../../images/spots/Q_SpotCard5.webp);
+}
+.Q_LocPhoto6::before {
+  background-image: url(../../images/spots/Q_SpotCard6.webp);
+}
+.Q_LocPhoto7::before {
+  background-image: url(../../images/spots/Q_SpotCard7.webp);
+}
+.Q_LocPhoto8::before {
+  background-image: url(../../images/spots/Q_SpotCard8.webp);
+}
+.Q_LocPhoto9::before {
+  background-image: url(../../images/spots/Q_SpotCard1.webp);
+}
+.Q_FunCard1::before {
+  background-image: url(../../images/chill/Q_FunCard1.webp);
+}
+.Q_FunCard2::before {
+  background-image: url(../../images/chill/Q_FunCard2.webp);
+}
+.Q_FunCard3::before {
+  background-image: url(../../images/chill/Q_FunCard3.webp);
 }

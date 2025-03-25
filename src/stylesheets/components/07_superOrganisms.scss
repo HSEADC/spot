@@ -3,6 +3,22 @@ SUPERORGANISMS
 _________________________________________________________________________________________
 */
 
+.S_MainCover {
+  height: 135vh;
+  padding: 20vh 50px 115px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.S_MainSections {
+  padding: 50px 50px 0 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .S_FooterWithCards {
   background-color: var(--grey);
   padding: 45px 0 80px 0;

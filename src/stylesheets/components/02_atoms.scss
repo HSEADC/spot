@@ -5,18 +5,16 @@ ________________________________________________________________________________
 
 .A_Header0 {
   font-family: 'Benzin-Bold', sans-serif;
-  font-size: 8rem;
+  font-size: 5.2rem;
   text-transform: uppercase;
-  color: var(--black);
   letter-spacing: 2%;
-  line-height: normal;
+  line-height: 105%;
 }
 
 .A_Header1 {
   font-family: 'Benzin-Bold', sans-serif;
   font-size: 4.6rem;
   text-transform: uppercase;
-  color: var(--white);
   letter-spacing: 3%;
   line-height: normal;
 }
@@ -62,6 +60,14 @@ ________________________________________________________________________________
   font-family: 'Inter-Regular';
   font-size: 1.125rem;
   color: var(--black);
+  letter-spacing: 1%;
+  line-height: normal;
+}
+
+.A_BodyTextWhite {
+  font-family: 'Inter-Regular';
+  font-size: 1.125rem;
+  color: var(--white);
   letter-spacing: 1%;
   line-height: normal;
 }
@@ -214,6 +220,11 @@ ________________________________________________________________________________
   height: 25px;
 }
 /*start*/
+
+.A_ImgAbout {
+  width: 50%;
+}
+
 .A_LevelIcon {
   width: 14%;
   height: 100%;
@@ -264,12 +275,19 @@ ________________________________________________________________________________
 .A_ArrowYellow {
   opacity: 0;
   visibility: hidden;
-  width: 2rem;
-  background-image: url(../../images/components/02_Atoms/A_ArrowYellow.webp);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(../../images/components/02_Atoms/arrow-yellow.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  svg {
+    path {
+      fill: var(--yellow);
+    }
+  }
 }
 .A_ArticleCardPhoto {
   width: 100%;
