@@ -70,7 +70,6 @@ ________________________________________________________________________________
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 50%;
 
   h3 {
     color: var(--yellow);
@@ -169,4 +168,28 @@ ________________________________________________________________________________
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+}
+.M_HeaderWithTag {
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  align-items: flex-start;
+  gap: 12.5rem;
+  margin-top: 3.75rem;
+  .A_Header1 {
+    color: var(--black);
+  }
+  .A_Tag {
+    height: fit-content;
+  }
+}
+.M_SlangsTextWithHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+  width: 41.25rem;
+  padding: 0.1875rem 0rem;
+  flex-direction: column;
+  align-items: flex-start;
 }

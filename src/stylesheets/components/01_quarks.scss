@@ -76,8 +76,11 @@ ________________________________________________________________________________
 
 .Q_BannerSkateboards {
   background-image: url(../../images/components/01_Quarks/banner_skateboards.webp);
+  background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
+  background-position: center;
+  border-radius: 1.25rem;
 }
 
 .Q_LocationMainPhoto {
@@ -275,4 +278,8 @@ ________________________________________________________________________________
 .Q_Trick1_3 {
   height: 60vh;
   width: 60%;
+}
+.Q_SlangsPhoto2 {
+  width: 60%;
+  height: fit-content;
 }
