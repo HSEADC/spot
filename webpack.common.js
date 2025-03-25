@@ -158,6 +158,30 @@ module.exports = {
       template: './src/tricks/tricksBmx6.html',
       filename: './tricks/tricksBmx6.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksScooter1.html',
+      filename: './tricks/tricksScooter1.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksScooter2.html',
+      filename: './tricks/tricksScooter2.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksScooter3.html',
+      filename: './tricks/tricksScooter3.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksScooter4.html',
+      filename: './tricks/tricksScooter4.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksScooter5.html',
+      filename: './tricks/tricksScooter5.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tricks/tricksScooter6.html',
+      filename: './tricks/tricksScooter6.html'
+    }),
     // Section 'Spots' articles
     new HtmlWebpackPlugin({
       template: './src/spots/spots1.html',
