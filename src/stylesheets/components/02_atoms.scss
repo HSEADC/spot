@@ -226,26 +226,29 @@ ________________________________________________________________________________
 }
 
 .A_LevelIcon {
-  width: 14%;
-  height: 100%;
+  width: 1.6rem;
+  height: 1.4rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .A_LevelIconEasy {
-  background-image: url(../../images/components/02_Atoms/A_LevelIconEasy.webp);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url(../../images/components/02_Atoms/A_LevelIconEasy.svg);
 }
 .A_LevelIconMid {
-  background-image: url(../../images/components/02_Atoms/A_LevelIconMid.webp);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url(../../images/components/02_Atoms/A_LevelIconMid.svg);
 }
 .A_LevelIconHard {
-  background-image: url(../../images/components/02_Atoms/A_LevelIconHard.webp);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url(../../images/components/02_Atoms/A_LevelIconHard.svg);
+}
+.A_LevelIconEasyBlack {
+  background-image: url(../../images/components/02_Atoms/A_LevelIconEasyBlack.svg);
+}
+.A_LevelIconMidBlack {
+  background-image: url(../../images/components/02_Atoms/A_LevelIconMidBlack.svg);
+}
+.A_LevelIconHardBlack {
+  background-image: url(../../images/components/02_Atoms/A_LevelIconHardBlack.svg);
 }
 .A_FilterTag {
   display: inline-flex;
@@ -305,19 +308,19 @@ ________________________________________________________________________________
   border-radius: 1.125rem 0;
 }
 .A_IconCoverSkate {
-  background-image: url(../../images/components/02_Atoms/A_IconCoverSkate.webp);
+  background-image: url(../../images/components/02_Atoms/A_IconCoverSkate.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .A_IconCoverLocation {
-  background-image: url(../../images/components/02_Atoms/A_IconCoverLocation.webp);
+  background-image: url(../../images/components/02_Atoms/A_IconCoverLocation.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .A_IconCoverFile {
-  background-image: url(../../images/components/02_Atoms/A_IconCoverFile.webp);
+  background-image: url(../../images/components/02_Atoms/A_IconCoverFile.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

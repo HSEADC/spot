@@ -9,8 +9,8 @@ ________________________________________________________________________________
 }
 
 .Q_BgYellow {
-  background-color: var(--yellow);
-  color: var(--black);
+  background-color: var(--grey);
+  color: var(--yellow);
 }
 
 .Q_BgBlackTxtWhite {
@@ -57,7 +57,11 @@ ________________________________________________________________________________
   width: 100%;
   background-size: cover;
 }
-
+.Q_BannerQuote {
+  background-image: url(../../images/components/01_Quarks/Q_BannerQuote.webp);
+  width: 100%;
+  background-size: cover;
+}
 .Q_BannerQuestion {
   background-image: url(../../images/components/01_Quarks/banner_question.webp);
   width: 100%;
@@ -92,7 +96,7 @@ ________________________________________________________________________________
   width: 60%;
 }
 .Q_CardScooter {
-  background-image: url(../../images/components/01_Quarks/card_scooter.webp);
+  background-image: url(../../images/components/01_Quarks/Q_CardScooter.webp);
   background-size: cover;
   border-radius: 50px 0;
   width: 100%;
@@ -101,12 +105,12 @@ ________________________________________________________________________________
   transition: background-image 0.2s ease-in-out, color 0.2s ease-in-out;
 
   &:hover {
-    background-image: url(../../images/components/01_Quarks/card_scooterYellow.webp);
+    background-image: url(../../images/components/01_Quarks/Q_CardScooterYellow.webp);
   }
 }
 
 .Q_CardSkateboard {
-  background-image: url(../../images/components/01_Quarks/card_skateboard.webp);
+  background-image: url(../../images/components/01_Quarks/Q_CardSkateboard.webp);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -114,12 +118,12 @@ ________________________________________________________________________________
   transition: background-image 0.2s ease-in-out, color 0.2s ease-in-out;
 
   &:hover {
-    background-image: url(../../images/components/01_Quarks/card_skateboardYellow.webp);
+    background-image: url(../../images/components/01_Quarks/Q_CardSkateboardYellow.webp);
   }
 }
 
 .Q_CardBMX {
-  background-image: url(../../images/components/01_Quarks/card_bmx.webp);
+  background-image: url(../../images/components/01_Quarks/Q_CardBmx.webp);
   background-size: cover;
   border-radius: 50px 0;
   width: 100%;
@@ -127,7 +131,7 @@ ________________________________________________________________________________
   background-position: center;
   transition: background-image 0.2s ease-in-out, color 0.2s ease-in-out;
   &:hover {
-    background-image: url(../../images/components/01_Quarks/card_bmxYellow.webp);
+    background-image: url(../../images/components/01_Quarks/Q_CardBmxYellow.webp);
   }
 }
 .Q_SectionHeaderPhoto {
@@ -136,7 +140,7 @@ ________________________________________________________________________________
 }
 .Q_LogoWithTg {
   width: 26%;
-  background-image: url(../../images/components/01_Quarks/Q_LogoWithTg.webp);
+  background-image: url(../../images/components/01_Quarks/Q_LogoWithTg.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,4 +205,15 @@ ________________________________________________________________________________
 }
 .Q_FunCard3::before {
   background-image: url(../../images/chill/Q_FunCard3.webp);
+}
+.Q_Trick1_1 {
+  background-image: url(../../images/tricks/Q_Trick1_1.webp);
+}
+.Q_Trick1_2 {
+  height: 60vh;
+  width: 40%;
+}
+.Q_Trick1_3 {
+  height: 60vh;
+  width: 60%;
 }

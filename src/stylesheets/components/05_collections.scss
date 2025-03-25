@@ -47,7 +47,6 @@ ________________________________________________________________________________
 
 .C_TricksPhotos {
   width: 100%;
-  padding: 0 8%;
   display: flex;
   gap: 20px;
 }
@@ -61,8 +60,8 @@ ________________________________________________________________________________
 .C_ListedParagrapgh {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
+  width: 60%;
   gap: 20px;
 }
 

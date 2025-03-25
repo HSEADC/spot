@@ -94,7 +94,6 @@ ________________________________________________________________________________
 .M_ListedParagraph {
   display: flex;
   gap: 20px;
-  width: 45%;
 }
 .M_ArticleCardData {
   padding: 1.2rem 1.8rem;
@@ -132,6 +131,17 @@ ________________________________________________________________________________
   justify-content: start;
   align-items: flex-start;
   gap: 0.3125rem;
+}
+.M_TrickTagsYellow {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 0.3125rem;
+  background-color: var(--yellow);
+  padding: 6px 24px;
+  border-radius: 0.18rem;
 }
 .M_BannerTextWithButton {
   display: flex;

@@ -53,7 +53,13 @@ body {
   position: relative;
   z-index: 2;
 }
-
+.highlight {
+  color: var(--yellow);
+}
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
 nav.navMobile {
   width: 90%;
   height: 10vw;

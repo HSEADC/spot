@@ -39,7 +39,9 @@ function initFilter() {
 }
 
 function filterAll() {
-  const cards = document.querySelectorAll('.O_TrickCard, .O_LocationCard')
+  const cards = document.querySelectorAll(
+    '.O_TrickCard, .O_LocationCard, .O_FunCard'
+  )
   const activeTags = document.querySelectorAll('.active')
 
   activeTags.forEach((tag) => {
@@ -53,7 +55,9 @@ function filterAll() {
 }
 
 function filterByTag() {
-  const cards = document.querySelectorAll('.O_TrickCard, .O_LocationCard')
+  const cards = document.querySelectorAll(
+    '.O_TrickCard, .O_LocationCard, .O_FunCard'
+  )
   const activeTags = document.querySelectorAll('.active')
   let tagList = []
   let count

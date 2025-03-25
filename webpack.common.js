@@ -111,8 +111,8 @@ module.exports = {
 
     // Section 'Tricks' articles
     new HtmlWebpackPlugin({
-      template: './src/tricks/tricks1.html',
-      filename: './tricks/tricks1.html'
+      template: './src/tricks/tricksSkate1.html',
+      filename: './tricks/tricksSkate1.html'
     }),
     // Section 'Spots' articles
     new HtmlWebpackPlugin({
