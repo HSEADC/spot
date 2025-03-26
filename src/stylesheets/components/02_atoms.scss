@@ -41,9 +41,9 @@ ________________________________________________________________________________
 
 .A_Header3 {
   font-family: 'Benzin-Bold', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--black);
-  letter-spacing: 3%;
+  letter-spacing: 0.037rem;
   line-height: 1.6rem;
 }
 
@@ -52,23 +52,23 @@ ________________________________________________________________________________
   font-size: 1.8rem;
   text-transform: uppercase;
   color: var(--black);
-  letter-spacing: 3%;
-  line-height: 2.5rem;
+  letter-spacing: 0.0525rem;
+  line-height: 2.1rem;
 }
 
 .A_BodyText {
   font-family: 'Inter-Regular';
   font-size: 1.125rem;
   color: var(--black);
-  letter-spacing: 1%;
   line-height: normal;
+  letter-spacing: 0.012rem;
 }
 
 .A_BodyTextWhite {
   font-family: 'Inter-Regular';
   font-size: 1.125rem;
   color: var(--white);
-  letter-spacing: 1%;
+  letter-spacing: 0.012rem;
   line-height: normal;
 }
 
@@ -77,7 +77,7 @@ ________________________________________________________________________________
   font-style: italic;
   font-size: 1.125rem;
   color: var(--black);
-  letter-spacing: 1%;
+  letter-spacing: 0.012rem;
   line-height: normal;
 }
 
@@ -137,12 +137,22 @@ ________________________________________________________________________________
 
 .A_Tag {
   font-family: 'Inter-Regular';
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
   width: fit-content;
   padding: 6px 24px;
   border-radius: 0.18rem;
-  letter-spacing: 1%;
+  letter-spacing: 0.0075rem;
+}
+
+.A_TagLarge {
+  font-family: 'Inter-Regular';
+  font-size: 1.1rem;
+  text-align: center;
+  width: fit-content;
+  padding: 8px 24px;
+  border-radius: 5px;
+  letter-spacing: 0.012rem;
 }
 .A_BurgerMenu {
   width: 5rem;
@@ -160,7 +170,6 @@ ________________________________________________________________________________
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 .A_LogoBlack {
   width: 9.5rem;
@@ -169,7 +178,6 @@ ________________________________________________________________________________
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 .A_HseLogo {
@@ -179,7 +187,6 @@ ________________________________________________________________________________
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 
 .A_SocialNetworks {
@@ -188,7 +195,6 @@ ________________________________________________________________________________
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 .tg {
   background-image: url(../../images/components/02_Atoms/tg.webp);
@@ -339,13 +345,29 @@ ________________________________________________________________________________
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.A_SpotOnePhoto {
+  width: 48%;
+}
+
+.A_SpotsBigPhoto {
+  padding: 0 163px;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.A_SectionsBottomText {
+  padding: 0 50px 120px 50px;
+  text-align: center;
+}
+
 @media screen and (max-width: 500px) {
   .A_Header0 {
     font-size: 5.5rem;
   }
 
   .A_Header1 {
-    font-size: 4.6rem;
+    font-size: 2.375rem;
     text-align: left;
   }
 
@@ -354,7 +376,7 @@ ________________________________________________________________________________
   }
 
   .A_BodyText {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   .A_FactText {
@@ -366,8 +388,8 @@ ________________________________________________________________________________
   }
 
   .A_Tag {
-    font-size: 0.625rem;
-    padding: 8px 10px;
+    font-size: 0.78rem;
+    padding: 0.3125rem 1.25rem;
   }
 
   .A_Button {
@@ -376,5 +398,31 @@ ________________________________________________________________________________
 
   .A_Input {
     width: 100%;
+  }
+
+  .A_IconCover {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+
+  .A_FilterTag {
+    font-size: 1rem;
+    padding: 0.625rem 1.5rem;
+  }
+
+  .A_HeaderCards {
+    font-size: 1.75rem;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .A_SectionsBottomText {
+    font-size: 1.25rem;
+    line-height: 1.4375rem;
   }
 }

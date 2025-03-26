@@ -190,6 +190,50 @@ module.exports = {
       template: './src/spots/spots1.html',
       filename: './spots/spots1.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots2.html',
+      filename: './spots/spots2.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots3.html',
+      filename: './spots/spots3.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots4.html',
+      filename: './spots/spots4.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots5.html',
+      filename: './spots/spots5.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots6.html',
+      filename: './spots/spots6.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots7.html',
+      filename: './spots/spots7.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots8.html',
+      filename: './spots/spots8.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots9.html',
+      filename: './spots/spots9.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots10.html',
+      filename: './spots/spots10.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots11.html',
+      filename: './spots/spots11.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/spots/spots12.html',
+      filename: './spots/spots12.html'
+    }),
     // Section 'Chill' articles
     // Fun Slangs
     new HtmlWebpackPlugin({

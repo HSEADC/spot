@@ -22,6 +22,10 @@ ________________________________________________________________________________
   }
 }
 
+.W_BannerAdress {
+  padding: 88px 163px;
+}
+
 .W_BannerNumbers {
   display: flex;
   align-items: center;
@@ -33,11 +37,20 @@ ________________________________________________________________________________
 .W_BannerQuestion {
   display: flex;
   align-items: center;
-  height: 40vh;
-  padding-left: 8%;
+  justify-content: space-between;
+  height: fit-content;
+  padding: 44px 80px;
+  margin: 80px 163px 0 163px;
+  border-radius: 20px;
+  width: auto;
+  background-color: var(--black);
 
   p {
     color: var(--white);
+  }
+
+  img {
+    width: 32%;
   }
 }
 
@@ -93,14 +106,14 @@ ________________________________________________________________________________
 .W_LocationCardInfo {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 .W_LocationTextWithHeader {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 35%;
+  width: 45%;
   .A_BodyText {
     color: var(--text);
   }
@@ -268,4 +281,26 @@ ________________________________________________________________________________
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.W_SpotsBottomText {
+  padding: 0 163px;
+  margin-top: 49px;
+  width: 70vw;
+}
+
+@media screen and (max-width: 500px) {
+  .W_SectionCover {
+    width: 100%;
+    height: 40vh; /* Высота 40% от высоты окна */
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Для использования абсолютного позиционирования */
+  }
+
+  .W_HeaderWithFilter {
+    padding: 70px 20px 30px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

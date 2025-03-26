@@ -79,7 +79,7 @@ ________________________________________________________________________________
 .M_LocationCardHeader {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   width: 100%;
 
   h4 {
@@ -198,4 +198,20 @@ ________________________________________________________________________________
   flex-direction: row;
   gap: 20px;
   align-items: center;
+}
+
+.M_SpotsCover {
+  position: relative;
+  width: 100%;
+  padding: 0 163px 60px 163px;
+  display: flex;
+  height: 75vh;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.M_SpotsCover > * {
+  z-index: 2;
 }

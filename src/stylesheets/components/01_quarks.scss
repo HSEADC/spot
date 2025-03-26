@@ -62,16 +62,11 @@ ________________________________________________________________________________
   width: 100%;
   background-size: cover;
 }
+
 .Q_BannerQuote {
   background-image: url(../../images/components/01_Quarks/Q_BannerQuote.webp);
   width: 100%;
   background-size: cover;
-}
-.Q_BannerQuestion {
-  background-image: url(../../images/components/01_Quarks/banner_question.webp);
-  width: 100%;
-  background-size: cover;
-  background-position: -270px;
 }
 
 .Q_BannerSkateboards {
@@ -176,8 +171,28 @@ ________________________________________________________________________________
   z-index: 1;
 }
 
+.Q_GradientSquareCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(26, 26, 26, 0.9) 0%,
+    rgba(26, 26, 26, 0) 80%,
+    rgba(26, 26, 26, 0) 100%
+  );
+  z-index: 0;
+}
+
 // ADD IMAGES
 
+.Q_LocPhoto0::before {
+  background-image: url(../../images/spots/Q_SpotCard1.webp);
+}
 .Q_LocPhoto1::before {
   background-image: url(../../images/spots/Q_SpotCard1.webp);
 }
@@ -203,8 +218,18 @@ ________________________________________________________________________________
   background-image: url(../../images/spots/Q_SpotCard8.webp);
 }
 .Q_LocPhoto9::before {
-  background-image: url(../../images/spots/Q_SpotCard1.webp);
+  background-image: url(../../images/spots/Q_SpotCard9.webp);
 }
+.Q_LocPhoto10::before {
+  background-image: url(../../images/spots/Q_SpotCard10.webp);
+}
+.Q_LocPhoto11::before {
+  background-image: url(../../images/spots/Q_SpotCard11.webp);
+}
+.Q_LocPhoto12::before {
+  background-image: url(../../images/spots/Q_SpotCard12.webp);
+}
+
 .Q_FunCard1::before {
   background-image: url(../../images/chill/Q_FunCard1.webp);
 }
@@ -241,6 +266,49 @@ ________________________________________________________________________________
 .Q_FunCard12::before {
   background-image: url(../../images/chill/Q_FunCard12.webp);
 }
+
+.Q_SpotsCovers {
+  background-size: cover;
+  background-position: center center;
+}
+
+.Q_SpotsCover1 {
+  background-image: url(../../images/spots/Q_SpotCard1.webp);
+}
+.Q_SpotsCover2 {
+  background-image: url(../../images/spots/Q_SpotCard2.webp);
+}
+.Q_SpotsCover3 {
+  background-image: url(../../images/spots/Q_SpotCard3.webp);
+}
+.Q_SpotsCover4 {
+  background-image: url(../../images/spots/Q_SpotCard4.webp);
+}
+.Q_SpotsCover5 {
+  background-image: url(../../images/spots/Q_SpotCard5.webp);
+}
+.Q_SpotsCover6 {
+  background-image: url(../../images/spots/Q_SpotCard6.webp);
+}
+.Q_SpotsCover7 {
+  background-image: url(../../images/spots/Q_SpotCard7.webp);
+}
+.Q_SpotsCover8 {
+  background-image: url(../../images/spots/Q_SpotCard8.webp);
+}
+.Q_SpotsCover9 {
+  background-image: url(../../images/spots/Q_SpotCard9.webp);
+}
+.Q_SpotsCover10 {
+  background-image: url(../../images/spots/Q_SpotCard10.webp);
+}
+.Q_SpotsCover11 {
+  background-image: url(../../images/spots/Q_SpotCard11.webp);
+}
+.Q_SpotsCover12 {
+  background-image: url(../../images/spots/Q_SpotCard12.webp);
+}
+
 .Q_Trick1_1 {
   background-image: url(../../images/tricks/Q_Trick1_1.webp);
 }
@@ -308,10 +376,19 @@ ________________________________________________________________________________
 }
 .Q_SlangsPhoto2 {
   width: 60%;
-  height: fit-content;
-  margin: 3.75rem 0 3.75rem 0;
 }
-.Q_FilmPhoto {
-  width: 35%;
-  height: fit-content;
+
+@media screen and (max-width: 500px) {
+  .Q_SectionHeaderPhoto {
+    width: 100%; /* Ширина картинки на 100% */
+    height: 100%; /* Картинка растягивается по высоте родительского блока */
+    object-fit: cover; /* Сохраняет пропорции изображения, обрезая лишнее при необходимости */
+  }
+  .Q_SectionHeaderPhotoMobile {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0;
+  }
+  .Q_SectionHeaderPhotoSpotsMobile {
+    object-position: right center;
+  }
 }
