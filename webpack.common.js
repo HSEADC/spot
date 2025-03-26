@@ -110,6 +110,7 @@ module.exports = {
     }),
 
     // Section 'Tricks' articles
+    // Tricks Skate
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate1.html',
       filename: './tricks/tricksSkate1.html'
@@ -134,6 +135,7 @@ module.exports = {
       template: './src/tricks/tricksSkate6.html',
       filename: './tricks/tricksSkate6.html'
     }),
+    // Tricks BMX
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksBmx1.html',
       filename: './tricks/tricksBmx1.html'
@@ -158,6 +160,7 @@ module.exports = {
       template: './src/tricks/tricksBmx6.html',
       filename: './tricks/tricksBmx6.html'
     }),
+    // Tricks Scooter
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksScooter1.html',
       filename: './tricks/tricksScooter1.html'
@@ -188,6 +191,7 @@ module.exports = {
       filename: './spots/spots1.html'
     }),
     // Section 'Chill' articles
+    // Fun Slangs
     new HtmlWebpackPlugin({
       template: './src/chill/funSlangs1.html',
       filename: './chill/funSlangs1.html'
@@ -216,6 +220,13 @@ module.exports = {
       template: './src/chill/funSlangs7.html',
       filename: './chill/funSlangs7.html'
     }),
+    // Fun Films
+    new HtmlWebpackPlugin({
+      template: './src/chill/funFilms1.html',
+      filename: './chill/funFilms.html'
+    }),
+
+    // Articles
     new HtmlWebpackPlugin({
       template: './src/tips/tips1.html',
       filename: './tips/tips1.html'
