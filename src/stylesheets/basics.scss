@@ -360,7 +360,9 @@ body {
 #navMenu {
   display: none;
 }
-
+#navMenu.active {
+  display: flex;
+}
 @media screen and (max-width: 500px) {
   .O_Header {
     display: none;
@@ -368,9 +370,7 @@ body {
   .O_HeaderMobile {
     display: flex;
   }
-  #navMenu.active {
-    display: flex;
-  }
+
   body {
     h1 {
       font-size: 3.6rem;
