@@ -225,4 +225,20 @@ ________________________________________________________________________________
   .M_MobileLogoMenu {
     display: flex;
   }
+  .M_TricksTextWithHeader {
+    flex-direction: column;
+    gap: 1rem;
+    .C_ListedParagrapgh {
+      width: 100%;
+    }
+    .Q_HeaderWidth {
+      width: 100%;
+    }
+    .A_BodyText {
+      width: 100%;
+    }
+  }
+  .M_Fact {
+    width: 100%;
+  }
 }

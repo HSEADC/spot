@@ -320,4 +320,38 @@ ________________________________________________________________________________
   .W_Menu {
     display: none;
   }
+  .W_TricksMainHeader {
+    height: 80vh;
+    padding: 4rem 3.2rem;
+    justify-content: flex-end;
+    background-position: -60rem;
+    .M_HeaderPlusTag {
+      gap: 1rem;
+    }
+    .A_Header1 {
+      font-size: 2.6rem;
+    }
+  }
+  .W_TricksSection1,
+  .W_TricksSection2,
+  .W_TricksSection3,
+  .W_TricksSection4 {
+    flex-direction: column;
+    padding: 2rem 1.25rem 0 1.25rem;
+    gap: 1.8rem;
+    .Q_BodyTextWidth {
+      width: 100%;
+    }
+  }
+  .W_BannerQuote {
+    padding: 1.8rem 1.25rem;
+    .A_Header2 {
+      font-size: 1.2rem;
+      line-height: 120%;
+    }
+  }
+  .W_BannerNumbers {
+    flex-direction: column;
+    height: auto;
+  }
 }
