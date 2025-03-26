@@ -42,12 +42,12 @@ ________________________________________________________________________________
 }
 
 .W_BannerSkateboards {
-  width: 70rem;
+  width: 80%;
   display: flex;
   align-items: center;
   height: fit-content;
   justify-content: center;
-  padding: 60px 200px;
+  padding: 6% 10%;
 
   p {
     color: var(--white);
@@ -263,4 +263,9 @@ ________________________________________________________________________________
       width: 100%;
     }
   }
+}
+.W_FilmDescripWithHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }

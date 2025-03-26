@@ -299,15 +299,19 @@ ________________________________________________________________________________
   background-image: url(../../images/tricks/Q_Trick18_1.webp);
 }
 .Q_Trick1_2 {
-  height: 60vh;
-  width: 38%;
+  height: fit-content;
+  width: 39%;
 }
 .Q_Trick1_3 {
-  height: 60vh;
-  width: 60%;
+  height: fit-content;
+  width: 59%;
 }
 .Q_SlangsPhoto2 {
   width: 60%;
   height: fit-content;
   margin: 3.75rem 0 3.75rem 0;
+}
+.Q_FilmPhoto {
+  width: 35%;
+  height: fit-content;
 }

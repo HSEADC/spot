@@ -225,6 +225,14 @@ module.exports = {
       template: './src/chill/funFilms1.html',
       filename: './chill/funFilms1.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/funFilms2.html',
+      filename: './chill/funFilms3.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/chill/funFilms3.html',
+      filename: './chill/funFilms3.html'
+    }),
 
     // Articles
     new HtmlWebpackPlugin({
