@@ -5,6 +5,7 @@ ________________________________________________________________________________
 
 .C_Tags {
   display: flex;
+  gap: 10px;
 }
 
 .C_Facts {
@@ -26,7 +27,6 @@ ________________________________________________________________________________
 
   *:hover {
     text-decoration: underline 2px;
-    cursor: pointer;
   }
 }
 
@@ -41,7 +41,6 @@ ________________________________________________________________________________
 
   *:hover {
     text-decoration: underline 2px;
-    cursor: pointer;
   }
 }
 
@@ -87,4 +86,10 @@ ________________________________________________________________________________
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+
+@media screen and (max-width: 500px) {
+  .C_FilterTags {
+    flex-wrap: wrap;
+  }
 }

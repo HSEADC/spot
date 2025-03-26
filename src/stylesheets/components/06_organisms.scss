@@ -20,7 +20,6 @@ ________________________________________________________________________________
       display: inline-block; /* Ensures proper sizing */
       color: black;
       background-color: white;
-      cursor: pointer;
       overflow: hidden; /* Ensures ::before stays within bounds */
       transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
       &::before {
@@ -219,4 +218,37 @@ ________________________________________________________________________________
 
 .O_Link {
   width: fit-content;
+}
+
+.O_SpotsTextPhotos {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 163px;
+  margin-top: 80px;
+  align-items: center;
+  gap: 20px;
+}
+
+.O_SpotsTexts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 163px;
+  margin-top: 80px;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .O_Cards {
+    padding: 0 20px 120px;
+  }
+  .O_Mid {
+    width: 100%;
+  }
+  .O_Big {
+    width: 100%;
+  }
+  .O_Small {
+    width: 100%;
+  }
 }

@@ -82,6 +82,9 @@ function filterByTag() {
     cards.forEach((card) => {
       if (card.classList.contains(tagName)) {
         card.style.cssText = 'display: flex;'
+        card.classList.remove('O_Small')
+        card.classList.remove('O_Big')
+        card.classList.add('O_Mid')
       }
     })
   })
