@@ -1,12 +1,11 @@
 $(document).ready(function () {
-  //
+  // When clicking .main_cover, add 'none' class to <nav>
   $('.main_cover').click(function () {
     $('nav').addClass('none')
   })
-})
-document.getElementById('toggleBtn').addEventListener('click', function () {
-  const navMenu = document.getElementById('navMenu')
 
-  // Toggle 'active' class
-  navMenu.classList.toggle('active')
+  // Toggle 'active' class on #navMenu when clicking #toggleBtn
+  $('#toggleBtn').click(function () {
+    $('#navMenu').toggleClass('active')
+  })
 })
