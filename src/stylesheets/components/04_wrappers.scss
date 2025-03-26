@@ -289,6 +289,7 @@ ________________________________________________________________________________
   width: 70vw;
 }
 .W_MobileMenu {
+  display: none;
   flex-direction: column;
   align-items: center;
   background-color: var(--black);
