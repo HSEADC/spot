@@ -155,12 +155,14 @@ ________________________________________________________________________________
   letter-spacing: 0.012rem;
 }
 .A_BurgerMenu {
+  display: none;
   width: 5rem;
   height: 1.2rem;
   background-image: url(../../images/components/02_Atoms/A_BurgerMenu.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0 1rem;
   cursor: pointer;
 }
 .A_LogoYellow {
@@ -424,5 +426,11 @@ ________________________________________________________________________________
   .A_SectionsBottomText {
     font-size: 1.25rem;
     line-height: 1.4375rem;
+  }
+  .A_LogoYellow {
+    width: 7rem;
+  }
+  .A_BurgerMenu {
+    display: block;
   }
 }

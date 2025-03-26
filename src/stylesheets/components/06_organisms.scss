@@ -229,23 +229,15 @@ ________________________________________________________________________________
   justify-content: center;
 }
 .O_HeaderMobile {
-  background-color: red;
+  background-color: var(--black);
   display: none;
   position: sticky;
   top: 0;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 1.6rem 3.125rem;
+  padding: 1.8rem 2.6rem;
   z-index: 1000;
-}
-@media screen and (max-width: 700px) {
-  .O_Header {
-    display: none;
-  }
-  .O_HeaderMobile {
-    display: flex;
-  }
 }
 
 .O_SpotsTextPhotos {
@@ -278,5 +270,11 @@ ________________________________________________________________________________
   }
   .O_Small {
     width: 100%;
+  }
+  .O_Header {
+    display: none;
+  }
+  .O_HeaderMobile {
+    display: flex;
   }
 }
