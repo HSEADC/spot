@@ -227,7 +227,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/chill/funFilms2.html',
-      filename: './chill/funFilms3.html'
+      filename: './chill/funFilms2.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/chill/funFilms3.html',
