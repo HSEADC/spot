@@ -89,3 +89,7 @@ function filterByTag() {
     })
   })
 }
+
+$('#toggleBtn').click(function () {
+  $('#navMenu').toggleClass('active')
+})

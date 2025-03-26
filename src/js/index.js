@@ -6,7 +6,4 @@ $(document).ready(function () {
   })
 
   // Toggle 'active' class on #navMenu when clicking #toggleBtn
-  $('#toggleBtn').click(function () {
-    $('#navMenu').toggleClass('active')
-  })
 })
