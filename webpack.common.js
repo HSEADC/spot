@@ -223,7 +223,7 @@ module.exports = {
     // Fun Films
     new HtmlWebpackPlugin({
       template: './src/chill/funFilms1.html',
-      filename: './chill/funFilms.html'
+      filename: './chill/funFilms1.html'
     }),
 
     // Articles
