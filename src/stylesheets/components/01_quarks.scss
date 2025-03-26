@@ -374,8 +374,18 @@ ________________________________________________________________________________
   height: fit-content;
   width: 59%;
 }
+
 .Q_SlangsPhoto2 {
   width: 60%;
+}
+.Q_SlangsPhoto2 {
+  width: 60%;
+  height: fit-content;
+  margin: 3.75rem 0 3.75rem 0;
+}
+.Q_FilmPhoto {
+  width: 35%;
+  height: fit-content;
 }
 
 @media screen and (max-width: 500px) {
