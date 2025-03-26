@@ -4,16 +4,17 @@ ________________________________________________________________________________
 */
 
 .O_Header {
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: var(--black);
   display: flex;
   width: 100%;
-  padding: 30px;
   justify-content: space-between;
   align-items: center;
   padding: 1.6rem 3.125rem;
   z-index: 1000;
+  flex-direction: column;
+  overflow: hidden;
   .W_Menu {
     .A_ButtonSmall {
       position: relative; /* Add this line */
@@ -228,17 +229,6 @@ ________________________________________________________________________________
   display: flex;
   justify-content: center;
 }
-.O_HeaderMobile {
-  background-color: var(--black);
-  display: none;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.8rem 2.6rem;
-  z-index: 1000;
-}
 
 .O_SpotsTextPhotos {
   display: flex;
@@ -270,11 +260,5 @@ ________________________________________________________________________________
   }
   .O_Small {
     width: 100%;
-  }
-  .O_Header {
-    display: none;
-  }
-  .O_HeaderMobile {
-    display: flex;
   }
 }

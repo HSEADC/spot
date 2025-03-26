@@ -93,7 +93,15 @@ ________________________________________________________________________________
   gap: 3.75rem;
   padding: 5rem 20% 0 20%;
 }
-
+.C_MobileMenuLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  .A_Header2 {
+    color: var(--white);
+  }
+}
 @media screen and (max-width: 500px) {
   .C_FilterTags {
     flex-wrap: wrap;

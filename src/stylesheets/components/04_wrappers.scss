@@ -99,8 +99,8 @@ ________________________________________________________________________________
 .W_Menu {
   display: flex;
   align-items: center;
-  gap: 6.25rem;
-  width: fit-content;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .W_LocationCardInfo {
@@ -288,7 +288,20 @@ ________________________________________________________________________________
   margin-top: 49px;
   width: 70vw;
 }
-
+.W_MobileMenu {
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black);
+  gap: 20vh;
+  padding: 20vh 0;
+  height: 100vh;
+}
+.W_MenuTg {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  align-items: center;
+}
 @media screen and (max-width: 500px) {
   .W_SectionCover {
     width: 100%;
@@ -302,5 +315,8 @@ ________________________________________________________________________________
     padding: 70px 20px 30px 20px;
     flex-direction: column;
     align-items: flex-start;
+  }
+  .W_Menu {
+    display: none;
   }
 }

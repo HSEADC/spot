@@ -215,3 +215,14 @@ ________________________________________________________________________________
 .M_SpotsCover > * {
   z-index: 2;
 }
+.M_MobileLogoMenu {
+  display: none;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .M_MobileLogoMenu {
+    display: flex;
+  }
+}

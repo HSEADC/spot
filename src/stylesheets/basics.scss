@@ -357,7 +357,12 @@ body {
     color: var(--black);
   }
 }
-
+#navMenu {
+  display: none;
+}
+#navMenu.active {
+  display: flex;
+}
 @media screen and (max-width: 700px) {
   .O_Header {
     display: none;
