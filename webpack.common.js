@@ -213,10 +213,6 @@ module.exports = {
       filename: './chill/funSlangs6.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/chill/funSlangs7.html',
-      filename: './chill/funSlangs7.html'
-    }),
-    new HtmlWebpackPlugin({
       template: './src/tips/tips1.html',
       filename: './tips/tips1.html'
     }),
