@@ -119,10 +119,10 @@ ________________________________________________________________________________
   }
 }
 .O_LocationCard {
-  min-height: 45vh;
+  height: 21.25rem;
   display: flex;
   flex-direction: column;
-  border-radius: 50px 0;
+  border-radius: 1.875rem 0rem;
   overflow: hidden;
   padding: 1.88rem;
   background-position: center;
@@ -145,7 +145,7 @@ ________________________________________________________________________________
   }
 }
 .O_Mid {
-  width: 48.5%;
+  width: calc((100% - 1.25rem) / 2);
 }
 .O_Big {
   width: 100%;
@@ -239,6 +239,33 @@ ________________________________________________________________________________
   padding: 1.6rem 3.125rem;
   z-index: 1000;
 }
+
+.O_Test {
+  margin: 0 10.19rem 7.5rem 10.19rem;
+  padding: 4.38rem 5.62rem;
+  border-radius: 3rem 0rem;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 4.88rem;
+}
+
+.O_Result {
+  margin: 0 10.19rem 7.5rem 10.19rem;
+  padding: 4.38rem 5.62rem;
+  border-radius: 3rem 0rem;
+  background-color: var(--black);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3.75rem;
+
+  img {
+    width: 35%;
+    height: fit-content;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .O_Header {
     display: none;
@@ -266,6 +293,14 @@ ________________________________________________________________________________
   gap: 20px;
 }
 
+.O_Song {
+  height: 9.4375rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.81rem 2.88rem 1.81rem 13.3rem;
+}
+
 @media screen and (max-width: 500px) {
   .O_Cards {
     padding: 0 20px 120px;
@@ -278,5 +313,58 @@ ________________________________________________________________________________
   }
   .O_Small {
     width: 100%;
+  }
+  .O_Test {
+    margin: 0 1.25rem 1.88rem 1.25rem;
+    padding: 1.88rem 1.25rem;
+    border-radius: 1.875rem 0rem;
+    gap: 1.25rem;
+  }
+  .O_Result {
+    margin: 0 1.25rem 1.88rem 1.25rem;
+    padding: 1.25rem 1.25rem 1.88rem 1.25rem;
+    border-radius: 1.875rem 0rem;
+    gap: 1.25rem;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      border-radius: 0.875rem 0 0 0;
+    }
+  }
+
+  .O_SpotsTextPhotos {
+    padding: 0 1.25rem;
+    margin-top: 1.88rem;
+    gap: 1.88rem;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > * {
+      width: 100%;
+    }
+
+    .C_TwoPhoto {
+      order: 3;
+    }
+
+    .W_LocationTextWithHeader {
+      order: 2;
+    }
+
+    .A_SpotOnePhoto {
+      order: 3;
+    }
+  }
+
+  .O_SpotsTexts {
+    margin-top: 2.5rem;
+    padding: 0 1.25rem;
+    flex-direction: column;
+    gap: 1.88rem;
+
+    & > * {
+      width: 100%;
+    }
   }
 }

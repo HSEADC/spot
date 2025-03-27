@@ -4,7 +4,7 @@ ________________________________________________________________________________
 */
 
 .S_MainCover {
-  height: 135vh;
+  height: 145vh;
   padding: 20vh 50px 115px 50px;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,10 @@ ________________________________________________________________________________
   gap: 3.75rem;
   margin-top: 7.5rem;
   padding: 3.75rem 3.125rem 5rem 3.125rem;
+
+  .O_ArticleCard {
+    background-color: var(--white);
+  }
 }
 
 .S_Footer {

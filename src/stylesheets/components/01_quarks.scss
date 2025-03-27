@@ -6,6 +6,11 @@ ________________________________________________________________________________
 .Q_BgWhite {
   background-color: var(--white);
   color: var(--black);
+
+  &:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+  }
 }
 
 .Q_BgYellow {
@@ -13,24 +18,44 @@ ________________________________________________________________________________
   color: var(--black);
 }
 
+.Q_BgYellowButton {
+  background-color: var(--yellow);
+  color: var(--black);
+
+  &:hover {
+    background-color: var(--black);
+    color: var(--yellow);
+  }
+}
+
 .Q_BgGrey {
   background-color: var(--grey);
   color: var(--yellow);
 }
 
-.Q_BgBlackTxtWhite {
+.Q_BgBlack {
   background-color: var(--black);
   color: var(--white);
-}
 
-.Q_BgBlackTxtYellow {
-  background-color: var(--black);
-  color: var(--yellow);
+  &:hover {
+    background-color: var(--yellow);
+    color: var(--black) !important;
+  }
 }
 
 .Q_ButtonStroke {
   background-color: none;
   border: solid 1.5px var(--black);
+}
+
+.Q_ButtonStrokeWhite {
+  background-color: none;
+  border: solid 1.5px var(--white);
+
+  &:hover {
+    color: var(--yellow) !important;
+    border-color: var(--yellow);
+  }
 }
 
 .Q_Row {
@@ -388,6 +413,29 @@ ________________________________________________________________________________
   height: fit-content;
 }
 
+.Q_TipCardSmall1 {
+  background-image: url(../../images/tips/Q_TipCardSmall1.webp);
+}
+
+.Q_BannerQuestion {
+  background-image: url(../../images/components/02_Atoms/A_InfoIllustration.webp);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 90% center;
+}
+
+.Q_Song {
+  width: 18.125rem;
+}
+
+.Q_Artist {
+  width: 15rem;
+}
+
+.Q_Album {
+  width: 12.9375rem;
+}
+
 @media screen and (max-width: 500px) {
   .Q_SectionHeaderPhoto {
     width: 100%; /* Ширина картинки на 100% */
@@ -400,5 +448,19 @@ ________________________________________________________________________________
   }
   .Q_SectionHeaderPhotoSpotsMobile {
     object-position: right center;
+  }
+
+  .Q_GradientSquareCover {
+    background: linear-gradient(
+      to top,
+      rgba(26, 26, 26, 1) 0%,
+      rgba(26, 26, 26, 1) 5%,
+      rgba(26, 26, 26, 0) 100%
+    );
+  }
+
+  .Q_BannerQuestion {
+    background-position: center 1.88rem;
+    background-size: 20rem;
   }
 }
