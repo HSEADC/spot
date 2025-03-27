@@ -273,4 +273,22 @@ ________________________________________________________________________________
       width: 100%;
     }
   }
+  .O_Film {
+    align-items: center;
+    flex-direction: column;
+  }
+  .O_FilmFooterBanner {
+    padding: 4rem 1.25rem 0 1.25rem;
+  }
+  .O_FunCard {
+    width: 100%;
+  }
+  .O_FooterMenuLogoSocial {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+  }
+  .O_TrickCard {
+    width: 100%;
+  }
 }

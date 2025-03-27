@@ -55,3 +55,14 @@ ________________________________________________________________________________
     }
   }
 }
+@media screen and (max-width: 500px) {
+  .S_Footer {
+    padding: 3rem 2.4rem 2.4rem 2.4rem;
+    p {
+      font-size: 12px;
+    }
+  }
+  .S_FooterWithCards {
+    padding: 2rem 1.25rem 6rem 1.25rem;
+  }
+}

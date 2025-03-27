@@ -304,9 +304,7 @@ ________________________________________________________________________________
   gap: 5rem;
   align-items: center;
 }
-.W_ChillCover {
-  width: 100%;
-}
+
 @media screen and (max-width: 500px) {
   .W_SectionCover {
     width: 100%;
@@ -370,8 +368,8 @@ ________________________________________________________________________________
   .W_BannerSkateboards {
     width: 100%;
   }
-  .W_ChillCover {
-    height: 45vh;
-    object-fit: cover;
+  .W_FooterMenuLogo {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
