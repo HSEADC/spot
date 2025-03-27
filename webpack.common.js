@@ -81,7 +81,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index']
     }),
 
     // Error Pages
@@ -113,7 +113,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/chill.html',
       filename: './chill.html',
-      chunks: ['index']
+      chunks: ['index', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/tips.html',
