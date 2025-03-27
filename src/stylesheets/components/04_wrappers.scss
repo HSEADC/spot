@@ -372,4 +372,14 @@ ________________________________________________________________________________
     flex-direction: column;
     gap: 2rem;
   }
+  .W_TrickTagsName {
+    margin-top: 10%;
+  }
+  .W_Form {
+    flex-direction: column;
+    width: 100%;
+    #email {
+      width: 100%;
+    }
+  }
 }

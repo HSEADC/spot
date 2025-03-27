@@ -65,4 +65,12 @@ ________________________________________________________________________________
   .S_FooterWithCards {
     padding: 2rem 1.25rem 6rem 1.25rem;
   }
+  .S_MainCover {
+    height: 180vh;
+    justify-content: flex-end;
+    gap: 45vh;
+  }
+  .S_MainSections:first-of-type .C_Cards > a:nth-child(-n + 3) {
+    display: none;
+  }
 }

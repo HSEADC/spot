@@ -252,7 +252,7 @@ ________________________________________________________________________________
   background-image: url(../../images/chill/Q_FunCard7.webp);
 }
 .Q_FunCard8::before {
-  background-image: url(../../images/chill/Q_FunCard3.webp);
+  background-image: url(../../images/chill/Q_FunCard8.webp);
 }
 .Q_FunCard9::before {
   background-image: url(../../images/chill/Q_FunCard9.webp);
@@ -420,5 +420,8 @@ ________________________________________________________________________________
   }
   .Q_FilmPhoto {
     width: 50%;
+  }
+  .Q_MainCover {
+    background-position: -320vw;
   }
 }
