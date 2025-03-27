@@ -364,6 +364,14 @@ ________________________________________________________________________________
   font-size: 140px;
   color: var(--midgrey);
 }
+.A_Arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url('../../images/components/02_Atoms/A_Arrow.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 @media screen and (max-width: 500px) {
   .A_Header0 {
     font-size: 2.6rem;
