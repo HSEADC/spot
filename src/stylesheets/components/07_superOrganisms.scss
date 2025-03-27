@@ -70,7 +70,9 @@ ________________________________________________________________________________
     justify-content: flex-end;
     gap: 45vh;
   }
-  .S_MainSections:first-of-type .C_Cards > a:nth-child(-n + 3) {
-    display: none;
+  .S_MainSections {
+    .C_Cards:first-of-type > *:nth-child(-n + 3) {
+      display: none !important;
+    }
   }
 }
