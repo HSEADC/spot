@@ -371,6 +371,9 @@ ________________________________________________________________________________
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 80vh;
+  left: 49%;
 }
 @media screen and (max-width: 500px) {
   .A_Header0 {
