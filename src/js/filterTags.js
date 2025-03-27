@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   initFilter()
   initBurgerMenu()
+  filterAll()
+  filterByTag()
 })
 
 function initFilter() {
