@@ -278,7 +278,7 @@ module.exports = {
       filename: './chill/funFilms3.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/chill/funMuisc1.html',
+      template: './src/chill/funMusic1.html',
       filename: './chill/funMusic1.html'
     }),
     new HtmlWebpackPlugin({
