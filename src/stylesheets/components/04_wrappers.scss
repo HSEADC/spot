@@ -146,6 +146,7 @@ ________________________________________________________________________________
   padding: 2rem 3.125rem 2rem 3.125rem;
 }
 .W_TrickTagsName {
+  margin-top: 30%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -303,6 +304,9 @@ ________________________________________________________________________________
   gap: 5rem;
   align-items: center;
 }
+.W_ChillCover {
+  width: 100%;
+}
 @media screen and (max-width: 500px) {
   .W_SectionCover {
     width: 100%;
@@ -335,11 +339,20 @@ ________________________________________________________________________________
   .W_TricksSection1,
   .W_TricksSection2,
   .W_TricksSection3,
-  .W_TricksSection4 {
+  .W_TricksSection4,
+  .W_SlangsSection1,
+  .W_SlangsSection2,
+  .W_SlangsSection3 {
     flex-direction: column;
     padding: 2rem 1.25rem 0 1.25rem;
     gap: 1.8rem;
     .Q_BodyTextWidth {
+      width: 100%;
+    }
+    .C_ListedParagrapgh {
+      width: 100%;
+    }
+    div.C_ListedParagrapgh + p {
       width: 100%;
     }
   }
@@ -353,5 +366,12 @@ ________________________________________________________________________________
   .W_BannerNumbers {
     flex-direction: column;
     height: auto;
+  }
+  .W_BannerSkateboards {
+    width: 100%;
+  }
+  .W_ChillCover {
+    height: 45vh;
+    object-fit: cover;
   }
 }

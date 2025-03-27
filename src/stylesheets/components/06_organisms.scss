@@ -186,13 +186,13 @@ ________________________________________________________________________________
   overflow: hidden;
   background-color: var(--midgrey);
   justify-content: flex-start;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out;
   .A_BodyText {
     color: var(--grey);
     font-style: italic;
   }
   &:hover {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -260,5 +260,17 @@ ________________________________________________________________________________
   }
   .O_Small {
     width: 100%;
+  }
+  .O_SmallBanner {
+    margin-top: 40px;
+    flex-direction: column-reverse;
+    min-height: auto;
+    width: 100%;
+    padding: 2rem 1.25rem;
+    margin-top: 0;
+    gap: 2rem;
+    .A_ButtonSmall {
+      width: 100%;
+    }
   }
 }

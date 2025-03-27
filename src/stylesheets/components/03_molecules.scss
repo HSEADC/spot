@@ -241,4 +241,15 @@ ________________________________________________________________________________
   .M_Fact {
     width: 100%;
   }
+  .M_HeaderWithTag {
+    flex-direction: column;
+    padding: 2rem 1.25rem 0 1.25rem;
+    gap: 1.8rem;
+  }
+  .M_SlangsTextWithHeader {
+    width: 100%;
+  }
+  .M_BannerTextWithButton {
+    width: 100%;
+  }
 }
