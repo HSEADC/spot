@@ -81,6 +81,12 @@ module.exports = {
       filename: './index.html'
     }),
 
+    // Error Pages
+    new HtmlWebpackPlugin({
+      template: './src/404.html',
+      filename: './404.html'
+    }),
+
     // Main sections
     new HtmlWebpackPlugin({
       template: './src/about.html',
