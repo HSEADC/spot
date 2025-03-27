@@ -374,6 +374,10 @@ ________________________________________________________________________________
   position: absolute;
   top: 80vh;
   left: 49%;
+  display: none;
+  opacity: 1; /* Default opacity */
+  pointer-events: auto;
+  transition: opacity 0.3s ease;
 }
 @media screen and (max-width: 500px) {
   .A_Header0 {
@@ -451,9 +455,9 @@ ________________________________________________________________________________
   }
 
   .A_Arrow {
-    transition: opacity 0.3s ease;
+    display: block; /* Make the arrow visible on smaller screens */
   }
-
+  /* Hidden class for hiding the arrow on scroll down */
   .A_Arrow.hidden {
     opacity: 0;
     pointer-events: none;

@@ -131,13 +131,11 @@ function initScrollEffect() {
     let scrollTop = window.scrollY || document.documentElement.scrollTop
 
     if (scrollTop > lastScrollTop) {
-      // Hide when scrolling down
-      arrow.style.opacity = '0'
-      arrow.style.pointerEvents = 'none'
+      // Hide when scrolling down (add the 'hidden' class)
+      arrow.classList.add('hidden')
     } else {
-      // Show when scrolling up
-      arrow.style.opacity = '1'
-      arrow.style.pointerEvents = 'auto'
+      // Show when scrolling up (remove the 'hidden' class)
+      arrow.classList.remove('hidden')
     }
 
     lastScrollTop = scrollTop
