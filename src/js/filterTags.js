@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   initFilter()
   initBurgerMenu()
-  initScrollEffect() // Adding scroll effect for hiding the arrow
 })
 
 function initFilter() {
@@ -10,26 +9,26 @@ function initFilter() {
 
   tags.forEach((tag) => {
     tag.addEventListener('click', () => {
-      if (tag !== a) {
+      if (tag != a) {
         a.classList.remove('active')
         tag.classList.toggle('active')
         console.log('здесь будет функция фильтрации по тегу')
         filterByTag()
       }
 
-      let activeTags = document.querySelectorAll('.active')
-      if (tag === a && !tag.classList.contains('active')) {
-        activeTags.forEach((activeTag) => {
-          activeTag.classList.remove('active')
+      let b = document.querySelectorAll('.active')
+      if (tag == a && !tag.classList.contains('active')) {
+        b.forEach((tag) => {
+          tag.classList.remove('active')
         })
         tag.classList.add('active')
         console.log('здесь будет функция вывода всех карточек')
         filterAll()
       }
 
-      if (tags.length - 1 === activeTags.length || activeTags.length === 0) {
-        activeTags.forEach((activeTag) => {
-          activeTag.classList.remove('active')
+      if (tags.length - 1 == b.length || b.length == 0) {
+        b.forEach((tag) => {
+          tag.classList.remove('active')
         })
         a.classList.add('active')
         console.log('здесь будет функция вывода всех карточек')
@@ -71,7 +70,7 @@ function filterByTag() {
     let classList = tag.className.split(' ')
     classList = classList.sort()
     count = 1
-    if (classList[1] === 'active') {
+    if (classList[1] == 'active') {
       count++
     }
     for (let i = count; i < classList.length; i++) {
@@ -117,27 +116,5 @@ function initBurgerMenu() {
         'https://raw.githubusercontent.com/HSEADC/spot/refs/heads/main/src/images/components/02_Atoms/A_BurgerMenu.svg'
       )
     }
-  })
-}
-
-// Scroll effect for hiding the arrow
-function initScrollEffect() {
-  let arrow = document.querySelector('.A_Arrow')
-  if (!arrow) return // Prevent errors if the element is missing
-
-  let lastScrollTop = 0
-
-  window.addEventListener('scroll', function () {
-    let scrollTop = window.scrollY || document.documentElement.scrollTop
-
-    if (scrollTop > lastScrollTop) {
-      // Hide when scrolling down (add the 'hidden' class)
-      arrow.classList.add('hidden')
-    } else {
-      // Show when scrolling up (remove the 'hidden' class)
-      arrow.classList.remove('hidden')
-    }
-
-    lastScrollTop = scrollTop
   })
 }
