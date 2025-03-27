@@ -446,4 +446,13 @@ ________________________________________________________________________________
     width: 6rem;
     height: 6rem;
   }
+
+  .A_Arrow {
+    transition: opacity 0.3s ease;
+  }
+
+  .A_Arrow.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
