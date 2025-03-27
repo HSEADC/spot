@@ -20,6 +20,12 @@ ________________________________________________________________________________
   gap: 20px;
 }
 
+.C_TwoPhotoMain {
+  display: flex;
+  width: 35vw;
+  gap: 20px;
+}
+
 .C_HeaderMenuSections {
   display: flex;
   flex-direction: row;
@@ -176,7 +182,7 @@ ________________________________________________________________________________
   .C_Authors {
     gap: 10px;
   }
-  .C_TwoPhoto {
+  .C_TwoPhotoMain {
     width: 120%;
     margin-left: 80px;
   }

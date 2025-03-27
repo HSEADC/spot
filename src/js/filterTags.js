@@ -94,6 +94,7 @@ function filterByTag() {
 function initBurgerMenu() {
   // Toggle the nav menu
   $('#toggleBtn').click(function () {
+    console.log('burger menu')
     $('#navMenu').toggleClass('active')
   })
 

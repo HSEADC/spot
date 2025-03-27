@@ -267,10 +267,7 @@ ________________________________________________________________________________
   }
 }
 
-@media screen and (max-width: 700px) {
-  .O_Header {
-    display: none;
-  }
+@media screen and (max-width: 500px) {
   .O_HeaderMobile {
     display: flex;
   }

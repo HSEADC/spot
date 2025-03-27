@@ -448,13 +448,6 @@ ________________________________________________________________________________
       width: 100%;
     }
   }
-}
-@media only screen and (max-width: 1380px) and (min-width: 501px) {
-  .W_TrickTagsName {
-    margin-top: 20%;
-    gap: 1rem;
-  }
-
   .W_TextButtonImg {
     margin: 1rem 1.25rem 1.88rem 1.25rem;
 
@@ -493,5 +486,11 @@ ________________________________________________________________________________
     padding: 0 1.25rem;
     width: 100%;
     margin-top: 1.88rem;
+  }
+}
+@media only screen and (max-width: 1380px) and (min-width: 501px) {
+  .W_TrickTagsName {
+    margin-top: 20%;
+    gap: 1rem;
   }
 }

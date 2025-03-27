@@ -81,7 +81,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index']
+      chunks: ['index', 'filterTags']
     }),
 
     // Error Pages
@@ -341,12 +341,9 @@ module.exports = {
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
-      template: './src/chill/funMusic1.html',
-      filename: './chill/funMusic1.html'
-    }),
-    new HtmlWebpackPlugin({
       template: './src/chill/funMusic2.html',
-      filename: './chill/funMusic2.html'
+      filename: './chill/funMusic2.html',
+      chunks: ['index']
     }),
 
     // Articles
