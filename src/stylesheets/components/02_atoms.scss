@@ -13,9 +13,9 @@ ________________________________________________________________________________
 
 .A_Header1 {
   font-family: 'Benzin-Bold', sans-serif;
-  font-size: 4.6rem;
+  font-size: 4.125rem;
   text-transform: uppercase;
-  letter-spacing: 3%;
+  letter-spacing: 0.12375rem;
   line-height: 115%;
 }
 
@@ -56,6 +56,10 @@ ________________________________________________________________________________
   line-height: 2.1rem;
 }
 
+.A_HeaderTest {
+  margin: 5rem 10.19rem 1.25rem 10.19rem;
+}
+
 .A_BodyText {
   font-family: 'Inter-Regular';
   font-size: 1.125rem;
@@ -81,6 +85,23 @@ ________________________________________________________________________________
   line-height: normal;
 }
 
+.A_TextAnnotation {
+  font-family: 'Inter-Regular';
+  font-style: italic;
+  color: var(--text);
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.01125rem;
+}
+
+.A_BodyTextBold {
+  font-family: 'Inter-SemiBold';
+  font-size: 1.125rem;
+  color: var(--black);
+  line-height: normal;
+  letter-spacing: 0.012rem;
+}
+
 .A_TextButton {
   font-family: 'Inter-SemiBold';
   font-size: 1.125rem;
@@ -94,8 +115,6 @@ ________________________________________________________________________________
   border-radius: 6px;
 
   &:hover {
-    opacity: 70%;
-
     .A_TextButton {
       text-decoration: none;
     }
@@ -291,8 +310,8 @@ ________________________________________________________________________________
 .A_ArrowYellow {
   opacity: 0;
   visibility: hidden;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   background-image: url(../../images/components/02_Atoms/arrow-yellow.svg);
   background-size: contain;
   background-position: center;
@@ -379,6 +398,33 @@ ________________________________________________________________________________
   pointer-events: auto;
   transition: opacity 0.3s ease;
 }
+.A_TestCoverImageMobile {
+  display: none;
+  width: calc(100% - 3.76rem);
+  margin: 1.88rem 1.25rem 1rem 1.25rem;
+}
+
+.A_YellowBorder {
+  width: 3.2rem;
+  height: 9.25rem;
+  border-radius: 1.875rem 0rem;
+  background: var(--yellow, #f1fd53);
+}
+
+.A_TipsPhoto {
+  width: 41.25rem;
+  margin: 0 auto 3.12rem auto;
+  display: flex;
+}
+
+.A_MusicIcon {
+  width: 3rem;
+}
+
+.A_AlbumCover {
+  width: 5.81rem;
+}
+
 @media screen and (max-width: 500px) {
   .A_Header0 {
     font-size: 2.6rem;
@@ -389,12 +435,26 @@ ________________________________________________________________________________
     text-align: left;
   }
 
+  .A_Header2 {
+    font-size: 1.75rem;
+    line-height: 2.0125rem;
+    letter-spacing: 0.0525rem;
+  }
+
+  .A_Header3 {
+    font-size: 1.125rem;
+    line-height: 1.29375rem;
+    letter-spacing: 0.0225rem;
+  }
+
   .A_HeaderCards {
     font-size: 2.1rem;
   }
 
   .A_BodyText {
-    font-size: 1.125rem;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    letter-spacing: 0.01rem;
   }
 
   .A_FactText {
@@ -461,5 +521,45 @@ ________________________________________________________________________________
   .A_Arrow.hidden {
     opacity: 0;
     pointer-events: none;
+  }
+
+  .A_HeaderTest {
+    margin: 1.88rem 1.25rem 1rem 1.25rem;
+  }
+
+  .A_TestCoverImageMobile {
+    display: block;
+  }
+
+  .A_TextAnnotation {
+    font-size: 0.75rem;
+    line-height: 0.8625rem;
+    letter-spacing: 0.0075rem;
+  }
+
+  .A_YellowBorder {
+    height: 6rem;
+  }
+
+  .A_Numbers {
+    padding: 0.35156rem;
+    min-width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 0.39063rem 0rem;
+  }
+
+  .A_TipsPhoto {
+    margin-inline: 1.25rem;
+    width: calc(100% - 2.5rem);
+  }
+
+  .A_ImgAbout {
+    width: calc(50% - 0.31rem);
+  }
+
+  .A_SpotsBigPhoto {
+    margin-top: 1.88rem;
+    padding: 0 1.25rem;
+    width: 100%;
   }
 }

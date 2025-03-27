@@ -150,12 +150,19 @@ body::-webkit-scrollbar-thumb {
   /* border: 3px solid orange;  padding вокруг плашки */
 }
 
+@media screen and (max-width: 500px) {
+  body::-webkit-scrollbar {
+    width: 5px; /* ширина scrollbar */
+  }
+}
+
 html,
 body {
   cursor: url(./../images/components/02_Atoms/default.svg) 1 1, default;
 }
 
 a,
-button {
+button,
+input {
   cursor: url(./../images/components/02_Atoms/pointer.svg) 1 1, pointer;
 }

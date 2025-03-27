@@ -69,7 +69,8 @@ ________________________________________________________________________________
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1.8rem;
+  column-gap: 1.25rem;
+  row-gap: 1.88rem;
 }
 
 .C_Authors {
@@ -103,6 +104,57 @@ ________________________________________________________________________________
     color: var(--white);
   }
 }
+.C_AnswerCards {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.25rem 1.875rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.C_Buttons {
+  display: flex;
+  gap: 0.62rem;
+}
+
+.C_ResultScore {
+  display: flex;
+}
+
+.C_MusicIcons {
+  display: flex;
+  gap: 0.69rem;
+}
+
+.C_SongTextHead {
+  display: flex;
+  padding: 5rem 3.12rem 0 24.12rem;
+}
+
+.C_SongText {
+  display: flex;
+  padding: 0;
+}
+
+.C_Music {
+  display: flex;
+  flex-direction: column;
+}
+
+.C_Music .O_Song:nth-child(odd) {
+  background-color: var(--white);
+}
+
+.C_Music .O_Song:nth-child(even) {
+  background-color: var(--lightgrey);
+}
+
+.C_Music .O_Song:nth-child(even) .Q_BgGrey {
+  background-color: var(--black);
+  color: var(--yellow);
+}
+
 @media screen and (max-width: 500px) {
   .C_FilterTags {
     flex-wrap: wrap;
@@ -127,5 +179,19 @@ ________________________________________________________________________________
   .C_TwoPhoto {
     width: 120%;
     margin-left: 80px;
+  }
+
+  .C_AnswerCards {
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .C_Buttons {
+    flex-direction: column;
+  }
+
+  .C_TwoPhoto {
+    gap: 0.62rem;
+    width: calc(100% - 2.5rem);
   }
 }
