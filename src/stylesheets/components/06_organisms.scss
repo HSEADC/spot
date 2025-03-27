@@ -247,7 +247,24 @@ ________________________________________________________________________________
   align-items: flex-start;
   gap: 20px;
 }
+.O_Error {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  flex-direction: column;
+  gap: 40px;
+  .A_Header1 {
+    color: var(--black);
+    text-align: center;
 
+    .A_Header1 + .A_BodyText {
+      width: 60%;
+      text-align: center;
+    }
+  }
+}
 @media screen and (max-width: 500px) {
   .O_Cards {
     padding: 0 20px 120px;
@@ -303,6 +320,17 @@ ________________________________________________________________________________
   .O_Form {
     .M_HeaderText {
       padding: 0 10vw;
+    }
+  }
+  .O_Error {
+    padding: 40% 10%;
+    gap: 50px;
+    .A_Header1 {
+      font-size: 3rem;
+    }
+    .A_Header1 + .A_BodyText {
+      width: 100%;
+      text-align: center;
     }
   }
 }

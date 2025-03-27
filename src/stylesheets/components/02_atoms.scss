@@ -359,7 +359,11 @@ ________________________________________________________________________________
   padding: 0 50px 120px 50px;
   text-align: center;
 }
-
+.A_ErrorText {
+  font-family: 'Siegra';
+  font-size: 140px;
+  color: var(--midgrey);
+}
 @media screen and (max-width: 500px) {
   .A_Header0 {
     font-size: 2.6rem;
