@@ -304,7 +304,12 @@ ________________________________________________________________________________
   gap: 5rem;
   align-items: center;
 }
-
+.W_ErrorHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (max-width: 500px) {
   .W_SectionCover {
     width: 100%;
@@ -315,9 +320,10 @@ ________________________________________________________________________________
   }
 
   .W_HeaderWithFilter {
-    padding: 70px 20px 30px 20px;
+    padding: 80px 20px 30px 20px;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
   }
   .W_Menu {
     display: none;
