@@ -462,11 +462,11 @@ body {
       }
     }
   }
-  #navMenu {
-    display: none;
-  }
   #navMenu.active {
     display: flex;
+  }
+  #navMenu {
+    display: none;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -492,6 +492,7 @@ body {
     p {
       font-size: 1rem;
     }
+
     #navMenu {
       display: none;
     }
