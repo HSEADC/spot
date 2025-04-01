@@ -11,6 +11,7 @@ function initFilter() {
 
   tags.forEach((tag) => {
     tag.addEventListener('click', () => {
+      console.log(1)
       if (tag != a) {
         a.classList.remove('active')
         tag.classList.toggle('active')

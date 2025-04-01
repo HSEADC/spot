@@ -1,3 +1,5 @@
+import './jquery-3.6.1.js'
+
 $(document).ready(function () {
   console.log(' Script loaded!')
   // When clicking .main_cover, add 'none' class to <nav>

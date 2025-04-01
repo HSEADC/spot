@@ -9,6 +9,7 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
+    jQuery: './src/js/jquery-3.6.1.js',
     filterTags: './src/js/filterTags.js',
     test: './src/js/test.js'
   },
@@ -81,7 +82,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
 
     // Error Pages
@@ -98,32 +99,32 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/about.html',
       filename: './about.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks.html',
       filename: './tricks.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots.html',
       filename: './spots.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill.html',
       filename: './chill.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/tips.html',
       filename: './tips.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
       filename: './styleguide.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
 
     // Section 'Tricks' articles
@@ -131,43 +132,43 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate1.html',
       filename: './tricks/tricksSkate1.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate2.html',
       filename: './tricks/tricksSkate2.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate3.html',
       filename: './tricks/tricksSkate3.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate4.html',
       filename: './tricks/tricksSkate4.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate5.html',
       filename: './tricks/tricksSkate5.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate6.html',
       filename: './tricks/tricksSkate6.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     // Tricks BMX
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksBmx1.html',
       filename: './tricks/tricksBmx1.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksBmx2.html',
       filename: './tricks/tricksBmx2.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'jQuery', 'filterTags']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksBmx3.html',
