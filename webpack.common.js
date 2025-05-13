@@ -10,7 +10,8 @@ module.exports = {
   entry: {
     index: './src/index.js',
     filterTags: './src/js/filterTags.js',
-    test: './src/js/test.js'
+    test: './src/js/test.js',
+    menu: './src/js/menu.js'
   },
   output: {
     filename: '[name].js',
@@ -394,7 +395,8 @@ module.exports = {
         path: path.join(__dirname, './src/partials/nav.html'),
         location: 'navPartial',
         template_filename: '*',
-        priority: 'replace'
+        priority: 'replace',
+        chunks: ['menu']
       }
     ]),
     new HtmlWebpackPartialsPlugin([
