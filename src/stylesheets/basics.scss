@@ -462,11 +462,11 @@ body {
       }
     }
   }
-  #navMenu {
-    display: none;
-  }
   #navMenu.active {
     display: flex;
+  }
+  #navMenu {
+    display: none;
   }
 }
 .active {

@@ -370,6 +370,55 @@ ________________________________________________________________________________
   align-items: center;
 }
 
+@media only screen and (max-width: 1380px) and (min-width: 501px) {
+  .W_TrickTagsName {
+    margin-top: 20%;
+    gap: 1rem;
+  }
+
+  .W_TextButtonImg {
+    margin: 1rem 1.25rem 1.88rem 1.25rem;
+
+    img {
+      display: none;
+    }
+  }
+
+  .W_ListItem {
+    margin-inline: 1.25rem;
+    width: calc(100% - 2.5rem);
+    gap: 0.62rem;
+  }
+
+  .W_TipsLinkTest {
+    margin-inline: 1.25rem;
+    width: calc(100% - 2.5rem);
+  }
+
+  .W_BannerAdress {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .W_BannerQuestion {
+    margin: 2.5rem 1.25rem;
+    padding: 1.88rem;
+    flex-direction: column-reverse;
+    gap: 2.5rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .W_SpotsBottomText {
+    padding: 0 1.25rem;
+    width: 100%;
+    margin-top: 1.88rem;
+  }
+  .W_Menu {
+    display: flex;
+  }
+}
 @media screen and (max-width: 500px) {
   .W_SectionCover {
     width: 100%;
