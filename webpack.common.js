@@ -353,6 +353,66 @@ module.exports = {
       filename: './tips/tips1.html',
       chunks: ['index']
     }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips2.html',
+      filename: './tips/tips2.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips3.html',
+      filename: './tips/tips3.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips4.html',
+      filename: './tips/tips4.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips5.html',
+      filename: './tips/tips5.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips6.html',
+      filename: './tips/tips6.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips7.html',
+      filename: './tips/tips7.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips8.html',
+      filename: './tips/tips8.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips9.html',
+      filename: './tips/tips9.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips10.html',
+      filename: './tips/tips10.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips11.html',
+      filename: './tips/tips11.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips12.html',
+      filename: './tips/tips12.html',
+      chunks: ['index']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tips/tips13.html',
+      filename: './tips/tips13.html',
+      chunks: ['index']
+    }),
     // Components
     new HtmlWebpackPlugin({
       template: './src/components.html',
