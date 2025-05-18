@@ -418,6 +418,6 @@ module.exports = {
     ])
   ],
   optimization: {
-    minimizer: [new CssMinimizerPlugin()]
+    // minimizer: [new CssMinimizerPlugin()]
   }
 }
