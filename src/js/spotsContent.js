@@ -10,8 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
+// const token =
+//   'pat6NlUMRXr1Hpyuv.f31b5411264b7db981199aee8e05b7a44313c4f4a910b4099fc33a36478482ea'
+
 const token =
-  'pat6NlUMRXr1Hpyuv.f31b5411264b7db981199aee8e05b7a44313c4f4a910b4099fc33a36478482ea'
+  'patBbosjGKktgKYih.5882b4ff3b2f3784c56f88d80f2b5ac3571854e87c07c2b89f7d3de16161dde3'
 
 Airtable.configure({
   endpointUrl: 'https://api.airtable.com',
@@ -24,7 +27,11 @@ function getArticleContent() {
     const content = []
 
     base('spots')
-      .select({ maxRecords: 100 })
+      .select({
+        maxRecords: 100,
+        sort: [{ field: 'Index', direction: 'asc' }] // ВАЖНО!
+      })
+
       .firstPage()
       .then((result) => {
         result.forEach((record) => {
@@ -79,10 +86,11 @@ function createArticleContent(cards) {
     const C_Tags = document.createElement('div')
     C_Tags.classList.add('C_Tags')
 
-    tags.forEach(() => {
+    tags.forEach((tagText) => {
       const tag = document.createElement('div')
       tag.classList.add('A_Tag', 'Q_BgYellow')
-      tag.innerText = tag
+      tag.innerText = tagText
+      C_Tags.appendChild(tag)
     })
 
     const A_HeaderCards = document.createElement('h4')
@@ -108,7 +116,7 @@ function createArticleContent(cards) {
 
     const Metro = document.createElement('p')
     Metro.classList.add('A_BodyText')
-    Metro.src = metro
+    Metro.innerText = metro
 
     const A_ArrowYellow = document.createElement('div')
     A_ArrowYellow.classList.add('A_ArrowYellow')
