@@ -23,7 +23,7 @@ function getArticleContent() {
   return new Promise((resolve, reject) => {
     const content = []
 
-    base('teasers')
+    base('spots')
       .select({ maxRecords: 100 })
       .firstPage()
       .then((result) => {
