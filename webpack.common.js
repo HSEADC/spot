@@ -82,7 +82,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index']
+      chunks: ['index', 'menu']
     }),
 
     // Error Pages
