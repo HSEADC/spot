@@ -69,6 +69,10 @@ strong {
   font-family: 'Inter-SemiBold';
   font-weight: 600;
 }
+.disabled {
+  background-color: var(--grey) !important;
+  cursor: url(../images/components/02_Atoms/default.svg) 1 1, default !important;
+}
 nav.navMobile {
   width: 90%;
   height: 10vw;

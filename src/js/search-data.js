@@ -1,7 +1,7 @@
 import Airtable from 'airtable'
 
 const token =
-  'patWJ1m7vuYs8HPrk.764ec31e150e7d996f85c1d9beae7cba274eb0ef45011bbd83864d25907e6ba3'
+  'patBbosjGKktgKYih.5882b4ff3b2f3784c56f88d80f2b5ac3571854e87c07c2b89f7d3de16161dde3'
 
 Airtable.configure({
   endpointUrl: 'https://api.airtable.com',
@@ -13,7 +13,7 @@ function getPostTeasers() {
   return new Promise((resolve, reject) => {
     const content = []
 
-    base('teasers')
+    base('spots')
       .select({ maxRecords: 100 })
       .firstPage()
       .then((result) => {
@@ -24,7 +24,11 @@ function getPostTeasers() {
             description: record.fields['Description'],
             tags: record.fields['Tags'],
             image: record.fields['Image'],
-            url: record.fields['URL']
+            url: record.fields['URL'],
+            metro: record.fields['Metro'],
+            metroLogo: record.fields['Metro_Logo'],
+            classes: record.fields['Class'],
+            index: record.fields['Index']
           })
         })
         resolve(content)

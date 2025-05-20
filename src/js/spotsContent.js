@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   getArticleContent().then((data) => {
     content = data
 
-    // createstroke(content)
     createArticleContent(content)
   })
 })
@@ -29,7 +28,7 @@ function getArticleContent() {
     base('spots')
       .select({
         maxRecords: 100,
-        sort: [{ field: 'Index', direction: 'asc' }] // ВАЖНО!
+        sort: [{ field: 'Index', direction: 'asc' }]
       })
 
       .firstPage()

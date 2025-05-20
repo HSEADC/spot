@@ -1,121 +1,137 @@
-// import { getPostTeasers } from './search-data'
+import { getPostTeasers } from './search-data'
 
-// let content
+let content
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   getPostTeasers().then((data) => {
-//     content = data
+document.addEventListener('DOMContentLoaded', () => {
+  getPostTeasers().then((data) => {
+    content = data
 
-//     createCard(content)
-//     initSearch()
-//   })
-// })
+    document.querySelector('.C_LocationCards').innerHTML = ''
+    content.forEach((card) => createCard(card))
 
-// function initSearch() {
-//   const O_Search = document.querySelector('.O_Search')
-//   const A_SearchButton = document.querySelector('.A_SearchButton')
-//   const A_SearchInput = O_Search.querySelector('.A_SearchInput')
+    initSearch()
+  })
 
-//   let requestText = getSearchRequest()
+  getPostTeasers().then((data) => {
+    content = data
 
-//   if (requestText != undefined) {
-//     A_SearchInput.value = requestText
+    content.sort((a, b) => a.index - b.index)
 
-//     if (content) {
-//       searchContent(requestText)
-//     }
-//   } else {
-//     A_SearchInput.value = ''
-//   }
+    document.querySelector('.C_LocationCards').innerHTML = ''
+    content.forEach((card) => createCard(card))
 
-//   A_SearchInput.addEventListener('input', (e) => {
-//     requestText = e.target.value
-//     if (requestText.length >= 3) {
-//       A_SearchButton.classList.remove('disabled')
-//     } else {
-//       A_SearchButton.classList.add('disabled')
-//     }
-//   })
+    initSearch()
+  })
+})
 
-//   A_SearchInput.addEventListener('keydown', (e) => {
-//     requestText = e.target.value
+function initSearch() {
+  const O_Search = document.querySelector('.O_Search')
+  const A_SearchButton = document.querySelector('.A_SearchButton')
+  const A_SearchInput = O_Search.querySelector('.A_SearchInput')
 
-//     if (e.key == 'Enter') {
-//       setSearchRequest(requestText)
-//       searchContent(requestText)
-//     }
-//   })
+  let requestText = getSearchRequest()
 
-//   A_SearchButton.addEventListener('click', (e) => {
-//     if (!e.target.classList.contains('disabled')) {
-//       requestText = A_SearchInput.value
-//       setSearchRequest(requestText)
-//       searchContent(requestText)
-//     }
-//   })
-// }
+  if (requestText != undefined) {
+    A_SearchInput.value = requestText
 
-// function searchContent(requestText) {
-//   const container = document.querySelector('.S_Content')
-//   container.innerHtml = ''
+    if (content) {
+      searchContent(requestText)
+    }
+  } else {
+    A_SearchInput.value = ''
+  }
 
-//   let contentItemIds = []
+  A_SearchInput.addEventListener('input', (e) => {
+    requestText = e.target.value
+    if (requestText.length >= 3) {
+      A_SearchButton.classList.remove('disabled')
+    } else {
+      A_SearchButton.classList.add('disabled')
+    }
+  })
 
-//   content.forEach((contentItem) => {
-//     const nbspRegEx = /[\u202F\u00A0]/gm
-//     const punctuationRegEx = /[.,\/#!$%\^&\*;:{}=\-_`()]/gm
+  A_SearchInput.addEventListener('keydown', (e) => {
+    requestText = e.target.value
 
-//     let { title, description, id } = contentItem
+    if (e.key == 'Enter') {
+      setSearchRequest(requestText)
+      searchContent(requestText)
+    }
+  })
 
-//     title = title.replaceAll(nbspRegEx, ' ')
-//     title = title.replaceAll(punctuationRegEx, '')
+  A_SearchButton.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('disabled')) {
+      requestText = A_SearchInput.value
+      setSearchRequest(requestText)
+      searchContent(requestText)
+    }
+  })
+}
 
-//     description = description.replaceAll(nbspRegEx, ' ')
-//     description = description.replaceAll(punctuationRegEx, '')
+function searchContent(requestText) {
+  const container = document.querySelector('.C_LocationCards')
+  const container2 = document.querySelector('.A_NothingFounded')
+  const A_SectionsBottomText = document.querySelector('.A_SectionsBottomText')
+  container.innerHTML = ''
 
-//     if (requestText.length >= 3) {
-//       if (title.includes(requestText) || description.includes(requestText)) {
-//         contentItemIds.push(id)
-//       }
-//     }
-//   })
+  let contentItemIds = []
 
-//   if (contentItemIds.length > 0) {
-//     renderCardsByIds(container, contentItemIds)
-//   } else {
-//     renderNothingFounded(container)
-//   }
-// }
+  content.forEach((contentItem) => {
+    const nbspRegEx = /[\u202F\u00A0]/gm
+    const punctuationRegEx = /[.,\/#!$%\^&\*;:{}=\-_`()]/gm
 
-// function renderNothingFounded(container) {
-//   container.innerHTML = 'Ничего не найдено :('
-// }
+    let { title, description, id } = contentItem
 
-// function renderCardsByIds(container, ids) {
-//   ids = [...new Set(ids)]
+    title = title.replaceAll(nbspRegEx, ' ')
+    title = title.replaceAll(punctuationRegEx, '')
 
-//   ids.forEach((id) => {
-//     content.forEach((item) => {
-//       if (item.id == id) {
-//         createCard(item)
-//       }
-//     })
-//   })
-// }
+    description = description.replaceAll(nbspRegEx, ' ')
+    description = description.replaceAll(punctuationRegEx, '')
 
-// function setSearchRequest(requestText) {
-//   const url = window.location.href.split('?')[0]
-//   window.location.href = url + '?request=' + requestText
-// }
+    if (requestText.length >= 3) {
+      if (title.includes(requestText) || description.includes(requestText)) {
+        contentItemIds.push(id)
+      }
+    }
+  })
 
-// function getSearchRequest() {
-//   const url = new URL(window.location.href)
-//   const searchParams = new URLSearchParams(url.search)
+  if (contentItemIds.length > 0) {
+    renderCardsByIds(container, contentItemIds)
+  } else {
+    renderNothingFounded(container2, A_SectionsBottomText)
+  }
+}
 
-//   if (searchParams.has('requst')) {
-//     return searchParams.get('request')
-//   }
-// }
+function renderNothingFounded(container, A_SectionsBottomText) {
+  container.innerHTML = 'Ничего не найдено :('
+  A_SectionsBottomText.innerHTML = ''
+}
+
+function renderCardsByIds(container, ids) {
+  ids = [...new Set(ids)]
+
+  ids.forEach((id) => {
+    content.forEach((item) => {
+      if (item.id == id) {
+        createCard(item)
+      }
+    })
+  })
+}
+
+function setSearchRequest(requestText) {
+  const url = window.location.href.split('?')[0]
+  window.location.href = url + '?request=' + requestText
+}
+
+function getSearchRequest() {
+  const url = new URL(window.location.href)
+  const searchParams = new URLSearchParams(url.search)
+
+  if (searchParams.has('request')) {
+    return searchParams.get('request')
+  }
+}
 
 // function createCard(card) {
 //   let { id, title, description, url, image, tags, metro, metroLogo } = card
@@ -156,3 +172,80 @@
 
 //   document.querySelector('.C_LocationCards').appendChild(contentItem)
 // }
+
+function createCard(card) {
+  let { id, title, description, url, image, tags, metro, metroLogo, classes } =
+    card
+
+  const O_LocationCard = document.createElement('a')
+  O_LocationCard.classList.add('O_LocationCard')
+  O_LocationCard.href = url
+
+  if (Array.isArray(classes)) {
+    classes.forEach((el) => {
+      O_LocationCard.classList.add(el)
+    })
+  }
+
+  const Q_GradientSquare = document.createElement('div')
+  Q_GradientSquare.classList.add('Q_GradientSquare')
+
+  const W_LocationCardInfo = document.createElement('div')
+  W_LocationCardInfo.classList.add('W_LocationCardInfo')
+
+  const M_LocationCardHeader = document.createElement('div')
+  M_LocationCardHeader.classList.add('M_LocationCardHeader')
+
+  const C_Tags = document.createElement('div')
+  C_Tags.classList.add('C_Tags')
+
+  tags.forEach((tagText) => {
+    const tag = document.createElement('div')
+    tag.classList.add('A_Tag', 'Q_BgYellow')
+    tag.innerText = tagText
+    C_Tags.appendChild(tag)
+  })
+
+  const A_HeaderCards = document.createElement('h4')
+  A_HeaderCards.classList.add('A_HeaderCards')
+  A_HeaderCards.innerText = title
+
+  const W_AddressInfo = document.createElement('div')
+  W_AddressInfo.classList.add('W_AddressInfo')
+
+  const A_BodyText = document.createElement('p')
+  A_BodyText.classList.add('A_BodyText')
+  A_BodyText.innerText = description
+
+  const M_MetroInfoArrow = document.createElement('div')
+  M_MetroInfoArrow.classList.add('M_MetroInfoArrow')
+
+  const W_MetroInfo = document.createElement('div')
+  W_MetroInfo.classList.add('W_MetroInfo')
+
+  const Q_MetroLogo = document.createElement('img')
+  Q_MetroLogo.classList.add('Q_MetroLogo')
+  Q_MetroLogo.src = metroLogo
+
+  const Metro = document.createElement('p')
+  Metro.classList.add('A_BodyText')
+  Metro.innerText = metro
+
+  const A_ArrowYellow = document.createElement('div')
+  A_ArrowYellow.classList.add('A_ArrowYellow')
+
+  O_LocationCard.appendChild(Q_GradientSquare)
+  O_LocationCard.appendChild(W_LocationCardInfo)
+  W_LocationCardInfo.appendChild(M_LocationCardHeader)
+  W_LocationCardInfo.appendChild(W_AddressInfo)
+  M_LocationCardHeader.appendChild(C_Tags)
+  M_LocationCardHeader.appendChild(A_HeaderCards)
+  W_AddressInfo.appendChild(A_BodyText)
+  W_AddressInfo.appendChild(M_MetroInfoArrow)
+  M_MetroInfoArrow.appendChild(W_MetroInfo)
+  M_MetroInfoArrow.appendChild(A_ArrowYellow)
+  W_MetroInfo.appendChild(Q_MetroLogo)
+  W_MetroInfo.appendChild(Metro)
+
+  document.querySelector('.C_LocationCards').appendChild(O_LocationCard)
+}
