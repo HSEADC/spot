@@ -139,20 +139,19 @@ table {
 }
 
 body::-webkit-scrollbar {
-  width: 12px; /* ширина scrollbar */
+  width: 12px;
 }
 body::-webkit-scrollbar-track {
-  background: var(--black); /* цвет дорожки */
+  background: var(--black);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--yellow); /* цвет плашки */
-  border-radius: 20px 0 20px 0; /* закругления плашки */
-  /* border: 3px solid orange;  padding вокруг плашки */
+  background-color: var(--yellow);
+  border-radius: 20px 0 20px 0;
 }
 
 @media screen and (max-width: 500px) {
   body::-webkit-scrollbar {
-    width: 5px; /* ширина scrollbar */
+    width: 5px;
   }
 }
 

@@ -297,6 +297,7 @@ ________________________________________________________________________________
   font-style: normal;
   font-weight: 600;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  cursor: url(../../images/components/02_Atoms/pointer.svg) 1 1, pointer;
 
   &.active {
     background-color: var(--grey);

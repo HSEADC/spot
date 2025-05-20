@@ -11,6 +11,8 @@ module.exports = {
     index: './src/index.js',
     filterTags: './src/js/filterTags.js',
     test: './src/js/test.js',
+    searchVanilla: './src/js/search-vanilla.js',
+    spotsContent: './src/js/spotsContent.js',
     menu: './src/js/menu.js'
   },
   output: {
@@ -82,7 +84,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
 
     // Error Pages
@@ -99,32 +101,32 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/about.html',
       filename: './about.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks.html',
       filename: './tricks.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'filterTags', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots.html',
       filename: './spots.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'filterTags', 'searchVanilla', 'spotsContent']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill.html',
       filename: './chill.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'filterTags', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tips.html',
       filename: './tips.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
       filename: './styleguide.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
 
     // Section 'Tricks' articles
@@ -132,238 +134,238 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate1.html',
       filename: './tricks/tricksSkate1.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate2.html',
       filename: './tricks/tricksSkate2.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate3.html',
       filename: './tricks/tricksSkate3.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate4.html',
       filename: './tricks/tricksSkate4.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate5.html',
       filename: './tricks/tricksSkate5.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksSkate6.html',
       filename: './tricks/tricksSkate6.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     // Tricks BMX
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksBmx1.html',
       filename: './tricks/tricksBmx1.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksBmx2.html',
       filename: './tricks/tricksBmx2.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksBmx3.html',
       filename: './tricks/tricksBmx3.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksBmx4.html',
       filename: './tricks/tricksBmx4.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksBmx5.html',
       filename: './tricks/tricksBmx5.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksBmx6.html',
       filename: './tricks/tricksBmx6.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     // Tricks Scooter
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksScooter1.html',
       filename: './tricks/tricksScooter1.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksScooter2.html',
       filename: './tricks/tricksScooter2.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksScooter3.html',
       filename: './tricks/tricksScooter3.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksScooter4.html',
       filename: './tricks/tricksScooter4.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksScooter5.html',
       filename: './tricks/tricksScooter5.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks/tricksScooter6.html',
       filename: './tricks/tricksScooter6.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     // Section 'Spots' articles
     new HtmlWebpackPlugin({
       template: './src/spots/spots1.html',
       filename: './spots/spots1.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots/spots2.html',
       filename: './spots/spots2.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots/spots3.html',
       filename: './spots/spots3.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots/spots4.html',
       filename: './spots/spots4.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots/spots5.html',
       filename: './spots/spots5.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots/spots6.html',
       filename: './spots/spots6.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots/spots7.html',
       filename: './spots/spots7.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots/spots8.html',
       filename: './spots/spots8.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots/spots9.html',
       filename: './spots/spots9.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots/spots10.html',
       filename: './spots/spots10.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots/spots11.html',
       filename: './spots/spots11.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots/spots12.html',
       filename: './spots/spots12.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     // Section 'Chill' articles
     // Fun Slangs
     new HtmlWebpackPlugin({
       template: './src/chill/funSlangs1.html',
       filename: './chill/funSlangs1.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill/funSlangs2.html',
       filename: './chill/funSlangs2.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill/funSlangs3.html',
       filename: './chill/funSlangs3.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill/funSlangs4.html',
       filename: './chill/funSlangs4.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill/funSlangs5.html',
       filename: './chill/funSlangs5.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill/funSlangs6.html',
       filename: './chill/funSlangs6.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill/funSlangs7.html',
       filename: './chill/funSlangs7.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     // Fun Films
     new HtmlWebpackPlugin({
       template: './src/chill/funFilms1.html',
       filename: './chill/funFilms1.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill/funFilms2.html',
       filename: './chill/funFilms2.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill/funFilms3.html',
       filename: './chill/funFilms3.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     // Fun Music
     new HtmlWebpackPlugin({
       template: './src/chill/funMusic1.html',
       filename: './chill/funMusic1.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill/funMusic2.html',
       filename: './chill/funMusic2.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
 
     // Articles
     new HtmlWebpackPlugin({
       template: './src/tips/tips1.html',
       filename: './tips/tips1.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     // Components
     new HtmlWebpackPlugin({
       template: './src/components.html',
       filename: './components.html',
-      chunks: ['index']
+      chunks: ['index', 'searchVanilla']
     }),
     // Tests
     new HtmlWebpackPlugin({
       template: './src/quiz/test1.html',
       filename: './quiz/test1.html',
-      chunks: ['index', 'test']
+      chunks: ['index', 'test', 'searchVanilla']
     }),
 
     // // Section 'Tips' articles
