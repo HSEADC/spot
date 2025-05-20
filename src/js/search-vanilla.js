@@ -6,15 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   getPostTeasers().then((data) => {
     content = data
 
-    document.querySelector('.C_LocationCards').innerHTML = ''
-    content.forEach((card) => createCard(card))
-
-    initSearch()
-  })
-
-  getPostTeasers().then((data) => {
-    content = data
-
     content.sort((a, b) => a.index - b.index)
 
     document.querySelector('.C_LocationCards').innerHTML = ''
@@ -72,6 +63,7 @@ function searchContent(requestText) {
   const container = document.querySelector('.C_LocationCards')
   const container2 = document.querySelector('.A_NothingFounded')
   const A_SectionsBottomText = document.querySelector('.A_SectionsBottomText')
+
   container.innerHTML = ''
 
   let contentItemIds = []
