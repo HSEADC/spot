@@ -11,7 +11,10 @@ module.exports = {
     index: './src/index.js',
     filterTags: './src/js/filterTags.js',
     test: './src/js/test.js',
-    menu: './src/js/menu.js'
+    menu: './src/js/menu.js',
+    searchData: './src/js/search-data.js',
+    searchVanilla: './src/js/search-vanilla.js',
+    spotsContent: './src/js/spotsContent.js'
   },
   output: {
     filename: '[name].js',
@@ -109,7 +112,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/spots.html',
       filename: './spots.html',
-      chunks: ['index', 'filterTags', 'menu']
+      chunks: [
+        'index',
+        'filterTags',
+        'menu',
+        'searchData',
+        'searchVanilla',
+        'spotsContent'
+      ]
     }),
     new HtmlWebpackPlugin({
       template: './src/chill.html',
