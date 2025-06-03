@@ -158,13 +158,13 @@ body::-webkit-scrollbar-thumb {
 
 html,
 body {
-  cursor: url(images/088ca5a0f5139d2a81f5.svg) 1 1, default;
+  cursor: url(images/937db009a6cda4bd9be0.svg) 1 1, default;
 }
 
 a,
 button,
 input {
-  cursor: url(images/ac949e6ddda192201da4.svg) 1 1, pointer;
+  cursor: url(images/43623af273c25d173102.svg) 1 1, pointer;
 }
 
 :root {
@@ -300,7 +300,7 @@ strong {
 }
 .disabled {
   background-color: var(--grey) !important;
-  cursor: url(images/088ca5a0f5139d2a81f5.svg) 1 1, default !important;
+  cursor: url(images/937db009a6cda4bd9be0.svg) 1 1, default !important;
 }
 nav.navMobile {
   width: 90%;
@@ -2703,7 +2703,7 @@ ________________________________________________________________________________
 }
 .Q_LogoWithTg {
   width: 26%;
-  background-image: url(images/1ec443b99c1f8950f734.svg);
+  background-image: url(images/bd0e3e1bd6d1afaa5393.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -3290,22 +3290,22 @@ ________________________________________________________________________________
   background-repeat: no-repeat;
 }
 .A_LevelIconEasy {
-  background-image: url(images/3e6545a5e0ae5b000c9d.svg);
+  background-image: url(images/8aa8fa3920eadc4df9fe.svg);
 }
 .A_LevelIconMid {
-  background-image: url(images/0385e81e6275ed17ac1c.svg);
+  background-image: url(images/77bb10d4f5855b549e62.svg);
 }
 .A_LevelIconHard {
-  background-image: url(images/f45b305fc9704fdd15d0.svg);
+  background-image: url(images/d7376c30a0496621d30e.svg);
 }
 .A_LevelIconEasyBlack {
-  background-image: url(images/8fb37a7ae4a303e3c745.svg);
+  background-image: url(images/c3be30ca1d5e3830e22d.svg);
 }
 .A_LevelIconMidBlack {
-  background-image: url(images/a3acdd392a6a3c7321a9.svg);
+  background-image: url(images/fa221ed63bbccac046d2.svg);
 }
 .A_LevelIconHardBlack {
-  background-image: url(images/d6ef628d09e6b9cb3e60.svg);
+  background-image: url(images/7602a49c0353df25de01.svg);
 }
 .A_FilterTag {
   display: inline-flex;
@@ -3322,7 +3322,7 @@ ________________________________________________________________________________
   font-style: normal;
   font-weight: 600;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  cursor: url(images/ac949e6ddda192201da4.svg) 1 1, pointer;
+  cursor: url(images/43623af273c25d173102.svg) 1 1, pointer;
 
   &.active {
     background-color: var(--grey);
@@ -3338,7 +3338,7 @@ ________________________________________________________________________________
   visibility: hidden;
   width: 1.8rem;
   height: 1.8rem;
-  background-image: url(images/68a2bc04f2863579de59.svg);
+  background-image: url(images/badfdaf54e3458478863.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -3366,19 +3366,19 @@ ________________________________________________________________________________
   border-radius: 1.125rem 0;
 }
 .A_IconCoverSkate {
-  background-image: url(images/151092ddd4ee6e530925.svg);
+  background-image: url(images/f75b038194802a7c6c11.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .A_IconCoverLocation {
-  background-image: url(images/ce0e6192039b525346e3.svg);
+  background-image: url(images/1374bcade8e21c4a151e.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .A_IconCoverFile {
-  background-image: url(images/d9aa4a32d4ecc5f0ecd2.svg);
+  background-image: url(images/728b459d57b38e59c44b.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -3412,7 +3412,7 @@ ________________________________________________________________________________
 .A_Arrow {
   width: 2.5rem;
   height: 2.5rem;
-  background-image: url(images/d0c18d1bb217b54b7b6c.svg);
+  background-image: url(images/31937c21d94b1bf62a55.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -3877,7 +3877,7 @@ ________________________________________________________________________________
   border-radius: 0.625rem;
   border: 2px solid var(--white);
   color: var(--white);
-  cursor: url(images/ac949e6ddda192201da4.svg) 1 1, pointer;
+  cursor: url(images/43623af273c25d173102.svg) 1 1, pointer;
 
   &:hover {
     color: var(--yellow);
@@ -4736,7 +4736,7 @@ ________________________________________________________________________________
         font-size: 1rem;
         font-style: normal;
         font-weight: 600;
-        cursor: url(images/ac949e6ddda192201da4.svg) 1 1, pointer;
+        cursor: url(images/43623af273c25d173102.svg) 1 1, pointer;
 
         &:hover {
           background-color: var(--yellow);
