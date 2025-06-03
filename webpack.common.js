@@ -99,32 +99,32 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/about.html',
       filename: './about.html',
-      chunks: ['index']
+      chunks: ['index', 'menu']
     }),
     new HtmlWebpackPlugin({
       template: './src/tricks.html',
       filename: './tricks.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'filterTags', 'menu']
     }),
     new HtmlWebpackPlugin({
       template: './src/spots.html',
       filename: './spots.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'filterTags', 'menu']
     }),
     new HtmlWebpackPlugin({
       template: './src/chill.html',
       filename: './chill.html',
-      chunks: ['index', 'filterTags']
+      chunks: ['index', 'filterTags', 'menu']
     }),
     new HtmlWebpackPlugin({
       template: './src/tips.html',
       filename: './tips.html',
-      chunks: ['index']
+      chunks: ['index', 'menu']
     }),
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
       filename: './styleguide.html',
-      chunks: ['index']
+      chunks: ['index', 'menu']
     }),
 
     // Section 'Tricks' articles
