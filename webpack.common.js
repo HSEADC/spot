@@ -2,9 +2,79 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const SitemapPlugin = require('sitemap-webpack-plugin').default
 
 const webpack = require('webpack')
 const path = require('path')
+
+const paths = [
+  '/spot/',
+  '/spot/about.html',
+  '/spot/components.html',
+  '/spot/404.html',
+  '/spot/505.html',
+  '/spot/chill.html',
+  '/spot/spots.html',
+  '/spot/styleguide.html',
+  '/spot/tips.html',
+  '/spot/tricks.html',
+  '/spot/tricks/tricksBmx1.html',
+  '/spot/tricks/tricksBmx2.html',
+  '/spot/tricks/tricksBmx3.html',
+  '/spot/tricks/tricksBmx4.html',
+  '/spot/tricks/tricksBmx5.html',
+  '/spot/tricks/tricksBmx6.html',
+  '/spot/tricks/tricksScooter1.html',
+  '/spot/tricks/tricksScooter2.html',
+  '/spot/tricks/tricksScooter3.html',
+  '/spot/tricks/tricksScooter4.html',
+  '/spot/tricks/tricksScooter5.html',
+  '/spot/tricks/tricksScooter6.html',
+  '/spot/tricks/tricksSkate1.html',
+  '/spot/tricks/tricksSkate2.html',
+  '/spot/tricks/tricksSkate3.html',
+  '/spot/tricks/tricksSkate4.html',
+  '/spot/tricks/tricksSkate5.html',
+  '/spot/tricks/tricksSkate6.html',
+  '/spot/tips/tips1.html',
+  '/spot/tips/tips2.html',
+  '/spot/tips/tips3.html',
+  '/spot/tips/tips4.html',
+  '/spot/tips/tips5.html',
+  '/spot/tips/tips6.html',
+  '/spot/tips/tips7.html',
+  '/spot/tips/tips8.html',
+  '/spot/tips/tips9.html',
+  '/spot/tips/tips10.html',
+  '/spot/tips/tips11.html',
+  '/spot/tips/tips12.html',
+  '/spot/tips/tips13.html',
+  '/spot/spots/spots1.html',
+  '/spot/spots/spots2.html',
+  '/spot/spots/spots3.html',
+  '/spot/spots/spots4.html',
+  '/spot/spots/spots5.html',
+  '/spot/spots/spots6.html',
+  '/spot/spots/spots7.html',
+  '/spot/spots/spots8.html',
+  '/spot/spots/spots9.html',
+  '/spot/spots/spots10.html',
+  '/spot/spots/spots11.html',
+  '/spot/spots/spots12.html',
+  '/spot/quiz/test1.html',
+  '/spot/chill/funFilms1.html',
+  '/spot/chill/funFilms2.html',
+  '/spot/chill/funFilms3.html',
+  '/spot/chill/funMusic1.html',
+  '/spot/chill/funMusic2.html',
+  '/spot/chill/funSlangs1.html',
+  '/spot/chill/funSlangs2.html',
+  '/spot/chill/funSlangs3.html',
+  '/spot/chill/funSlangs4.html',
+  '/spot/chill/funSlangs5.html',
+  '/spot/chill/funSlangs6.html',
+  '/spot/chill/funSlangs7.html'
+]
 
 module.exports = {
   entry: {
@@ -484,9 +554,10 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       }
-    ])
+    ]),
+    new SitemapPlugin({ base: 'https://hseadc.github.io.', paths })
   ],
   optimization: {
-    // minimizer: [new CssMinimizerPlugin()]
+    minimizer: [new CssMinimizerPlugin()]
   }
 }
