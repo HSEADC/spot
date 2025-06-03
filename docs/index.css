@@ -3005,7 +3005,7 @@ ________________________________________________________________________________
     width: 50%;
   }
   .Q_MainCover {
-    background-position: -320vw;
+    background-position: right;
   }
 
   .Q_GradientSquareCover {
@@ -5126,6 +5126,7 @@ ________________________________________________________________________________
   }
   .O_FilmFooterBanner {
     padding: 4rem 1.25rem 0 1.25rem;
+    margin-bottom: 4rem;
   }
   .O_FunCard {
     width: 100%;
