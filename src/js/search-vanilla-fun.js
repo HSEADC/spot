@@ -1,14 +1,11 @@
-import { getPostTeasers } from './search-data'
+import { getPostTeasers } from './search-data-fun'
 
 let content
 
 document.addEventListener('DOMContentLoaded', () => {
   getPostTeasers().then((data) => {
     content = data
-
-    content.sort((a, b) => a.index - b.index)
-
-    document.querySelector('.C_LocationCards').innerHTML = ''
+    document.querySelector('.C_FunCards').innerHTML = ''
     content.forEach((card) => createCard(card))
 
     initSearch()
@@ -60,7 +57,7 @@ function initSearch() {
 }
 
 function searchContent(requestText) {
-  const container = document.querySelector('.C_LocationCards')
+  const container = document.querySelector('.C_FunCards')
   const container2 = document.querySelector('.A_NothingFounded')
   const A_SectionsBottomText = document.querySelector('.A_SectionsBottomText')
 
@@ -72,16 +69,13 @@ function searchContent(requestText) {
     const nbspRegEx = /[\u202F\u00A0]/gm
     const punctuationRegEx = /[.,\/#!$%\^&\*;:{}=\-_`()]/gm
 
-    let { title, description, id } = contentItem
+    let { title, id, tags } = contentItem
 
     title = title.replaceAll(nbspRegEx, ' ')
     title = title.replaceAll(punctuationRegEx, '')
 
-    description = description.replaceAll(nbspRegEx, ' ')
-    description = description.replaceAll(punctuationRegEx, '')
-
     if (requestText.length >= 3) {
-      if (title.includes(requestText) || description.includes(requestText)) {
+      if (title.includes(requestText) || tags.includes(requestText)) {
         contentItemIds.push(id)
       }
     }
@@ -126,78 +120,38 @@ function getSearchRequest() {
 }
 
 function createCard(card) {
-  let { id, title, description, url, image, tags, metro, metroLogo, classes } =
-    card
+  let { id, title, url, tags, classes } = card
 
-  const O_LocationCard = document.createElement('a')
-  O_LocationCard.classList.add('O_LocationCard')
-  O_LocationCard.href = url
+  const O_FunCard = document.createElement('a')
+  O_FunCard.classList.add('O_FunCard')
+  O_FunCard.href = url
 
-  if (Array.isArray(classes)) {
-    classes.forEach((el) => {
-      O_LocationCard.classList.add(el)
-    })
-  }
+  classes.forEach((el) => {
+    O_FunCard.classList.add(`${el}`)
+  })
 
   const Q_GradientSquare = document.createElement('div')
   Q_GradientSquare.classList.add('Q_GradientSquare')
 
-  const W_LocationCardInfo = document.createElement('div')
-  W_LocationCardInfo.classList.add('W_LocationCardInfo')
+  const A_Tag = document.createElement('tag')
+  A_Tag.classList.add('A_Tag', 'Q_BgYellow')
+  A_Tag.innerText = tags
 
-  const M_LocationCardHeader = document.createElement('div')
-  M_LocationCardHeader.classList.add('M_LocationCardHeader')
-
-  const C_Tags = document.createElement('div')
-  C_Tags.classList.add('C_Tags')
-
-  tags.forEach((tagText) => {
-    const tag = document.createElement('div')
-    tag.classList.add('A_Tag', 'Q_BgYellow')
-    tag.innerText = tagText
-    C_Tags.appendChild(tag)
-  })
+  const M_FunHeaderArrow = document.createElement('div')
+  M_FunHeaderArrow.classList.add('M_FunHeaderArrow')
 
   const A_HeaderCards = document.createElement('h4')
   A_HeaderCards.classList.add('A_HeaderCards')
   A_HeaderCards.innerText = title
 
-  const W_AddressInfo = document.createElement('div')
-  W_AddressInfo.classList.add('W_AddressInfo')
-
-  const A_BodyText = document.createElement('p')
-  A_BodyText.classList.add('A_BodyText')
-  A_BodyText.innerText = description
-
-  const M_MetroInfoArrow = document.createElement('div')
-  M_MetroInfoArrow.classList.add('M_MetroInfoArrow')
-
-  const W_MetroInfo = document.createElement('div')
-  W_MetroInfo.classList.add('W_MetroInfo')
-
-  const Q_MetroLogo = document.createElement('img')
-  Q_MetroLogo.classList.add('Q_MetroLogo')
-  Q_MetroLogo.src = metroLogo
-
-  const Metro = document.createElement('p')
-  Metro.classList.add('A_BodyText')
-  Metro.innerText = metro
-
   const A_ArrowYellow = document.createElement('div')
   A_ArrowYellow.classList.add('A_ArrowYellow')
 
-  O_LocationCard.appendChild(Q_GradientSquare)
-  O_LocationCard.appendChild(W_LocationCardInfo)
-  W_LocationCardInfo.appendChild(M_LocationCardHeader)
-  W_LocationCardInfo.appendChild(W_AddressInfo)
-  M_LocationCardHeader.appendChild(C_Tags)
-  M_LocationCardHeader.appendChild(A_HeaderCards)
-  W_AddressInfo.appendChild(A_BodyText)
-  W_AddressInfo.appendChild(M_MetroInfoArrow)
-  M_MetroInfoArrow.appendChild(W_MetroInfo)
-  M_MetroInfoArrow.appendChild(A_ArrowYellow)
-  W_MetroInfo.appendChild(Q_MetroLogo)
-  W_MetroInfo.appendChild(Metro)
+  O_FunCard.appendChild(Q_GradientSquare)
+  O_FunCard.appendChild(A_Tag)
+  O_FunCard.appendChild(M_FunHeaderArrow)
+  M_FunHeaderArrow.appendChild(A_HeaderCards)
+  M_FunHeaderArrow.appendChild(A_ArrowYellow)
 
-  document.querySelector('.C_LocationCards').appendChild(O_LocationCard)
+  document.querySelector('.C_FunCards').appendChild(O_FunCard)
 }
