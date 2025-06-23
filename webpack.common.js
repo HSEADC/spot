@@ -515,6 +515,66 @@ module.exports = {
       filename: './quiz/test1.html',
       chunks: ['index', 'test', 'menu']
     }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test2.html',
+      filename: './quiz/test2.html',
+      chunks: ['index', 'test', 'menu']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test3.html',
+      filename: './quiz/test3.html',
+      chunks: ['index', 'test', 'menu']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test4.html',
+      filename: './quiz/test4.html',
+      chunks: ['index', 'test', 'menu']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test5.html',
+      filename: './quiz/test5.html',
+      chunks: ['index', 'test', 'menu']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test6.html',
+      filename: './quiz/test6.html',
+      chunks: ['index', 'test', 'menu']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test7.html',
+      filename: './quiz/test7.html',
+      chunks: ['index', 'test', 'menu']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test8.html',
+      filename: './quiz/test8.html',
+      chunks: ['index', 'test', 'menu']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test9.html',
+      filename: './quiz/test9.html',
+      chunks: ['index', 'test', 'menu']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test10.html',
+      filename: './quiz/test10.html',
+      chunks: ['index', 'test', 'menu']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test11.html',
+      filename: './quiz/test11.html',
+      chunks: ['index', 'test', 'menu']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test12.html',
+      filename: './quiz/test12.html',
+      chunks: ['index', 'test', 'menu']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/quiz/test13.html',
+      filename: './quiz/test13.html',
+      chunks: ['index', 'test', 'menu']
+    }),
 
     // // Section 'Tips' articles
     // new HtmlWebpackPlugin({

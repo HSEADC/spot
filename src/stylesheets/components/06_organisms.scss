@@ -138,6 +138,7 @@ ________________________________________________________________________________
   width: 80%;
   min-height: 16.25rem;
   margin-top: 5rem;
+  margin-bottom: 8rem;
   display: flex;
   padding: 2% 5%;
   flex-direction: row;
@@ -212,7 +213,7 @@ ________________________________________________________________________________
 }
 
 .O_ArticleCard {
-  min-height: 50vh;
+  min-height: 40vh;
   flex-direction: column;
   border-radius: 50px 0;
   overflow: hidden;

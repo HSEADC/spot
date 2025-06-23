@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/favicon.png" type="image/png" />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <!-- Primary Meta Tags -->
+    <title>Тест: Основная техника безопасности</title>
+    <meta name="title" content="Spot" />
+    <meta
+      name="description"
+      content="Медиа для райдеров, где ты найдешь вдохновляющий и полезный контент, поддержку и мотивацию, чтобы убедиться в достижимости пределов и нового уровня, возможности сделать жизнь ярче."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hseadc.github.io/spot/" />
+    <meta property="og:title" content="Spot" />
+    <meta
+      property="og:description"
+      content="Медиа для райдеров, где ты найдешь вдохновляющий и полезный контент, поддержку и мотивацию, чтобы убедиться в достижимости пределов и нового уровня, возможности сделать жизнь ярче."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/HSEADC/spot/refs/heads/main/src/images/main.webp"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hseadc.github.io/spot/" />
+    <meta property="twitter:title" content="Spot" />
+    <meta
+      property="twitter:description"
+      content="Медиа для райдеров, где ты найдешь вдохновляющий и полезный контент, поддержку и мотивацию, чтобы убедиться в достижимости пределов и нового уровня, возможности сделать жизнь ярче."
+    />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/HSEADC/spot/refs/heads/main/src/images/main.webp"
+    />
+
+    <analytics></analytics>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+
+  <body>
+    <navPartial></navPartial>
+    <img
+      src="../images/components/02_Atoms/A_InfoIllustration.webp"
+      class="A_TestCoverImageMobile"
+    />
+    <h1 class="A_Header1 black A_HeaderTest">
+      Тест: <br />правильные колёса для скейта
+    </h1>
+    <div class="W_TextButtonImg">
+      <div class="M_TextButton">
+        <p class="A_BodyText">
+          От&nbsp;выбора колёс зависит не&nbsp;только комфорт,
+          но&nbsp;и&nbsp;стиль катания, безопасность и&nbsp;контроль. Этот тест
+          поможет тебе понять, насколько хорошо ты&nbsp;разбираешься в&nbsp;теме
+          и&nbsp;готов&nbsp;ли к&nbsp;следующему апгрейду своей доски.
+        </p>
+        <a
+          href="../tips/tips8.html"
+          class="A_TextButton A_Button Q_BgYellowButton"
+          >Читать статью</a
+        >
+      </div>
+      <img src="../images/components/02_Atoms/A_InfoIllustration.webp" />
+    </div>
+    <div class="O_Test" id="question1">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Какие колёса подойдут для&nbsp;катания по&nbsp;плохому асфальту?
+        </h2>
+        <h3 class="A_Header3 white">
+          1&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(1, false)">
+          Жёсткие (99A–101A)
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(1, false)">
+          Только большие (60+ мм)
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(1, false)">
+          Универсальные (90A)
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(1, true)"
+        >
+          Мягкие (78A–87A)
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question2">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Почему жёсткие колёса чаще Они легче в&nbsp;обслуживаниивыбирают
+          для&nbsp;скейтпарков?
+        </h2>
+        <h3 class="A_Header3 white">
+          2&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(2, false)">
+          Они легче в&nbsp;обслуживании
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(2, false)">
+          У&nbsp;них меньше сцепление с&nbsp;поверхностью
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(2, true)"
+        >
+          Лучше слайдятся и&nbsp;быстрее едут
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(2, false)">
+          Они дешевле
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question3">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Какой диаметр колёс считается стандартным
+          для&nbsp;стрит-катании&nbsp;трюков?
+        </h2>
+        <h3 class="A_Header3 white">
+          3&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(3, false)">
+          60 мм
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(3, true)"
+        >
+          50–54 мм
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(3, false)">
+          48 мм
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(3, false)">
+          55–60 мм
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question4">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Какие колёса подойдут для&nbsp;круизинга и&nbsp;больших расстояний?
+        </h2>
+        <h3 class="A_Header3 white">
+          4&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(4, true)"
+        >
+          60 мм и больше
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(4, false)">
+          54 мм
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(4, false)">
+          49–52 мм
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(4, false)">
+          Только мягкие колёса
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question5">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">Что даёт узкий профиль колеса?</h2>
+        <h3 class="A_Header3 white">
+          5&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(5, false)">
+          Больше сцепление
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(5, true)"
+        >
+          Быстрее разгоняется и&nbsp;проще делать флипы
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(5, false)">
+          Стабильность на&nbsp;скорости
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(5, false)">
+          Дольше служит
+        </div>
+      </div>
+    </div>
+    <div class="O_Result hidden" id="result">
+      <img src="../images/components/02_Atoms/testResultPhoto.webp" />
+      <div class="W_TestResult">
+        <div class="W_TestResultText">
+          <div class="W_ResultHeader">
+            <div class="C_ResultScore">
+              <h1 class="A_Header1 white" id="score"></h1>
+              <h1 class="A_Header1 white">
+                &nbsp;<span class="yellow">/</span>&nbsp;5<br />
+              </h1>
+            </div>
+            <h1 class="A_Header1 white" id="resultHeader">Круто!</h1>
+          </div>
+          <p class="A_BodyText white" id="resultText">
+            Теперь ты&nbsp;знаешь, какие колёса нужны именно тебе. Запомни:
+            правильный выбор&nbsp;&mdash; это залог кайфового катания
+            и&nbsp;меньше падений. Так&nbsp;что не&nbsp;катайся
+            на&nbsp;квадрате&nbsp;&mdash; катайся с&nbsp;умом!
+          </p>
+        </div>
+
+        <div class="C_Buttons">
+          <a
+            href="../quiz/test8.html"
+            class="A_TextButton A_Button Q_ButtonStrokeWhite white"
+            >Пройти тест заново</a
+          >
+          <a href="../quiz/test8.html" class="A_TextButton A_Button Q_BgWhite"
+            >Поделиться</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <section class="S_FooterWithCards">
+      <h2 class="A_Header2">Почитать ещё</h2>
+      <div class="C_Cards">
+        <a href="../tips/tips9.html" class="O_Small">
+          <div class="O_ArticleCard">
+            <img
+              src="../images/tips/tips9/MainPhoto.webp"
+              class="A_ArticleCardPhoto"
+            />
+            <div class="M_ArticleCardData">
+              <div class="M_ArticleCardTags">
+                <tag class="A_Tag Q_BgYellow">Теория</tag>
+                <div class="M_Time">
+                  <img
+                    src="../images/components/02_Atoms/A_IconTimer.webp"
+                    alt=""
+                    class="A_IconTimer"
+                  />
+                  <p class="A_BodyText">5 мин</p>
+                </div>
+              </div>
+              <div class="M_ArticleHeaderWithDescription">
+                <h4 class="A_HeaderCards">
+                  разновидность фигур для&nbsp;трюков
+                </h4>
+                <p class="A_BodyText">
+                  Какие фигуры выбирать и&nbsp;как&nbsp;они влияют на&nbsp;твой
+                  стиль.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="../tips/tips10.html" class="O_Small">
+          <div class="O_ArticleCard">
+            <img
+              src="../images/tips/tips10/MainPhoto.webp"
+              class="A_ArticleCardPhoto"
+            />
+            <div class="M_ArticleCardData">
+              <div class="M_ArticleCardTags">
+                <tag class="A_Tag Q_BgYellow">Советы</tag>
+                <div class="M_Time">
+                  <img
+                    src="../images/components/02_Atoms/A_IconTimer.webp"
+                    alt=""
+                    class="A_IconTimer"
+                  />
+                  <p class="A_BodyText">7 мин</p>
+                </div>
+              </div>
+              <div class="M_ArticleHeaderWithDescription">
+                <h4 class="A_HeaderCards">
+                  Как избежать травм при&nbsp;катании
+                </h4>
+                <p class="A_BodyText">
+                  Как катать жёстко, но&nbsp;безопасно. Читай, чтобы избежать
+                  травм.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="../tips/tips11.html" class="O_Small">
+          <div class="O_ArticleCard">
+            <img
+              src="../images/tips/tips11/MainPhoto.webp"
+              class="A_ArticleCardPhoto"
+            />
+            <div class="M_ArticleCardData">
+              <div class="M_ArticleCardTags">
+                <tag class="A_Tag Q_BgYellow">Коммьюнити</tag>
+                <div class="M_Time">
+                  <img
+                    src="../images/components/02_Atoms/A_IconTimer.webp"
+                    alt=""
+                    class="A_IconTimer"
+                  />
+                  <p class="A_BodyText">10 мин</p>
+                </div>
+              </div>
+              <div class="M_ArticleHeaderWithDescription">
+                <h4 class="A_HeaderCards">мифы о&nbsp;мире скейтбординга</h4>
+                <p class="A_BodyText">
+                  Развеиваем мифы о&nbsp;скейтбординге. Что правда,
+                  а&nbsp;что&nbsp;&mdash; фигня?
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footerPartial> </footerPartial>
+  </body>
+</html>

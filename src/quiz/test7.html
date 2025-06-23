@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/favicon.png" type="image/png" />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <!-- Primary Meta Tags -->
+    <title>Тест: Основная техника безопасности</title>
+    <meta name="title" content="Spot" />
+    <meta
+      name="description"
+      content="Медиа для райдеров, где ты найдешь вдохновляющий и полезный контент, поддержку и мотивацию, чтобы убедиться в достижимости пределов и нового уровня, возможности сделать жизнь ярче."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hseadc.github.io/spot/" />
+    <meta property="og:title" content="Spot" />
+    <meta
+      property="og:description"
+      content="Медиа для райдеров, где ты найдешь вдохновляющий и полезный контент, поддержку и мотивацию, чтобы убедиться в достижимости пределов и нового уровня, возможности сделать жизнь ярче."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/HSEADC/spot/refs/heads/main/src/images/main.webp"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hseadc.github.io/spot/" />
+    <meta property="twitter:title" content="Spot" />
+    <meta
+      property="twitter:description"
+      content="Медиа для райдеров, где ты найдешь вдохновляющий и полезный контент, поддержку и мотивацию, чтобы убедиться в достижимости пределов и нового уровня, возможности сделать жизнь ярче."
+    />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/HSEADC/spot/refs/heads/main/src/images/main.webp"
+    />
+
+    <analytics></analytics>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+
+  <body>
+    <navPartial></navPartial>
+    <img
+      src="../images/components/02_Atoms/A_InfoIllustration.webp"
+      class="A_TestCoverImageMobile"
+    />
+    <h1 class="A_Header1 black A_HeaderTest">
+      Тест: <br />Женщины в&nbsp;мире скейтбординга
+    </h1>
+    <div class="W_TextButtonImg">
+      <div class="M_TextButton">
+        <p class="A_BodyText">
+          В&nbsp;статье рассказывается о&nbsp;развитии женского
+          скейтбординга&nbsp;&mdash; от&nbsp;первых шагов в&nbsp;1970-х
+          до&nbsp;современных героинь, вдохновляющих новое поколение.
+          Рассматриваются истории успеха, участие в&nbsp;соревнованиях,
+          поддержка в&nbsp;сообществе и&nbsp;перспективы для&nbsp;девушек
+          в&nbsp;этом ярком виде спорта.
+        </p>
+        <a
+          href="../tips/tips7.html"
+          class="A_TextButton A_Button Q_BgYellowButton"
+          >Читать статью</a
+        >
+      </div>
+      <img src="../images/components/02_Atoms/A_InfoIllustration.webp" />
+    </div>
+    <div class="O_Test" id="question1">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Когда женщины начали активно участвовать
+          в&nbsp;турнирахпо&nbsp;скейтбордингу?
+        </h2>
+        <h3 class="A_Header3 white">
+          1&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(1, false)">
+          В 1960-х
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(1, false)">
+          В 2010-х
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(1, false)">
+          В 1970-х
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(1, true)"
+        >
+          В 2000-х
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question2">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Кто была первой женщиной, принявшей участие в&nbsp;X-Games?
+        </h2>
+        <h3 class="A_Header3 white">
+          2&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(2, false)">
+          Leticia Bufoni
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(2, false)">
+          Alana Smith
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(2, true)"
+        >
+          Lyn-z Adams Hawkins
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(2, false)">
+          Sky Brown
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question3">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">Чем знаменита Elissa Steamer?</h2>
+        <h3 class="A_Header3 white">
+          3&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(3, false)">
+          Стала первой женщиной на&nbsp;Олимпиаде
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(3, true)"
+        >
+          Подписала контракт с&nbsp;Toy Machine и&nbsp;популяризировала женский
+          скейтбординг
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(3, false)">
+          Была судьёй на&nbsp;X-Games
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(3, false)">
+          Изобрела новый стиль катания
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question4">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Почему Leticia Bufoni считается звездой скейтбординга?
+        </h2>
+        <h3 class="A_Header3 white">
+          4&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(4, true)"
+        >
+          За&nbsp;множество побед на&nbsp;X-Games и&nbsp;сложные трюки
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(4, false)">
+          За&nbsp;победу на&nbsp;Олимпиаде
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(4, false)">
+          За актёрскую карьеру
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(4, false)">
+          За создание своего бренда досок
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question5">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Что делает Alana Smith уникальной фигурой в&nbsp;женском
+          скейтбординге?
+        </h2>
+        <h3 class="A_Header3 white">
+          5&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(5, false)">
+          Её стиль напоминает классический серфинг
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(5, true)"
+        >
+          Она начала карьеру в&nbsp;очень юном возрасте и&nbsp;преодолевает
+          барьеры
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(5, false)">
+          Она изобрела новые элементы скейтпарков
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(5, false)">
+          Она создала женскую лигу
+        </div>
+      </div>
+    </div>
+    <div class="O_Result hidden" id="result">
+      <img src="../images/components/02_Atoms/testResultPhoto.webp" />
+      <div class="W_TestResult">
+        <div class="W_TestResultText">
+          <div class="W_ResultHeader">
+            <div class="C_ResultScore">
+              <h1 class="A_Header1 white" id="score"></h1>
+              <h1 class="A_Header1 white">
+                &nbsp;<span class="yellow">/</span>&nbsp;5<br />
+              </h1>
+            </div>
+            <h1 class="A_Header1 white" id="resultHeader">Круто!</h1>
+          </div>
+          <p class="A_BodyText white" id="resultText">
+            Теперь ты&nbsp;знаешь, как&nbsp;женщины изменили мир скейтбординга
+            и&nbsp;продолжают вдохновлять тысячи людей по&nbsp;всему миру.
+            Скейт&nbsp;&mdash; это пространство для&nbsp;всех, и&nbsp;женская
+            энергия только делает его богаче и&nbsp;сильнее.
+          </p>
+        </div>
+        <div class="C_Buttons">
+          <a
+            href="../quiz/test7.html"
+            class="A_TextButton A_Button Q_ButtonStrokeWhite white"
+            >Пройти тест заново</a
+          >
+          <a href="../quiz/test7.html" class="A_TextButton A_Button Q_BgWhite"
+            >Поделиться</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <section class="S_FooterWithCards">
+      <h2 class="A_Header2">Почитать ещё</h2>
+      <div class="C_Cards">
+        <a href="../tips/tips8.html" class="O_Small">
+          <div class="O_ArticleCard">
+            <img
+              src="../images/tips/tips8/MainPhoto.webp"
+              class="A_ArticleCardPhoto"
+            />
+            <div class="M_ArticleCardData">
+              <div class="M_ArticleCardTags">
+                <tag class="A_Tag Q_BgYellow">Экипировка</tag>
+                <div class="M_Time">
+                  <img
+                    src="../images/components/02_Atoms/A_IconTimer.webp"
+                    alt=""
+                    class="A_IconTimer"
+                  />
+                  <p class="A_BodyText">10 мин</p>
+                </div>
+              </div>
+              <div class="M_ArticleHeaderWithDescription">
+                <h4 class="A_HeaderCards">Правильные колеса для&nbsp;скейта</h4>
+                <p class="A_BodyText">
+                  Какие колеса тебе нужны? Всё по&nbsp;делу, без&nbsp;занудства.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="../tips/tips9.html" class="O_Small">
+          <div class="O_ArticleCard">
+            <img
+              src="../images/tips/tips9/MainPhoto.webp"
+              class="A_ArticleCardPhoto"
+            />
+            <div class="M_ArticleCardData">
+              <div class="M_ArticleCardTags">
+                <tag class="A_Tag Q_BgYellow">Теория</tag>
+                <div class="M_Time">
+                  <img
+                    src="../images/components/02_Atoms/A_IconTimer.webp"
+                    alt=""
+                    class="A_IconTimer"
+                  />
+                  <p class="A_BodyText">5 мин</p>
+                </div>
+              </div>
+              <div class="M_ArticleHeaderWithDescription">
+                <h4 class="A_HeaderCards">
+                  разновидность фигур для&nbsp;трюков
+                </h4>
+                <p class="A_BodyText">
+                  Какие фигуры выбирать и&nbsp;как&nbsp;они влияют на&nbsp;твой
+                  стиль.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="../tips/tips10.html" class="O_Small">
+          <div class="O_ArticleCard">
+            <img
+              src="../images/tips/tips10/MainPhoto.webp"
+              class="A_ArticleCardPhoto"
+            />
+            <div class="M_ArticleCardData">
+              <div class="M_ArticleCardTags">
+                <tag class="A_Tag Q_BgYellow">Советы</tag>
+                <div class="M_Time">
+                  <img
+                    src="../images/components/02_Atoms/A_IconTimer.webp"
+                    alt=""
+                    class="A_IconTimer"
+                  />
+                  <p class="A_BodyText">7 мин</p>
+                </div>
+              </div>
+              <div class="M_ArticleHeaderWithDescription">
+                <h4 class="A_HeaderCards">
+                  Как избежать травм при&nbsp;катании
+                </h4>
+                <p class="A_BodyText">
+                  Как катать жёстко, но&nbsp;безопасно. Читай,
+                  чтобы&nbsp;избежать травм.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footerPartial> </footerPartial>
+  </body>
+</html>
