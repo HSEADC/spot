@@ -11,7 +11,6 @@ function initFilter() {
       if (tag != a) {
         a.classList.remove('active')
         tag.classList.toggle('active')
-        console.log('здесь будет функция фильтрации по тегу')
         filterByTag()
       }
 
@@ -21,7 +20,6 @@ function initFilter() {
           tag.classList.remove('active')
         })
         tag.classList.add('active')
-        console.log('здесь будет функция вывода всех карточек')
         filterAll()
       }
 
@@ -30,7 +28,6 @@ function initFilter() {
           tag.classList.remove('active')
         })
         a.classList.add('active')
-        console.log('здесь будет функция вывода всех карточек')
         filterAll()
       }
     })

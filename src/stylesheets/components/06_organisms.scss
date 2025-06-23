@@ -6,6 +6,7 @@ ________________________________________________________________________________
 .O_Header {
   position: fixed;
   top: 0;
+  right: 12px;
   background-color: var(--black);
   display: flex;
   width: 100%;
@@ -20,13 +21,14 @@ ________________________________________________________________________________
       display: flex;
       gap: 10px;
       height: 36px;
+      justify-content: stretch;
 
       .A_SearchInput {
         padding: 0.625rem 0;
-        width: 250px;
         border-bottom: 2px solid var(--white);
         background-color: var(--black);
         color: var(--white);
+        border-radius: 0.375rem;
 
         &:focus {
           border-bottom: 2px solid var(--yellow);
@@ -138,6 +140,7 @@ ________________________________________________________________________________
   width: 80%;
   min-height: 16.25rem;
   margin-top: 5rem;
+  margin-bottom: 8rem;
   display: flex;
   padding: 2% 5%;
   flex-direction: row;
@@ -212,7 +215,7 @@ ________________________________________________________________________________
 }
 
 .O_ArticleCard {
-  min-height: 50vh;
+  min-height: 40vh;
   flex-direction: column;
   border-radius: 50px 0;
   overflow: hidden;
@@ -302,6 +305,10 @@ ________________________________________________________________________________
 @media screen and (max-width: 500px) {
   .O_HeaderMobile {
     display: flex;
+  }
+
+  .O_Header {
+    right: 5px;
   }
 }
 
@@ -432,6 +439,7 @@ ________________________________________________________________________________
   }
   .O_FilmFooterBanner {
     padding: 4rem 1.25rem 0 1.25rem;
+    margin-bottom: 4rem;
   }
   .O_FunCard {
     width: 100%;

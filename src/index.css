@@ -1,17 +1,8 @@
 @import 'stylesheets/reset.scss';
-@import url('https://fonts.cdnfonts.com/css/tt-prosto-sans-trial');
 @import 'stylesheets/vars.scss';
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/basics.scss';
-@import 'stylesheets/index.scss';
-@import 'stylesheets/about.scss';
-@import 'stylesheets/chill.scss';
-@import 'stylesheets/tricks.scss';
-@import 'stylesheets/tips.scss';
-@import 'stylesheets/spots.scss';
 @import 'stylesheets/styleguide.scss';
-@import 'stylesheets/footer.scss';
-@import 'stylesheets/components.scss';
 /* Components */
 @import 'stylesheets/components/01_quarks.scss';
 @import 'stylesheets/components/02_atoms.scss';

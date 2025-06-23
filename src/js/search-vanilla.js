@@ -125,46 +125,6 @@ function getSearchRequest() {
   }
 }
 
-// function createCard(card) {
-//   let { id, title, description, url, image, tags, metro, metroLogo } = card
-
-//   const contentItem = document.createElement('a')
-//   contentItem.classList.add('O_ContentItem')
-//   contentItem.classList.add(`${card.classList}`)
-//   contentItem.href = url
-
-//   const contentItemCover = document.createElement('img')
-//   contentItemCover.classList.add('A_ContentItemCover')
-//   contentItemCover.src = image
-
-//   const contentItemTitle = document.createElement('h3')
-//   contentItemTitle.classList.add('A_ContentItemTitle')
-//   contentItemTitle.innerText = title
-
-//   const contentItemDescription = document.createElement('p')
-//   contentItemDescription.classList.add('A_ContentItemDescription')
-//   contentItemDescription.innerText = description
-
-//   const contentItemTag = document.createElement('div')
-//   contentItemTag.classList.add('A_ContentItemTag')
-//   contentItemTag.innerText = tags
-
-//   const contentItemMetro = document.createElement('p')
-//   contentItemMetro.classList.add('A_ContentItemMetro')
-//   contentItemMetro.src = metro
-
-//   const contentItemMetroLogo = document.createElement('img')
-//   contentItemMetroLogo.classList.add('A_ContentItemMetroLogo')
-//   contentItemMetroLogo.src = metroLogo
-
-//   contentItem.appendChild(contentItemCover)
-//   contentItem.appendChild(contentItemTag)
-//   contentItem.appendChild(contentItemTitle)
-//   contentItem.appendChild(contentItemDescription)
-
-//   document.querySelector('.C_LocationCards').appendChild(contentItem)
-// }
-
 function createCard(card) {
   let { id, title, description, url, image, tags, metro, metroLogo, classes } =
     card
