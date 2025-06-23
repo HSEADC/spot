@@ -86,8 +86,14 @@ module.exports = {
     searchVanilla: './src/js/search-vanilla.js',
     searchDataFun: './src/js/search-data-fun.js',
     searchVanillaFun: './src/js/search-vanilla-fun.js',
+    searchDataTips: './src/js/search-data-tips.js',
+    searchVanillaTips: './src/js/search-vanilla-tips.js',
+    searchDataTricks: './src/js/search-data-tricks.js',
+    searchVanillaTricks: './src/js/search-vanilla-tricks.js',
     spotsContent: './src/js/spotsContent.js',
-    funContent: './src/js/funContent.js'
+    funContent: './src/js/funContent.js',
+    tipsContent: './src/js/tipsContent.js',
+    tricksContent: './src/js/tricksContent.js'
   },
   output: {
     filename: '[name].js',
@@ -180,7 +186,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/tricks.html',
       filename: './tricks.html',
-      chunks: ['index', 'filterTags', 'menu']
+      chunks: [
+        'index',
+        'filterTags',
+        'menu',
+        'tricksContent',
+        'searchDataTricks',
+        'searchVanillaTricks'
+      ]
     }),
     new HtmlWebpackPlugin({
       template: './src/spots.html',
@@ -209,7 +222,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/tips.html',
       filename: './tips.html',
-      chunks: ['index', 'menu']
+      chunks: [
+        'index',
+        'menu',
+        'tipsContent',
+        'searchDataTips',
+        'searchVanillaTips'
+      ]
     }),
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
