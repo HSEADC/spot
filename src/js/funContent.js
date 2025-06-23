@@ -27,7 +27,7 @@ function getArticleContent() {
     base('fun')
       .select({
         maxRecords: 100,
-        sort: [{ field: 'Index', direction: 'desc' }]
+        sort: [{ field: 'Index', direction: 'asc' }]
       })
 
       .firstPage()

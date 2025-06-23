@@ -14,7 +14,7 @@ function getPostTeasers() {
     const content = []
 
     base('fun')
-      .select({ maxRecords: 100 })
+      .select({ maxRecords: 100, sort: [{ field: 'Index', direction: 'asc' }] })
       .firstPage()
       .then((result) => {
         result.forEach((record) => {
