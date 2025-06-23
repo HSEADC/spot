@@ -9,8 +9,6 @@ const path = require('path')
 
 const paths = [
   '/spot/',
-  '/spot/about.html',
-  '/spot/components.html',
   '/spot/404.html',
   '/spot/505.html',
   '/spot/chill.html',
@@ -90,10 +88,10 @@ module.exports = {
     searchVanillaTips: './src/js/search-vanilla-tips.js',
     searchDataTricks: './src/js/search-data-tricks.js',
     searchVanillaTricks: './src/js/search-vanilla-tricks.js',
-    spotsContent: './src/js/spotsContent.js',
-    funContent: './src/js/funContent.js',
-    tipsContent: './src/js/tipsContent.js',
-    tricksContent: './src/js/tricksContent.js'
+    spotsContent: './src/js/contentSpots.js',
+    funContent: './src/js/contentFun.js',
+    tipsContent: './src/js/contentTips.js',
+    tricksContent: './src/js/contentTricks.js'
   },
   output: {
     filename: '[name].js',
@@ -178,11 +176,6 @@ module.exports = {
     }),
 
     // Main sections
-    new HtmlWebpackPlugin({
-      template: './src/about.html',
-      filename: './about.html',
-      chunks: ['index', 'menu']
-    }),
     new HtmlWebpackPlugin({
       template: './src/tricks.html',
       filename: './tricks.html',
@@ -522,12 +515,6 @@ module.exports = {
       filename: './tips/tips13.html',
       chunks: ['index', 'menu']
     }),
-    // Components
-    new HtmlWebpackPlugin({
-      template: './src/components.html',
-      filename: './components.html',
-      chunks: ['index', 'menu']
-    }),
     // Tests
     new HtmlWebpackPlugin({
       template: './src/quiz/test1.html',
@@ -630,6 +617,15 @@ module.exports = {
     ]),
     new HtmlWebpackPartialsPlugin([
       {
+        path: path.join(__dirname, './src/partials/nav-main.html'),
+        location: 'navMainPartial',
+        template_filename: '*',
+        priority: 'replace',
+        chunks: ['menu']
+      }
+    ]),
+    new HtmlWebpackPartialsPlugin([
+      {
         path: path.join(__dirname, './src/partials/banner-question.html'),
         location: 'bannerQuestion',
         template_filename: '*',
@@ -646,8 +642,8 @@ module.exports = {
       }
     ]),
     new SitemapPlugin({ base: 'https://hseadc.github.io.', paths })
-  ],
-  optimization: {
+  ]
+  /*optimization: {
     minimizer: [new CssMinimizerPlugin()]
-  }
+  }*/
 }
