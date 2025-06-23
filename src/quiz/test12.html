@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/favicon.png" type="image/png" />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <!-- Primary Meta Tags -->
+    <title>Тест: Основная техника безопасности</title>
+    <meta name="title" content="Spot" />
+    <meta
+      name="description"
+      content="Медиа для райдеров, где ты найдешь вдохновляющий и полезный контент, поддержку и мотивацию, чтобы убедиться в достижимости пределов и нового уровня, возможности сделать жизнь ярче."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hseadc.github.io/spot/" />
+    <meta property="og:title" content="Spot" />
+    <meta
+      property="og:description"
+      content="Медиа для райдеров, где ты найдешь вдохновляющий и полезный контент, поддержку и мотивацию, чтобы убедиться в достижимости пределов и нового уровня, возможности сделать жизнь ярче."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/HSEADC/spot/refs/heads/main/src/images/main.webp"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hseadc.github.io/spot/" />
+    <meta property="twitter:title" content="Spot" />
+    <meta
+      property="twitter:description"
+      content="Медиа для райдеров, где ты найдешь вдохновляющий и полезный контент, поддержку и мотивацию, чтобы убедиться в достижимости пределов и нового уровня, возможности сделать жизнь ярче."
+    />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/HSEADC/spot/refs/heads/main/src/images/main.webp"
+    />
+
+    <analytics></analytics>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </head>
+
+  <body>
+    <navPartial></navPartial>
+    <img
+      src="../images/components/02_Atoms/A_InfoIllustration.webp"
+      class="A_TestCoverImageMobile"
+    />
+    <h1 class="A_Header1 black A_HeaderTest">Тест: <br />стили катания</h1>
+    <div class="W_TextButtonImg">
+      <div class="M_TextButton">
+        <p class="A_BodyText">
+          Скейтбординг&nbsp;&mdash; это не&nbsp;только про&nbsp;трюки,
+          но&nbsp;и&nbsp;про&nbsp;стиль. В&nbsp;этой статье ты&nbsp;узнаешь,
+          чем&nbsp;отличаются street, park, vert и&nbsp;bowl&nbsp;&mdash; четыре
+          направления катания, у&nbsp;каждого из&nbsp;которых своя атмосфера,
+          техника и&nbsp;настрой. Если хочешь понять, что&nbsp;тебе
+          ближе,&nbsp;&mdash; читай и&nbsp;выбирай свой путь.
+        </p>
+        <a
+          href="../tips/tips12.html"
+          class="A_TextButton A_Button Q_BgYellowButton"
+          >Читать статью</a
+        >
+      </div>
+      <img src="../images/components/02_Atoms/A_InfoIllustration.webp" />
+    </div>
+    <div class="O_Test" id="question1">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">Что характерно для&nbsp;стрит-катания?</h2>
+        <h3 class="A_Header3 white">
+          1&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(1, false)">
+          Выезды из&nbsp;боула и&nbsp;грабы
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(1, false)">
+          Скользкие пластиковые фигуры из&nbsp;супермаркета
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(1, false)">
+          Катание на&nbsp;высоких вертикальных стенах
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(1, true)"
+        >
+          Уличные объекты: лестницы, перила, бордюры, скамейки
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question2">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Чем отличается парк-катание от&nbsp;других стилей?
+        </h2>
+        <h3 class="A_Header3 white">
+          2&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(2, false)">
+          Это катание только по&nbsp;лестницам и&nbsp;парапетам
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(2, false)">
+          Это только катание в&nbsp;drained бассейнах
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(2, true)"
+        >
+          Это стиль, в&nbsp;котором собраны фигуры из&nbsp;разных направлений,
+          и&nbsp;можно комбинировать трюки глядеться вокруг на&nbsp;другие
+          объекты и&nbsp;людей
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(2, false)">
+          Это катание без&nbsp;препятствий&nbsp;&mdash; чисто по&nbsp;асфальту
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question3">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Какой стиль связан с&nbsp;полутрубами и&nbsp;вертикальными вылетами?
+        </h2>
+        <h3 class="A_Header3 white">
+          3&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(3, false)">
+          Стрит
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(3, true)"
+        >
+          Верт
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(3, false)">
+          Боул
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(3, false)">
+          Парк
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question4">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Что делает боул-катание особенным? Почему не&nbsp;стоит кататься
+          в&nbsp;запрещённых местах?
+        </h2>
+        <h3 class="A_Header3 white">
+          4&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(4, true)"
+        >
+          Это плавное катание по&nbsp;бетонным чашам с&nbsp;возможностью
+          вылетов, грабов и&nbsp;слайдов
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(4, false)">
+          В нём всегда участвуют только новички
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(4, false)">
+          В нём используется только деревянный скейт
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(4, false)">
+          Это катание по&nbsp;рейлам и&nbsp;фанбоксам
+        </div>
+      </div>
+    </div>
+    <div class="O_Test hidden" id="question5">
+      <div class="M_QuestionHeader">
+        <h2 class="A_Header2 white">
+          Какой из&nbsp;следующих пунктов НЕ&nbsp;относится к&nbsp;катанию
+          в&nbsp;стиле парк?
+        </h2>
+        <h3 class="A_Header3 white">
+          5&nbsp;<span class="yellow">/</span>&nbsp;5
+        </h3>
+      </div>
+      <div class="C_AnswerCards">
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(5, false)">
+          Универсальность и&nbsp;возможность совмещать трюки разных направлений
+        </div>
+        <div
+          class="A_BodyText M_AnswerCard right"
+          onclick="nextQuestion(5, true)"
+        >
+          Только технические трюки на&nbsp;перилах и&nbsp;бордюрах
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(5, false)">
+          Катание по&nbsp;фигурам: фанбоксы, квотеры, банки
+        </div>
+        <div class="A_BodyText M_AnswerCard" onclick="nextQuestion(5, false)">
+          Возможность сразу после флипа на&nbsp;рейле вылететь с&nbsp;рампы
+        </div>
+      </div>
+    </div>
+    <div class="O_Result hidden" id="result">
+      <img src="../images/components/02_Atoms/testResultPhoto.webp" />
+      <div class="W_TestResult">
+        <div class="W_TestResultText">
+          <div class="W_ResultHeader">
+            <div class="C_ResultScore">
+              <h1 class="A_Header1 white" id="score"></h1>
+              <h1 class="A_Header1 white">
+                &nbsp;<span class="yellow">/</span>&nbsp;5<br />
+              </h1>
+            </div>
+            <h1 class="A_Header1 white" id="resultHeader">Круто!</h1>
+          </div>
+          <p class="A_BodyText white" id="resultText">
+            Ты&nbsp;только начинаешь разбираться в&nbsp;стилях, и&nbsp;это
+            круто. Главное&nbsp;&mdash; не&nbsp;тормози! Катай, читай, пиши имя
+            своего любимого спота на&nbsp;доске и&nbsp;не&nbsp;бойся меняться.
+            Скейт&nbsp;&mdash; это движение.
+          </p>
+        </div>
+        <div class="C_Buttons">
+          <a
+            href="../quiz/test12.html"
+            class="A_TextButton A_Button Q_ButtonStrokeWhite white"
+            >Пройти тест заново</a
+          >
+          <a href="../quiz/test12.html" class="A_TextButton A_Button Q_BgWhite"
+            >Поделиться</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <section class="S_FooterWithCards">
+      <h2 class="A_Header2">Почитать ещё</h2>
+      <div class="C_Cards">
+        <a href="../tips/tips13.html" class="O_Small">
+          <div class="O_ArticleCard">
+            <img
+              src="../images/tips/tips13/MainPhoto.webp"
+              class="A_ArticleCardPhoto"
+            />
+            <div class="M_ArticleCardData">
+              <div class="M_ArticleCardTags">
+                <tag class="A_Tag Q_BgYellow">Коммьюнити</tag>
+                <div class="M_Time">
+                  <img
+                    src="../images/components/02_Atoms/A_IconTimer.webp"
+                    alt=""
+                    class="A_IconTimer"
+                  />
+                  <p class="A_BodyText">7 мин</p>
+                </div>
+              </div>
+              <div class="M_ArticleHeaderWithDescription">
+                <h4 class="A_HeaderCards">Культура командных тренировок</h4>
+                <p class="A_BodyText">
+                  Команда на&nbsp;тренировке: как&nbsp;поддержка друзей улучшает
+                  катание.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="../tips/tips1.html" class="O_Small">
+          <div class="O_ArticleCard">
+            <img
+              src="../images/tips/tips1/MainPhoto.webp"
+              class="A_ArticleCardPhoto"
+            />
+            <div class="M_ArticleCardData">
+              <div class="M_ArticleCardTags">
+                <tag class="A_Tag Q_BgYellow">Советы</tag>
+                <div class="M_Time">
+                  <img
+                    src="../images/components/02_Atoms/A_IconTimer.webp"
+                    alt=""
+                    class="A_IconTimer"
+                  />
+                  <p class="A_BodyText">5 мин</p>
+                </div>
+              </div>
+              <div class="M_ArticleHeaderWithDescription">
+                <h4 class="A_HeaderCards">Основная техника безопасности</h4>
+                <p class="A_BodyText">
+                  Скейт, самокат, BMX: как&nbsp;катать безопасно
+                  и&nbsp;без&nbsp;травм.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="../tips/tips2.html" class="O_Small">
+          <div class="O_ArticleCard">
+            <img
+              src="../images/tips/tips2/MainPhoto.webp"
+              class="A_ArticleCardPhoto"
+            />
+            <div class="M_ArticleCardData">
+              <div class="M_ArticleCardTags">
+                <tag class="A_Tag Q_BgYellow">Экипировка</tag>
+                <div class="M_Time">
+                  <img
+                    src="../images/components/02_Atoms/A_IconTimer.webp"
+                    alt=""
+                    class="A_IconTimer"
+                  />
+                  <p class="A_BodyText">7 мин</p>
+                </div>
+              </div>
+              <div class="M_ArticleHeaderWithDescription">
+                <h4 class="A_HeaderCards">
+                  Как&nbsp;выбрать нужную экипировку?
+                </h4>
+                <p class="A_BodyText">
+                  Гид по&nbsp;защите: как&nbsp;выбрать экипировку
+                  для&nbsp;безопасного катания.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footerPartial> </footerPartial>
+  </body>
+</html>
