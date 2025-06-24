@@ -226,7 +226,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
       filename: './styleguide.html',
-      chunks: ['index', 'menu']
+      chunks: ['index']
     }),
 
     // Section 'Tricks' articles

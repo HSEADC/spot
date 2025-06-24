@@ -22,22 +22,22 @@ body.styleguide {
   }
   h2 {
     font-size: 1rem;
-    font-family: 'Evolventa-Bold';
-    font-weight: 900;
+    font-family: 'Inter-SemiBold';
+    font-weight: 600;
     color: var(--yellow);
     text-transform: none;
     line-height: 0;
   }
   h3 {
     font-size: 1.25rem;
-    font-family: 'Evolventa-Regular';
+    font-family: 'Inter-Regular';
     font-weight: 400;
     color: var(--text);
     margin: 1rem 0;
   }
   p {
     font-size: 1rem;
-    font-family: 'Evolventa-Regular';
+    font-family: 'Inter-Regular';
     font-weight: 400;
     color: var(--text);
   }
@@ -67,7 +67,7 @@ body.styleguide {
     a {
       text-decoration: none;
       font-size: 1.125rem;
-      font-family: 'Evolventa-Regular';
+      font-family: 'Inter-Regular';
       font-weight: 400;
       color: var(--white);
       width: 100%;
@@ -313,12 +313,12 @@ body.styleguide {
             width: 100%;
           }
           p:nth-child(1) {
-            font-family: 'Evolventa-Bold';
-            font-weight: 900;
+            font-family: 'Inter-SemiBold';
+            font-weight: 600;
             font-size: 4rem;
           }
           p:nth-child(2) {
-            font-family: 'Evolventa-Regular';
+            font-family: 'Inter-Regular';
             margin-top: 0.5vw;
           }
         }
@@ -330,12 +330,12 @@ body.styleguide {
             width: 100%;
           }
           p:nth-child(1) {
-            font-family: 'Evolventa-Bold';
+            font-family: 'Inter-SemiBold';
 
             font-size: 4rem;
           }
           p:nth-child(2) {
-            font-family: 'Evolventa-Regular';
+            font-family: 'Inter-Regular';
             margin-top: 0.5vw;
           }
         }
@@ -347,12 +347,12 @@ body.styleguide {
             width: 100%;
           }
           p:nth-child(1) {
-            font-family: 'Evolventa-Bold';
+            font-family: 'Inter-SemiBold';
 
             font-size: 4rem;
           }
           p:nth-child(2) {
-            font-family: 'Evolventa-Regular';
+            font-family: 'Inter-Regular';
             margin-top: 0.5vw;
           }
         }
@@ -365,12 +365,12 @@ body.styleguide {
             width: 100%;
           }
           p:nth-child(1) {
-            font-family: 'Evolventa-Bold';
+            font-family: 'Inter-SemiBold';
 
             font-size: 4rem;
           }
           p:nth-child(2) {
-            font-family: 'Evolventa-Regular';
+            font-family: 'Inter-Regular';
             margin-top: 0.5vw;
           }
         }
@@ -440,7 +440,7 @@ body.styleguide {
         div:nth-child(1) {
           height: 16.5vw;
           p {
-            font-family: 'Evolventa-Bold';
+            font-family: 'Inter-SemiBold';
             font-size: 9.6vw;
             color: var(--white);
           }
@@ -450,8 +450,8 @@ body.styleguide {
           p {
             color: var(--yellow);
             font-size: 4vw;
-            font-family: 'Evolventa-Bold';
-            font-weight: 900;
+            font-family: 'Inter-SemiBold';
+            font-weight: 600;
             margin-top: 0.6vw;
           }
         }
@@ -468,8 +468,8 @@ body.styleguide {
           }
           hgroup:nth-child(2) {
             p {
-              font-family: 'Evolventa-Bold';
-              font-weight: 900;
+              font-family: 'Inter-SemiBold';
+              font-weight: 600;
             }
           }
         }
